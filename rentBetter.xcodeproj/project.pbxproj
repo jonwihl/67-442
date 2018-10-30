@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5292962521892086006131D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292962421892086006131D5 /* AppDelegate.swift */; };
+		5292962721892086006131D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292962621892086006131D5 /* ViewController.swift */; };
+		5292962A21892086006131D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5292962821892086006131D5 /* Main.storyboard */; };
+		5292962D21892086006131D5 /* rentBetter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5292962B21892086006131D5 /* rentBetter.xcdatamodeld */; };
+		5292962F21892087006131D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5292962E21892087006131D5 /* Assets.xcassets */; };
+		5292963221892087006131D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5292963021892087006131D5 /* LaunchScreen.storyboard */; };
+		5292963D21892087006131D5 /* rentBetterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292963C21892087006131D5 /* rentBetterTests.swift */; };
+		5292964821892087006131D5 /* rentBetterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292964721892087006131D5 /* rentBetterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5292963921892087006131D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5292961921892086006131D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5292962021892086006131D5;
+			remoteInfo = rentBetter;
+		};
+		5292964421892087006131D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5292961921892086006131D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5292962021892086006131D5;
+			remoteInfo = rentBetter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5292962121892086006131D5 /* rentBetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rentBetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5292962421892086006131D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5292962621892086006131D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5292962921892086006131D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5292962C21892086006131D5 /* rentBetter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = rentBetter.xcdatamodel; sourceTree = "<group>"; };
+		5292962E21892087006131D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5292963121892087006131D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5292963321892087006131D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5292963821892087006131D5 /* rentBetterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rentBetterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5292963C21892087006131D5 /* rentBetterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rentBetterTests.swift; sourceTree = "<group>"; };
+		5292963E21892087006131D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5292964321892087006131D5 /* rentBetterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rentBetterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5292964721892087006131D5 /* rentBetterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rentBetterUITests.swift; sourceTree = "<group>"; };
+		5292964921892087006131D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5292961E21892086006131D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5292963521892087006131D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5292964021892087006131D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5292961821892086006131D5 = {
+			isa = PBXGroup;
+			children = (
+				5292962321892086006131D5 /* rentBetter */,
+				5292963B21892087006131D5 /* rentBetterTests */,
+				5292964621892087006131D5 /* rentBetterUITests */,
+				5292962221892086006131D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5292962221892086006131D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5292962121892086006131D5 /* rentBetter.app */,
+				5292963821892087006131D5 /* rentBetterTests.xctest */,
+				5292964321892087006131D5 /* rentBetterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5292962321892086006131D5 /* rentBetter */ = {
+			isa = PBXGroup;
+			children = (
+				5292962421892086006131D5 /* AppDelegate.swift */,
+				5292962621892086006131D5 /* ViewController.swift */,
+				5292962821892086006131D5 /* Main.storyboard */,
+				5292962E21892087006131D5 /* Assets.xcassets */,
+				5292963021892087006131D5 /* LaunchScreen.storyboard */,
+				5292963321892087006131D5 /* Info.plist */,
+				5292962B21892086006131D5 /* rentBetter.xcdatamodeld */,
+			);
+			path = rentBetter;
+			sourceTree = "<group>";
+		};
+		5292963B21892087006131D5 /* rentBetterTests */ = {
+			isa = PBXGroup;
+			children = (
+				5292963C21892087006131D5 /* rentBetterTests.swift */,
+				5292963E21892087006131D5 /* Info.plist */,
+			);
+			path = rentBetterTests;
+			sourceTree = "<group>";
+		};
+		5292964621892087006131D5 /* rentBetterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5292964721892087006131D5 /* rentBetterUITests.swift */,
+				5292964921892087006131D5 /* Info.plist */,
+			);
+			path = rentBetterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5292962021892086006131D5 /* rentBetter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5292964C21892087006131D5 /* Build configuration list for PBXNativeTarget "rentBetter" */;
+			buildPhases = (
+				5292961D21892086006131D5 /* Sources */,
+				5292961E21892086006131D5 /* Frameworks */,
+				5292961F21892086006131D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rentBetter;
+			productName = rentBetter;
+			productReference = 5292962121892086006131D5 /* rentBetter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5292963721892087006131D5 /* rentBetterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5292964F21892087006131D5 /* Build configuration list for PBXNativeTarget "rentBetterTests" */;
+			buildPhases = (
+				5292963421892087006131D5 /* Sources */,
+				5292963521892087006131D5 /* Frameworks */,
+				5292963621892087006131D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5292963A21892087006131D5 /* PBXTargetDependency */,
+			);
+			name = rentBetterTests;
+			productName = rentBetterTests;
+			productReference = 5292963821892087006131D5 /* rentBetterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5292964221892087006131D5 /* rentBetterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5292965221892087006131D5 /* Build configuration list for PBXNativeTarget "rentBetterUITests" */;
+			buildPhases = (
+				5292963F21892087006131D5 /* Sources */,
+				5292964021892087006131D5 /* Frameworks */,
+				5292964121892087006131D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5292964521892087006131D5 /* PBXTargetDependency */,
+			);
+			name = rentBetterUITests;
+			productName = rentBetterUITests;
+			productReference = 5292964321892087006131D5 /* rentBetterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5292961921892086006131D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = AJ;
+				TargetAttributes = {
+					5292962021892086006131D5 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					5292963721892087006131D5 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 5292962021892086006131D5;
+					};
+					5292964221892087006131D5 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 5292962021892086006131D5;
+					};
+				};
+			};
+			buildConfigurationList = 5292961C21892086006131D5 /* Build configuration list for PBXProject "rentBetter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5292961821892086006131D5;
+			productRefGroup = 5292962221892086006131D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5292962021892086006131D5 /* rentBetter */,
+				5292963721892087006131D5 /* rentBetterTests */,
+				5292964221892087006131D5 /* rentBetterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5292961F21892086006131D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5292963221892087006131D5 /* LaunchScreen.storyboard in Resources */,
+				5292962F21892087006131D5 /* Assets.xcassets in Resources */,
+				5292962A21892086006131D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5292963621892087006131D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5292964121892087006131D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5292961D21892086006131D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5292962721892086006131D5 /* ViewController.swift in Sources */,
+				5292962521892086006131D5 /* AppDelegate.swift in Sources */,
+				5292962D21892086006131D5 /* rentBetter.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5292963421892087006131D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5292963D21892087006131D5 /* rentBetterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5292963F21892087006131D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5292964821892087006131D5 /* rentBetterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5292963A21892087006131D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5292962021892086006131D5 /* rentBetter */;
+			targetProxy = 5292963921892087006131D5 /* PBXContainerItemProxy */;
+		};
+		5292964521892087006131D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5292962021892086006131D5 /* rentBetter */;
+			targetProxy = 5292964421892087006131D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5292962821892086006131D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5292962921892086006131D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5292963021892087006131D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5292963121892087006131D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5292964A21892087006131D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5292964B21892087006131D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5292964D21892087006131D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = rentBetter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AJ.rentBetter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5292964E21892087006131D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = rentBetter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AJ.rentBetter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5292965021892087006131D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = rentBetterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AJ.rentBetterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rentBetter.app/rentBetter";
+			};
+			name = Debug;
+		};
+		5292965121892087006131D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = rentBetterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AJ.rentBetterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rentBetter.app/rentBetter";
+			};
+			name = Release;
+		};
+		5292965321892087006131D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = rentBetterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AJ.rentBetterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rentBetter;
+			};
+			name = Debug;
+		};
+		5292965421892087006131D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = rentBetterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AJ.rentBetterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rentBetter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5292961C21892086006131D5 /* Build configuration list for PBXProject "rentBetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5292964A21892087006131D5 /* Debug */,
+				5292964B21892087006131D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5292964C21892087006131D5 /* Build configuration list for PBXNativeTarget "rentBetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5292964D21892087006131D5 /* Debug */,
+				5292964E21892087006131D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5292964F21892087006131D5 /* Build configuration list for PBXNativeTarget "rentBetterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5292965021892087006131D5 /* Debug */,
+				5292965121892087006131D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5292965221892087006131D5 /* Build configuration list for PBXNativeTarget "rentBetterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5292965321892087006131D5 /* Debug */,
+				5292965421892087006131D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5292962B21892086006131D5 /* rentBetter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5292962C21892086006131D5 /* rentBetter.xcdatamodel */,
+			);
+			currentVersion = 5292962C21892086006131D5 /* rentBetter.xcdatamodel */;
+			path = rentBetter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5292961921892086006131D5 /* Project object */;
+}
