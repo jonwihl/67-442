@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5292962521892086006131D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292962421892086006131D5 /* AppDelegate.swift */; };
-		5292962721892086006131D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292962621892086006131D5 /* ViewController.swift */; };
+		5292962721892086006131D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292962621892086006131D5 /* LoginViewController.swift */; };
 		5292962A21892086006131D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5292962821892086006131D5 /* Main.storyboard */; };
 		5292962D21892086006131D5 /* rentBetter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5292962B21892086006131D5 /* rentBetter.xcdatamodeld */; };
 		5292962F21892087006131D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5292962E21892087006131D5 /* Assets.xcassets */; };
 		5292963221892087006131D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5292963021892087006131D5 /* LaunchScreen.storyboard */; };
 		5292963D21892087006131D5 /* rentBetterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292963C21892087006131D5 /* rentBetterTests.swift */; };
 		5292964821892087006131D5 /* rentBetterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292964721892087006131D5 /* rentBetterUITests.swift */; };
+		52929656218920D4006131D5 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929655218920D4006131D5 /* InfoViewController.swift */; };
+		52929658218920E4006131D5 /* MaintenanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929657218920E4006131D5 /* MaintenanceViewController.swift */; };
+		5292965E2189408F006131D5 /* Maintenance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292965D2189408F006131D5 /* Maintenance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,7 @@
 /* Begin PBXFileReference section */
 		5292962121892086006131D5 /* rentBetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rentBetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5292962421892086006131D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5292962621892086006131D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5292962621892086006131D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5292962921892086006131D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5292962C21892086006131D5 /* rentBetter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = rentBetter.xcdatamodel; sourceTree = "<group>"; };
 		5292962E21892087006131D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		5292964321892087006131D5 /* rentBetterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rentBetterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5292964721892087006131D5 /* rentBetterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rentBetterUITests.swift; sourceTree = "<group>"; };
 		5292964921892087006131D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52929655218920D4006131D5 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		52929657218920E4006131D5 /* MaintenanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceViewController.swift; sourceTree = "<group>"; };
+		5292965D2189408F006131D5 /* Maintenance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maintenance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				5292962421892086006131D5 /* AppDelegate.swift */,
-				5292962621892086006131D5 /* ViewController.swift */,
+				5292965C2189407D006131D5 /* Models */,
+				52929659218920EE006131D5 /* Controllers */,
 				5292962821892086006131D5 /* Main.storyboard */,
 				5292962E21892087006131D5 /* Assets.xcassets */,
 				5292963021892087006131D5 /* LaunchScreen.storyboard */,
@@ -126,6 +133,24 @@
 				5292964921892087006131D5 /* Info.plist */,
 			);
 			path = rentBetterUITests;
+			sourceTree = "<group>";
+		};
+		52929659218920EE006131D5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5292962621892086006131D5 /* LoginViewController.swift */,
+				52929655218920D4006131D5 /* InfoViewController.swift */,
+				52929657218920E4006131D5 /* MaintenanceViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5292965C2189407D006131D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5292965D2189408F006131D5 /* Maintenance.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5292962721892086006131D5 /* ViewController.swift in Sources */,
+				5292962721892086006131D5 /* LoginViewController.swift in Sources */,
 				5292962521892086006131D5 /* AppDelegate.swift in Sources */,
+				52929656218920D4006131D5 /* InfoViewController.swift in Sources */,
+				5292965E2189408F006131D5 /* Maintenance.swift in Sources */,
 				5292962D21892086006131D5 /* rentBetter.xcdatamodeld in Sources */,
+				52929658218920E4006131D5 /* MaintenanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
