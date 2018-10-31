@@ -125,7 +125,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="GvN-0w-ycv"/>
+                                    <tabBarItem title="" systemItem="contacts" id="GvN-0w-ycv"/>
                                     <tabBarItem systemItem="more" id="pAB-fX-ILJ"/>
                                 </items>
                             </tabBar>
