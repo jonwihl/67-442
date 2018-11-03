@@ -1,71 +1,71 @@
 {
-    "maintenances": [
-        {
-            "id": 1,
-            "title": "broken sink",
-            "description": "the sink is broken",
-            "created_on": "11/1/2018",
-            "closed_on": null,
-            "photo": null,
-            "active": true
-        },
-        {
-            "id": 2,
-            "title": "broken window",
-            "description": "second floor window is not closing",
-            "created_on": "10/31/2018",
-            "closed_on": null,
-            "photo": null,
-            "active": true
-        },
-        {
-            "id": 3,
-            "title": "Sink not running",
-            "description": "no water is coming out of the kitchen sink",
-            "created_on": "10/15/2018",
-            "closed_on": null,
-            "photo": null,
-            "active": true
-        }
-    ],
-
-    "properties": [
-        {
-            "id": 1,
-            "addr_line1": "5445 Wilkins Ave",
-            "addr_line2": null,
-            "city": "Pittsburgh",
-            "state": "PA",
-            "zipcode": "15217",
-            "rent": 3900,
-            "start_date": "6/1/2018",
-            "end_date": "6/1/2019",
-            "active": true
-        },
-        {
-            "id": 2,
-            "addr_line1": "155 Homer Street",
-            "addr_line2": null,
-            "city": "Newton",
-            "state": "MA",
-            "zipcode": "02459",
-            "rent": 2500,
-            "start_date": "2/1/2001",
-            "end_date": null,
-            "active": true
-        },
-        {
-            "id": 3,
-            "addr_line1": "5705 Fifth Ave",
-            "addr_line2": "6G",
-            "city": "Pittsburgh",
-            "state": "PA",
-            "zipcode": "15217",
-            "rent": 1100,
-            "start_date": "5/1/2016",
-            "end_date": "5/1/2019",
-            "active": true
-        }
-    ]
-
+	"maintenances": [
+		{
+			"id": 1,
+			"title": "broken sink",
+			"description": "the sink is broken",
+			"created_on": "11/1/2018",
+			"closed_on": null,
+			"photo": null,
+			"active": true
+		},
+		{
+			"id": 2,
+			"title": "broken window",
+			"description": "second floor window is not closing",
+			"created_on": "10/31/2018",
+			"closed_on": null,
+			"photo": null,
+			"active": true
+		},
+		{
+			"id": 3,
+			"title": "Sink not running",
+			"description": "no water is coming out of the kitchen sink",
+			"created_on": "10/15/2018",
+			"closed_on": null,
+			"photo": null,
+			"active": true
+		}
+	],
+	
+	"properties": [
+		{
+			"id": 1,
+			"addr_line1": "5445 Wilkins Ave",
+			"addr_line2": null,
+			"city": "Pittsburgh",
+			"state": "PA",
+			"zipcode": "15217",
+			"rent": 3900,
+			"start_date": "6/1/2018",
+			"end_date": "6/1/2019",
+			"active": true
+		},
+		{
+			"id": 2,
+			"addr_line1": "155 Homer Street",
+			"addr_line2": null,
+			"city": "Newton",
+			"state": "MA",
+			"zipcode": "02459",
+			"rent": 2500,
+			"start_date": "2/1/2001",
+			"end_date": null,
+			"active": true
+		},
+		{
+			"id": 3,
+			"addr_line1": "5705 Fifth Ave",
+			"addr_line2": "6G",
+			"city": "Pittsburgh",
+			"state": "PA",
+			"zipcode": "15217",
+			"rent": 1100,
+			"start_date": "5/1/2016",
+			"end_date": "5/1/2019",
+			"active": true
+		}
+	]
+	
 }

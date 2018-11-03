@@ -26,6 +26,9 @@
 		5292966A218E3A0C006131D5 /* SearchPropertiesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929669218E3A0C006131D5 /* SearchPropertiesClient.swift */; };
 		5292966C218E4905006131D5 /* PropertiesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292966B218E4905006131D5 /* PropertiesParser.swift */; };
 		5292966E218E4916006131D5 /* MaintenancesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292966D218E4916006131D5 /* MaintenancesParser.swift */; };
+		52929671218E6497006131D5 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 52929670218E6497006131D5 /* data.json */; };
+		52929676218E6501006131D5 /* PropertiesParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929675218E6501006131D5 /* PropertiesParserTests.swift */; };
+		52929678218E6517006131D5 /* MaintenancesParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929677218E6517006131D5 /* MaintenancesParserTests.swift */; };
 		5FD266B366C186DE217AABED /* Pods_rentBetter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7E052CCF911CD6B413781B /* Pods_rentBetter.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +76,9 @@
 		52929669218E3A0C006131D5 /* SearchPropertiesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPropertiesClient.swift; sourceTree = "<group>"; };
 		5292966B218E4905006131D5 /* PropertiesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesParser.swift; sourceTree = "<group>"; };
 		5292966D218E4916006131D5 /* MaintenancesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenancesParser.swift; sourceTree = "<group>"; };
+		52929670218E6497006131D5 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		52929675218E6501006131D5 /* PropertiesParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesParserTests.swift; sourceTree = "<group>"; };
+		52929677218E6517006131D5 /* MaintenancesParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenancesParserTests.swift; sourceTree = "<group>"; };
 		675D8278D00049FDC62FFCA7 /* Pods-rentBetter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentBetter.release.xcconfig"; path = "Pods/Target Support Files/Pods-rentBetter/Pods-rentBetter.release.xcconfig"; sourceTree = "<group>"; };
 		FCECFCF914070E387D0C42AC /* Pods-rentBetter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentBetter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rentBetter/Pods-rentBetter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,8 +169,9 @@
 			isa = PBXGroup;
 			children = (
 				5292963C21892087006131D5 /* rentBetterTests.swift */,
-				5292966F218E610A006131D5 /* Resources */,
 				5292963E21892087006131D5 /* Info.plist */,
+				52929673218E64CC006131D5 /* Classes */,
+				5292966F218E610A006131D5 /* Resources */,
 			);
 			path = rentBetterTests;
 			sourceTree = "<group>";
@@ -221,8 +228,26 @@
 		5292966F218E610A006131D5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				52929670218E6497006131D5 /* data.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		52929673218E64CC006131D5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				52929674218E64DC006131D5 /* Parser */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		52929674218E64DC006131D5 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				52929675218E6501006131D5 /* PropertiesParserTests.swift */,
+				52929677218E6517006131D5 /* MaintenancesParserTests.swift */,
+			);
+			path = Parser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +369,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52929671218E6497006131D5 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +457,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52929678218E6517006131D5 /* MaintenancesParserTests.swift in Sources */,
 				5292963D21892087006131D5 /* rentBetterTests.swift in Sources */,
+				52929676218E6501006131D5 /* PropertiesParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
