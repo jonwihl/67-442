@@ -15,7 +15,7 @@ public class Property{
     var zipcode: String
     var city: String
     var state: String
-    var rent: String?
+    var rent: String
     var start_date: String
     var end_date: String
     

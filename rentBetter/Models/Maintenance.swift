@@ -13,7 +13,7 @@ struct Maintenance {
 	var title: String
 	var description: String?
     var created_on: String
-	var photo: UIImage?
+	var photo: String?
     
     init(title: String, created_on:String) {
         self.title = title
