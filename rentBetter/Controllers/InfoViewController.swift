@@ -25,7 +25,7 @@ class InfoViewController: UIViewController {
     
     override func viewDidLoad() {
 		super.viewDidLoad()
-        updateLabelAddr()
+//        updateLabelAddr()
 		// Do any additional setup after loading the view, typically from a nib.
 	}
     
