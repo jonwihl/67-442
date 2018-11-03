@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias JSONDictionary = [String: AnyObject]
+//typealias JSONDictionary = [String: AnyObject]
 
 class PropertiesParser {
 	
@@ -27,14 +27,14 @@ class PropertiesParser {
 	
 	
 	
-	func repositoriesFromSearchResponse(_ data: Data?) -> [Property]? {
+	func propertiesFromSearchResponse(_ data: Data?) -> [Property]? {
 		guard let dict = parseDictionary(data) else {
 			print("Error: couldn't parse dictionary from data")
 			return nil
 		}
 		
 		guard let propDicts = dict["properties"] as? [JSONDictionary] else {
-			print("Error: couldn't parse items from JSON: \(dict)")
+			print("Error: couldn't parse properties from JSON: \(dict)")
 			return nil
 		}
 		
