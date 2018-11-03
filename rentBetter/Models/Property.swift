@@ -10,15 +10,16 @@ import Foundation
 import UIKit
 
 struct Property{
-	let addr_1: String
-	let addr_2: String?
-	let street: String
-	let zipcode: String
+	let id: Int
+	let addr_line1: String
+	let addr_line2: String?
 	let city: String
 	let state: String
-	let rent: String
+	let zipcode: String
+	let rent: Int
 	let start_date: String
-	let end_date: String
+	let end_date: String?
+	let active: Bool
     
 //    init(addr_1: String, street:String, zipcode:String, city:String, state:String, rent: String, start_date: String, end_date: String) {
 //        self.addr_1 = addr_1

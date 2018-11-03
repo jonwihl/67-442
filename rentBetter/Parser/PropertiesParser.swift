@@ -45,14 +45,23 @@ class PropertiesParser {
 	
 	
 	func parseProperty(_ dict: JSONDictionary) -> Property? {
-		if let addr_1 = dict["addr_1"] as? String,
-			let name = dict["name"] as? String,
-			let description = dict["description"] as? String {
-			let htmlURL = dict["html_url"] as? String
-			let repo = Repository(id: id, name: name, description: description, htmlURL: htmlURL)
-			return repo
+		if let id = dict["id"] as? Int,
+			let addr_line1 = dict["addr_line1"] as? String,
+			let addr_line2 = dict["addr_line2"] as? String,
+			let city = dict["city"] as? String,
+			let state = dict["state"] as? String,
+			let zipcode = dict["zipcode"] as? String,
+			let rent = dict["rent"] as? Int,
+			let start_date = dict["start_date"] as? String,
+			let end_date = dict["end_date"] as? String,
+			let active = dict["active"] as? Bool {
+			let prop = Property(id: id, addr_line1: addr_line1, addr_line2: addr_line2, city: city,
+													state: state, zipcode: zipcode, rent: rent, start_date: start_date,
+													end_date: end_date, active: active)
+				return prop
+			
 		} else {
-			print("Error: couldn't parse JSON dictionary: \(dict)")
+				print("Error: couldn't parse JSON dictionary: \(dict)")
 		}
 		return nil
 	}
