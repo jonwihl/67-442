@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25CD14F1218E2B9A008E4D92 /* LandlordMaintenanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD14F0218E2B9A008E4D92 /* LandlordMaintenanceViewController.swift */; };
+		25CD14F5218E2BDA008E4D92 /* LandlordPropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD14F4218E2BDA008E4D92 /* LandlordPropertiesViewController.swift */; };
 		25CD5AF1218BBBAD0007C6AD /* MaintenanceViewCelll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD5AF0218BBBAD0007C6AD /* MaintenanceViewCelll.swift */; };
 		25D23273218A74D400A5E2B2 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D23272218A74D400A5E2B2 /* Property.swift */; };
 		5292962521892086006131D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292962421892086006131D5 /* AppDelegate.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25CD14F0218E2B9A008E4D92 /* LandlordMaintenanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordMaintenanceViewController.swift; sourceTree = "<group>"; };
+		25CD14F4218E2BDA008E4D92 /* LandlordPropertiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordPropertiesViewController.swift; sourceTree = "<group>"; };
 		25CD5AF0218BBBAD0007C6AD /* MaintenanceViewCelll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceViewCelll.swift; sourceTree = "<group>"; };
 		25D23272218A74D400A5E2B2 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		5292962121892086006131D5 /* rentBetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rentBetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +150,8 @@
 				52929655218920D4006131D5 /* InfoViewController.swift */,
 				52929657218920E4006131D5 /* MaintenanceViewController.swift */,
 				25CD5AF0218BBBAD0007C6AD /* MaintenanceViewCelll.swift */,
+				25CD14F0218E2B9A008E4D92 /* LandlordMaintenanceViewController.swift */,
+				25CD14F4218E2BDA008E4D92 /* LandlordPropertiesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -294,9 +300,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				25D23273218A74D400A5E2B2 /* Property.swift in Sources */,
+				25CD14F1218E2B9A008E4D92 /* LandlordMaintenanceViewController.swift in Sources */,
 				5292962721892086006131D5 /* LoginViewController.swift in Sources */,
 				5292962521892086006131D5 /* AppDelegate.swift in Sources */,
 				52929656218920D4006131D5 /* InfoViewController.swift in Sources */,
+				25CD14F5218E2BDA008E4D92 /* LandlordPropertiesViewController.swift in Sources */,
 				5292965E2189408F006131D5 /* Maintenance.swift in Sources */,
 				5292962D21892086006131D5 /* rentBetter.xcdatamodeld in Sources */,
 				52929658218920E4006131D5 /* MaintenanceViewController.swift in Sources */,
