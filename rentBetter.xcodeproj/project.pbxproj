@@ -22,6 +22,8 @@
 		52929656218920D4006131D5 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929655218920D4006131D5 /* InfoViewController.swift */; };
 		52929658218920E4006131D5 /* MaintenanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929657218920E4006131D5 /* MaintenanceViewController.swift */; };
 		5292965E2189408F006131D5 /* Maintenance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292965D2189408F006131D5 /* Maintenance.swift */; };
+		52929668218E39EF006131D5 /* SearchMaintenancesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929667218E39EF006131D5 /* SearchMaintenancesClient.swift */; };
+		5292966A218E3A0C006131D5 /* SearchPropertiesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929669218E3A0C006131D5 /* SearchPropertiesClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		52929655218920D4006131D5 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		52929657218920E4006131D5 /* MaintenanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceViewController.swift; sourceTree = "<group>"; };
 		5292965D2189408F006131D5 /* Maintenance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maintenance.swift; sourceTree = "<group>"; };
+		52929667218E39EF006131D5 /* SearchMaintenancesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMaintenancesClient.swift; sourceTree = "<group>"; };
+		52929669218E3A0C006131D5 /* SearchPropertiesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPropertiesClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				5292962421892086006131D5 /* AppDelegate.swift */,
 				5292965C2189407D006131D5 /* Models */,
 				52929659218920EE006131D5 /* Controllers */,
+				52929666218E3968006131D5 /* Network */,
+				52929663218E391E006131D5 /* Parser */,
 				5292962821892086006131D5 /* Main.storyboard */,
 				5292962E21892087006131D5 /* Assets.xcassets */,
 				5292963021892087006131D5 /* LaunchScreen.storyboard */,
@@ -163,6 +169,22 @@
 				25D23272218A74D400A5E2B2 /* Property.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		52929663218E391E006131D5 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		52929666218E3968006131D5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				52929667218E39EF006131D5 /* SearchMaintenancesClient.swift */,
+				52929669218E3A0C006131D5 /* SearchPropertiesClient.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,10 +322,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				25D23273218A74D400A5E2B2 /* Property.swift in Sources */,
+				5292966A218E3A0C006131D5 /* SearchPropertiesClient.swift in Sources */,
 				25CD14F1218E2B9A008E4D92 /* LandlordMaintenanceViewController.swift in Sources */,
 				5292962721892086006131D5 /* LoginViewController.swift in Sources */,
 				5292962521892086006131D5 /* AppDelegate.swift in Sources */,
 				52929656218920D4006131D5 /* InfoViewController.swift in Sources */,
+				52929668218E39EF006131D5 /* SearchMaintenancesClient.swift in Sources */,
 				25CD14F5218E2BDA008E4D92 /* LandlordPropertiesViewController.swift in Sources */,
 				5292965E2189408F006131D5 /* Maintenance.swift in Sources */,
 				5292962D21892086006131D5 /* rentBetter.xcdatamodeld in Sources */,
@@ -473,8 +497,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
