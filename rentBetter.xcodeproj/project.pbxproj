@@ -163,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				5292963C21892087006131D5 /* rentBetterTests.swift */,
+				5292966F218E610A006131D5 /* Resources */,
 				5292963E21892087006131D5 /* Info.plist */,
 			);
 			path = rentBetterTests;
@@ -215,6 +216,13 @@
 				52929669218E3A0C006131D5 /* SearchPropertiesClient.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		5292966F218E610A006131D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
