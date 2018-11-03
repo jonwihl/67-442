@@ -10,14 +10,17 @@ import Photos
 import UIKit
 
 struct Maintenance {
-	var title: String
-	var description: String?
-    var created_on: String
-	var photo: String?
+	let id: Int
+	let title: String
+	let description: String
+	let created_on: String
+	let photo: String?
     
-    init(title: String, created_on:String) {
-        self.title = title
-        self.created_on = created_on
-    }
-    
+//	init(id: Int, title: String, description: String, created_on:String) {
+//		self.id = id
+//		self.title = title
+//		self.description = description
+//		self.created_on = created_on
+//	}
+	
 }
