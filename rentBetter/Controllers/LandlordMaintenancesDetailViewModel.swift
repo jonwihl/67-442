@@ -28,7 +28,7 @@ class LandlordMaintenancesDetailViewModel {
 	}
 	
 	func closed_on() -> String? {
-		return maintenance.description
+		return maintenance.closed_on
 	}
 	
 	func photo() -> String? {
