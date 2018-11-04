@@ -5,8 +5,8 @@
 			"title": "broken sink",
 			"description": "the sink is broken",
 			"created_on": "11/1/2018",
-			"closed_on": null,
-			"photo": null,
+			"closed_on": "11/3/2018",
+			"photo": "xyz",
 			"active": true
 		},
 		{
@@ -14,8 +14,8 @@
 			"title": "broken window",
 			"description": "second floor window is not closing",
 			"created_on": "10/31/2018",
-			"closed_on": null,
-			"photo": null,
+			"closed_on": "11/2/2018",
+			"photo": "xyz",
 			"active": true
 		},
 		{
@@ -23,8 +23,8 @@
 			"title": "Sink not running",
 			"description": "no water is coming out of the kitchen sink",
 			"created_on": "10/15/2018",
-			"closed_on": null,
-			"photo": null,
+			"closed_on": "10/18/2018",
+			"photo": "xyz",
 			"active": true
 		}
 	],
@@ -33,7 +33,7 @@
 		{
 			"id": 1,
 			"addr_line1": "5445 Wilkins Ave",
-			"addr_line2": null,
+			"addr_line2": "5445 Wilkins Ave",
 			"city": "Pittsburgh",
 			"state": "PA",
 			"zipcode": "15217",
@@ -45,13 +45,13 @@
 		{
 			"id": 2,
 			"addr_line1": "155 Homer Street",
-			"addr_line2": null,
+			"addr_line2": "155 Homer Street",
 			"city": "Newton",
 			"state": "MA",
 			"zipcode": "02459",
 			"rent": 2500,
 			"start_date": "2/1/2001",
-			"end_date": null,
+			"end_date": "2/1/2020",
 			"active": true
 		},
 		{

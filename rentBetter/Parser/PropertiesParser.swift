@@ -56,8 +56,7 @@ class PropertiesParser {
 			let end_date = dict["end_date"] as? String,
 			let active = dict["active"] as? Bool {
 			let prop = Property(id: id, addr_line1: addr_line1, addr_line2: addr_line2, city: city,
-													state: state, zipcode: zipcode, rent: rent, start_date: start_date,
-													end_date: end_date, active: active)
+													state: state, zipcode: zipcode, rent: rent, start_date: start_date, end_date: end_date,active: active)
 				return prop
 			
 		} else {
