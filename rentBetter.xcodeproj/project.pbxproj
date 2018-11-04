@@ -34,6 +34,10 @@
 		52929680218F717E006131D5 /* LandlordPropertiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292967F218F717E006131D5 /* LandlordPropertiesViewModel.swift */; };
 		52929687218F77EE006131D5 /* LandlordPropertiesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929686218F77EE006131D5 /* LandlordPropertiesViewModelTests.swift */; };
 		52929689218F77FF006131D5 /* LandlordPropertiesDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929688218F77FF006131D5 /* LandlordPropertiesDetailViewModelTests.swift */; };
+		5292968C218F9001006131D5 /* LandlordMaintenancesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292968B218F9001006131D5 /* LandlordMaintenancesViewModelTests.swift */; };
+		5292968E218F907B006131D5 /* LandlordMaintenancesDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292968D218F907B006131D5 /* LandlordMaintenancesDetailViewModelTests.swift */; };
+		52929690218F90B0006131D5 /* LandlordMaintenancesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292968F218F90B0006131D5 /* LandlordMaintenancesViewModel.swift */; };
+		52929692218F9278006131D5 /* LandlordMaintenancesDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929691218F9278006131D5 /* LandlordMaintenancesDetailViewModel.swift */; };
 		5FD266B366C186DE217AABED /* Pods_rentBetter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7E052CCF911CD6B413781B /* Pods_rentBetter.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +93,10 @@
 		5292967F218F717E006131D5 /* LandlordPropertiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordPropertiesViewModel.swift; sourceTree = "<group>"; };
 		52929686218F77EE006131D5 /* LandlordPropertiesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordPropertiesViewModelTests.swift; sourceTree = "<group>"; };
 		52929688218F77FF006131D5 /* LandlordPropertiesDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordPropertiesDetailViewModelTests.swift; sourceTree = "<group>"; };
+		5292968B218F9001006131D5 /* LandlordMaintenancesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordMaintenancesViewModelTests.swift; sourceTree = "<group>"; };
+		5292968D218F907B006131D5 /* LandlordMaintenancesDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordMaintenancesDetailViewModelTests.swift; sourceTree = "<group>"; };
+		5292968F218F90B0006131D5 /* LandlordMaintenancesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordMaintenancesViewModel.swift; sourceTree = "<group>"; };
+		52929691218F9278006131D5 /* LandlordMaintenancesDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordMaintenancesDetailViewModel.swift; sourceTree = "<group>"; };
 		675D8278D00049FDC62FFCA7 /* Pods-rentBetter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentBetter.release.xcconfig"; path = "Pods/Target Support Files/Pods-rentBetter/Pods-rentBetter.release.xcconfig"; sourceTree = "<group>"; };
 		FCECFCF914070E387D0C42AC /* Pods-rentBetter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentBetter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rentBetter/Pods-rentBetter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,7 +210,9 @@
 				52929655218920D4006131D5 /* InfoViewController.swift */,
 				25CD5AF0218BBBAD0007C6AD /* MaintenanceViewCelll.swift */,
 				25CD14F0218E2B9A008E4D92 /* LandlordMaintenancesViewController.swift */,
+				5292968F218F90B0006131D5 /* LandlordMaintenancesViewModel.swift */,
 				52929679218F6625006131D5 /* LandlordMaintenancesDetailViewController.swift */,
+				52929691218F9278006131D5 /* LandlordMaintenancesDetailViewModel.swift */,
 				25CD14F4218E2BDA008E4D92 /* LandlordPropertiesViewController.swift */,
 				5292967F218F717E006131D5 /* LandlordPropertiesViewModel.swift */,
 				5292967B218F66CE006131D5 /* LandlordPropertiesDetailViewController.swift */,
@@ -249,6 +259,7 @@
 		52929673218E64CC006131D5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5292968A218F8FD7006131D5 /* Maintenances View Models */,
 				52929685218F7797006131D5 /* Properties View Models */,
 				52929674218E64DC006131D5 /* Parser */,
 			);
@@ -271,6 +282,15 @@
 				52929688218F77FF006131D5 /* LandlordPropertiesDetailViewModelTests.swift */,
 			);
 			path = "Properties View Models";
+			sourceTree = "<group>";
+		};
+		5292968A218F8FD7006131D5 /* Maintenances View Models */ = {
+			isa = PBXGroup;
+			children = (
+				5292968B218F9001006131D5 /* LandlordMaintenancesViewModelTests.swift */,
+				5292968D218F907B006131D5 /* LandlordMaintenancesDetailViewModelTests.swift */,
+			);
+			path = "Maintenances View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,8 +489,10 @@
 				5292967C218F66CE006131D5 /* LandlordPropertiesDetailViewController.swift in Sources */,
 				5292962521892086006131D5 /* AppDelegate.swift in Sources */,
 				52929656218920D4006131D5 /* InfoViewController.swift in Sources */,
+				52929690218F90B0006131D5 /* LandlordMaintenancesViewModel.swift in Sources */,
 				52929668218E39EF006131D5 /* SearchMaintenancesClient.swift in Sources */,
 				25CD14F5218E2BDA008E4D92 /* LandlordPropertiesViewController.swift in Sources */,
+				52929692218F9278006131D5 /* LandlordMaintenancesDetailViewModel.swift in Sources */,
 				5292965E2189408F006131D5 /* Maintenance.swift in Sources */,
 				5292962D21892086006131D5 /* rentBetter.xcdatamodeld in Sources */,
 				5292967A218F6625006131D5 /* LandlordMaintenancesDetailViewController.swift in Sources */,
@@ -483,6 +505,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5292968E218F907B006131D5 /* LandlordMaintenancesDetailViewModelTests.swift in Sources */,
+				5292968C218F9001006131D5 /* LandlordMaintenancesViewModelTests.swift in Sources */,
 				52929678218E6517006131D5 /* MaintenancesParserTests.swift in Sources */,
 				52929687218F77EE006131D5 /* LandlordPropertiesViewModelTests.swift in Sources */,
 				5292963D21892087006131D5 /* rentBetterTests.swift in Sources */,
