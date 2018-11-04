@@ -6,4 +6,6 @@
 //  Copyright © 2018 AJ. All rights reserved.
 //
 
-import Foundation
+import XCTest
+@testable import rentBetter
+

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LandlordMaintenancesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class LandlordMaintenancesViewController: UIViewController {
 	
 	
 
@@ -23,14 +23,14 @@ class LandlordMaintenancesViewController: UIViewController, UITableViewDataSourc
         // Dispose of any resources that can be recreated.
     }
 	
-		func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-			<#code#>
-		}
-	
-		func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-			<#code#>
-		}
-	
+//		func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//			<#code#>
+//		}
+//
+//		func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//			<#code#>
+//		}
+//
 
     /*
     // MARK: - Navigation

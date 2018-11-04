@@ -6,13 +6,14 @@
 //  Copyright © 2018 AJ. All rights reserved.
 //
 
-import Foundation
+import XCTest
+@testable import rentBetter
 
-class PropertiesViewModelTests: XCTestCase {
+class LandlordPropertiesViewModelTests: XCTestCase {
     
     func test_numberOfRows() {
         let properties = [createProperty()]
-        let viewModel = LandlordPropertiesViewModel()
+				let viewModel = LandlordPropertiesViewModel()
         viewModel.properties = properties
         
         XCTAssertEqual(viewModel.numberOfRows(), 1)
@@ -29,7 +30,7 @@ class PropertiesViewModelTests: XCTestCase {
     
     
     func createProperty() -> Property {
-        return Property(id: 1, addr_line1: "5445 Wilkins", addr_line2: "N/A", city: "Pittsburgh", state: "PA", zipcode: "15217", rent: 3900, start_date: "6/1/2018", end_date: "6/2/2019")
+			return Property(id: 1, addr_line1: "5445 Wilkins", addr_line2: "N/A", city: "Pittsburgh", state: "PA", zipcode: "15217", rent: 3900, start_date: "6/1/2018", end_date: "6/2/2019", active: true)
     }
     
 }
