@@ -10,25 +10,35 @@ import XCTest
 @testable import rentBetter
 
 class rentBetterTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    let propertiesParser = PropertiesParser()
+    let maintenancesParser = MaintenanceParser()
+    
+    func test_propertiesFromSearchResponse()  {
+        let data = loadJSONTestData("Resources/data.json")
+        let results = parser.propertiesFromSearchResponse(data)
+        XCTAssertEqual(3, results!.count)
+        
+        let first = results!.first!
+        XCTAssertEqual(1, first.id)
+        XCTAssertEqual("5445 Wilkins Ave", first.addr_line1)
+        XCTAssertEqual("Pittsburgh", first.city)
+        XCTAssertEqual("PA", first.state)
+        XCTAssertEqual("15217", first.zipcode)
+        XCTAssertEqual(3900, first.rent)
+        XCTAssertEqual("6/1/2018", first.start_date)
+        XCTAssertEqual("6/1/2019", first.end_date)
+        
+    }
+    
+    func test_propertiesFromSearchResponse_with_nil_data(){
+        let data: Data? = nil
+        let results = propertiesParser.propertiesFromSearchResponse(data)
+        XCTAssertNil(results)
+    }
+    func test_parseProperty(){
+        XCTAssertEqual(true, true)
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 
 }
