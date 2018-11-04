@@ -345,10 +345,10 @@
             </objects>
             <point key="canvasLocation" x="2118" y="-186"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Landlord Maintenances View Controller Scene-->
         <scene sceneID="m77-L1-szn">
             <objects>
-                <tableViewController id="yqW-Lj-iLc" sceneMemberID="viewController">
+                <tableViewController id="yqW-Lj-iLc" userLabel="Landlord Maintenances View Controller Scene" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fR8-K7-kvv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -371,16 +371,16 @@
                             <outlet property="delegate" destination="yqW-Lj-iLc" id="UpY-Jk-XI8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="EQS-bz-z63"/>
+                    <navigationItem key="navigationItem" title="Maintenance Requests" id="EQS-bz-z63"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rb2-Va-zlA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2118" y="1258"/>
         </scene>
-        <!--Landlord Maintenance View Controller-->
+        <!--Landlord Maintenances Detail View Controller Scene-->
         <scene sceneID="vgV-dZ-Ifm">
             <objects>
-                <viewController id="4vS-gl-R3d" customClass="LandlordMaintenanceViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4vS-gl-R3d" userLabel="Landlord Maintenances Detail View Controller Scene" customClass="LandlordMaintenancesDetailViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k2T-RT-jsJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -422,10 +422,10 @@
             </objects>
             <point key="canvasLocation" x="3089" y="1258"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Landlord Properties View Controller Scene-->
         <scene sceneID="4OW-36-uOV">
             <objects>
-                <tableViewController id="rki-KT-Qcw" sceneMemberID="viewController">
+                <tableViewController id="rki-KT-Qcw" userLabel="Landlord Properties View Controller Scene" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="y8y-Y0-7MP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -448,16 +448,16 @@
                             <outlet property="delegate" destination="rki-KT-Qcw" id="7cS-T7-wYm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="ftG-J2-Uas"/>
+                    <navigationItem key="navigationItem" title="Properties" id="ftG-J2-Uas"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJe-dW-WBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2118" y="1957"/>
         </scene>
-        <!--Landlord Properties View Controller-->
+        <!--Landlord Properties Detail View Controller Scene-->
         <scene sceneID="IXC-Jx-Npo">
             <objects>
-                <viewController id="TJl-Iq-BE2" customClass="LandlordPropertiesViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TJl-Iq-BE2" userLabel="Landlord Properties Detail View Controller Scene" customClass="LandlordPropertiesDetailViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NWZ-KT-1Ml">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -469,10 +469,10 @@
             </objects>
             <point key="canvasLocation" x="3090" y="1957"/>
         </scene>
-        <!--Item-->
+        <!--Properties Navigation Controller-->
         <scene sceneID="mC3-B5-0ga">
             <objects>
-                <navigationController id="cql-fU-vML" sceneMemberID="viewController">
+                <navigationController id="cql-fU-vML" userLabel="Properties Navigation Controller" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="2yd-Ob-Rjm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5xJ-nl-eFW">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>

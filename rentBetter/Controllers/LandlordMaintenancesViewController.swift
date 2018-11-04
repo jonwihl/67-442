@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LandlordMaintenanceViewController: UIViewController {
+class LandlordMaintenancesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
