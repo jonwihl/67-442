@@ -32,7 +32,7 @@ class LandlordPropertiesViewModel {
 		}
 	}
 	
-	func titleForRowAtIndexPath(_ indexPath: IndexPath) -> String {
+	func addrForRowAtIndexPath(_ indexPath: IndexPath) -> String {
 		guard indexPath.row >= 0 && indexPath.row < properties.count else {
 			return ""
 		}
