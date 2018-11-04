@@ -9,7 +9,7 @@
 import Foundation
 
 class LandlordMaintenancesViewModel {
-	var maintenanaces = [Maintenance]()
+	var maintenances = [Maintenance]()
 	var filteredMaintenances = [Maintenance]()
 	
 	let client = SearchMaintenancesClient()
@@ -18,7 +18,7 @@ class LandlordMaintenancesViewModel {
 	func refresh(_ completion: @escaping () -> Void) {
 		client.fetchMaintenances{ [unowned self] data in
 			if let maintenance = self.parser.maintenancesFromSearchResponse(data) {
-				self.maintenanaces = maintenance
+				self.maintenances = maintenance
 			}
 			completion()
 		}
@@ -26,41 +26,41 @@ class LandlordMaintenancesViewModel {
 	
 	func numberOfRows() -> Int {
 		if filteredMaintenances.isEmpty {
-			return maintenanaces.count
+			return maintenances.count
 		} else {
 			return filteredMaintenances.count
 		}
 	}
 	
 	func titleForRowAtIndexPath(_ indexPath: IndexPath) -> String {
-		guard indexPath.row >= 0 && indexPath.row < maintenanaces.count else {
+		guard indexPath.row >= 0 && indexPath.row < maintenances.count else {
 			return ""
 		}
 		if filteredMaintenances.isEmpty {
-			return maintenanaces[indexPath.row].title
+			return maintenances[indexPath.row].title
 		} else {
 			return filteredMaintenances[indexPath.row].title
 		}
 	}
 	
 	func summaryForRowAtIndexPath(_ indexPath: IndexPath) -> String {
-		guard indexPath.row >= 0 && indexPath.row < maintenanaces.count else {
+		guard indexPath.row >= 0 && indexPath.row < maintenances.count else {
 			return ""
 		}
 		if filteredMaintenances.isEmpty {
-			return maintenanaces[indexPath.row].description
+			return maintenances[indexPath.row].description
 		} else {
 			return filteredMaintenances[indexPath.row].description
 		}
 	}
 	
 	func detailViewModelForRowAtIndexPath(_ indexPath: IndexPath) -> LandlordMaintenancesDetailViewModel {
-		let fix = (filteredMaintenances.isEmpty ? maintenanaces[indexPath.row] : filteredMaintenances[indexPath.row])
+		let fix = (filteredMaintenances.isEmpty ? maintenances[indexPath.row] : filteredMaintenances[indexPath.row])
 		return LandlordMaintenancesDetailViewModel(maintenance: fix)
 	}
 	
 	func updateFiltering(_ searchText: String) -> Void {
-		filteredMaintenances = self.maintenanaces.filter { maintenance in
+		filteredMaintenances = self.maintenances.filter { maintenance in
 			return maintenance.title.lowercased().contains(searchText.lowercased())
 		}
 	}

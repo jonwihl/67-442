@@ -22,10 +22,10 @@ class LandlordMaintenancesViewModelTests: XCTestCase {
     func test_titleForRowAtIndexPath() {
         let maintenance1 = createMaintenance()
         let viewModel = LandlordMaintenancesViewModel()
-        viewModel.maintenances = [property1]
+        viewModel.maintenances = [maintenance1]
         
         let indexPath1 = IndexPath(row: 0, section: 0)
-        XCTAssertEqual(viewModel.addrForRowAtIndexPath(indexPath1), "Sink not running")
+        XCTAssertEqual(viewModel.titleForRowAtIndexPath(indexPath1), "Sink not running")
     }
     
     
