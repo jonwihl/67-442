@@ -13,32 +13,39 @@ import XCTest
 class MaintenancesParserTests: XCTestCase {
 	
 	let maintenancesParser = MaintenancesParser()
+    
+    func test_parseDictionary() {
+        let data = loadJSONTestData("data")
+        let results = maintenancesParser.parseDictionary(data)
+        XCTAssertNotNil(results)
+    }
 	
-//	func test_propertiesFromSearchResponse()  {
-//		let data = loadJSONTestData("data.json")
-//		let results = parser.propertiesFromSearchResponse(data)
-//		XCTAssertEqual(3, results!.count)
-//
-//		let first = results!.first!
-//		XCTAssertEqual(1, first.id)
-//		XCTAssertEqual("5445 Wilkins Ave", first.addr_line1)
-//		XCTAssertEqual("Pittsburgh", first.city)
-//		XCTAssertEqual("PA", first.state)
-//		XCTAssertEqual("15217", first.zipcode)
-//		XCTAssertEqual(3900, first.rent)
-//		XCTAssertEqual("6/1/2018", first.start_date)
-//		XCTAssertEqual("6/1/2019", first.end_date)
-//
-//	}
-//
-//	func test_propertiesFromSearchResponse_with_nil_data(){
-//		let data: Data? = nil
-//		let results = propertiesParser.propertiesFromSearchResponse(data)
-//		XCTAssertNil(results)
-//	}
-//	func test_parseProperty(){
-//		XCTAssertEqual(true, true)
-//	}
-//
+    func test_maintenancesFromSearchResponse()  {
+        let data = loadJSONTestData("data.json")
+        let results = maintenancesParser.maintenancesFromSearchResponse(data)
+        XCTAssertEqual(3, results!.count)
+
+        let first = results!.first!
+        XCTAssertEqual(1, first.id)
+        XCTAssertEqual("broken sink", first.title)
+        XCTAssertEqual("the sink is broken", first.description)
+        XCTAssertEqual("11/1/2018", first.created_on)
+        XCTAssertEqual("11/3/2018", first.closed_on)
+        XCTAssertEqual("xyz", first.photo)
+        XCTAssertEqual(true, first.active)
+    }
+
+    func test_propertiesFromSearchResponse_with_nil_data(){
+        let data: Data? = nil
+        let results = maintenancesParser.maintenancesFromSearchResponse(data)
+        XCTAssertNil(results)
+    }
+        
+    func loadJSONTestData(_ filename: String) -> Data? {
+        let bundle = Bundle(for: type(of: self))
+        let path = bundle.path(forResource: filename, ofType: "json")
+        return (try? Data(contentsOf: URL(fileURLWithPath: path!)))
+    }
+    
 	
 }

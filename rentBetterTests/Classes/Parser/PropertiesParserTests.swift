@@ -48,9 +48,6 @@ class PropertiesParserTests: XCTestCase {
 	}
 	
 	
-	func test_parseProperty(){
-		XCTAssertEqual(true, true)
-	}
 	
 	
 	func loadJSONTestData(_ filename: String) -> Data? {
