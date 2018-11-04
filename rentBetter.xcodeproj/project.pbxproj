@@ -193,8 +193,8 @@
 				5292962621892086006131D5 /* LoginViewController.swift */,
 				52929655218920D4006131D5 /* InfoViewController.swift */,
 				25CD5AF0218BBBAD0007C6AD /* MaintenanceViewCelll.swift */,
-				52929679218F6625006131D5 /* LandlordMaintenancesDetailViewController.swift */,
 				25CD14F0218E2B9A008E4D92 /* LandlordMaintenancesViewController.swift */,
+				52929679218F6625006131D5 /* LandlordMaintenancesDetailViewController.swift */,
 				25CD14F4218E2BDA008E4D92 /* LandlordPropertiesViewController.swift */,
 				5292967B218F66CE006131D5 /* LandlordPropertiesDetailViewController.swift */,
 			);

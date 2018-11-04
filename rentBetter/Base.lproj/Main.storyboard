@@ -345,10 +345,10 @@
             </objects>
             <point key="canvasLocation" x="2118" y="-186"/>
         </scene>
-        <!--Landlord Maintenances View Controller Scene-->
+        <!--Landlord Maintenances View Controller-->
         <scene sceneID="m77-L1-szn">
             <objects>
-                <tableViewController id="yqW-Lj-iLc" userLabel="Landlord Maintenances View Controller Scene" sceneMemberID="viewController">
+                <tableViewController id="yqW-Lj-iLc" userLabel="Landlord Maintenances View Controller" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fR8-K7-kvv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -377,10 +377,10 @@
             </objects>
             <point key="canvasLocation" x="2118" y="1258"/>
         </scene>
-        <!--Landlord Maintenances Detail View Controller Scene-->
+        <!--Landlord Maintenances Detail View Controller-->
         <scene sceneID="vgV-dZ-Ifm">
             <objects>
-                <viewController id="4vS-gl-R3d" userLabel="Landlord Maintenances Detail View Controller Scene" customClass="LandlordMaintenancesDetailViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4vS-gl-R3d" customClass="LandlordMaintenancesDetailViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k2T-RT-jsJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -422,10 +422,10 @@
             </objects>
             <point key="canvasLocation" x="3089" y="1258"/>
         </scene>
-        <!--Landlord Properties View Controller Scene-->
+        <!--Landlord Properties View Controller-->
         <scene sceneID="4OW-36-uOV">
             <objects>
-                <tableViewController id="rki-KT-Qcw" userLabel="Landlord Properties View Controller Scene" sceneMemberID="viewController">
+                <tableViewController id="rki-KT-Qcw" userLabel="Landlord Properties View Controller" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="y8y-Y0-7MP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -454,10 +454,10 @@
             </objects>
             <point key="canvasLocation" x="2118" y="1957"/>
         </scene>
-        <!--Landlord Properties Detail View Controller Scene-->
+        <!--Landlord Properties Detail View Controller-->
         <scene sceneID="IXC-Jx-Npo">
             <objects>
-                <viewController id="TJl-Iq-BE2" userLabel="Landlord Properties Detail View Controller Scene" customClass="LandlordPropertiesDetailViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TJl-Iq-BE2" customClass="LandlordPropertiesDetailViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NWZ-KT-1Ml">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -486,10 +486,10 @@
             </objects>
             <point key="canvasLocation" x="1182" y="1957"/>
         </scene>
-        <!--Item-->
+        <!--Maintenances Navigation Controller-->
         <scene sceneID="fIf-hi-N3l">
             <objects>
-                <navigationController id="DMf-pi-odf" sceneMemberID="viewController">
+                <navigationController id="DMf-pi-odf" userLabel="Maintenances Navigation Controller" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="46Z-SR-MiR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v8u-G4-9NP">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
