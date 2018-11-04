@@ -21,7 +21,7 @@ class MaintenancesParserTests: XCTestCase {
     }
 	
     func test_maintenancesFromSearchResponse()  {
-        let data = loadJSONTestData("data.json")
+        let data = loadJSONTestData("data")
         let results = maintenancesParser.maintenancesFromSearchResponse(data)
         XCTAssertEqual(3, results!.count)
 
