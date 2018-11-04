@@ -126,7 +126,7 @@
             </objects>
             <point key="canvasLocation" x="1182" y="131"/>
         </scene>
-        <!--Item-->
+        <!--Maintenance-->
         <scene sceneID="m5b-U1-c4C">
             <objects>
                 <viewController id="Xjp-eV-9y9" sceneMemberID="viewController">
@@ -185,7 +185,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Dqw-3S-m81"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="mnW-cr-Jr2"/>
+                    <tabBarItem key="tabBarItem" title="Maintenance" id="mnW-cr-Jr2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jcb-Vk-lIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,7 +330,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="x2l-Eo-Dfs"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Info" id="UTT-Mm-t5j"/>
+                    <tabBarItem key="tabBarItem" title="Property" id="UTT-Mm-t5j"/>
                     <connections>
                         <outlet property="Addr_1_Label" destination="YNW-eG-5VW" id="JD3-kX-mKe"/>
                         <outlet property="city_Label" destination="Zqu-6L-DPT" id="gSn-01-lwr"/>
@@ -473,7 +473,7 @@
         <scene sceneID="mC3-B5-0ga">
             <objects>
                 <navigationController id="cql-fU-vML" userLabel="Properties Navigation Controller" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="2yd-Ob-Rjm"/>
+                    <tabBarItem key="tabBarItem" title="Properties" id="2yd-Ob-Rjm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5xJ-nl-eFW">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -490,7 +490,7 @@
         <scene sceneID="fIf-hi-N3l">
             <objects>
                 <navigationController id="DMf-pi-odf" userLabel="Maintenances Navigation Controller" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="46Z-SR-MiR"/>
+                    <tabBarItem key="tabBarItem" title="Maintenances" id="46Z-SR-MiR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v8u-G4-9NP">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
