@@ -32,6 +32,8 @@
 		5292967C218F66CE006131D5 /* LandlordPropertiesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292967B218F66CE006131D5 /* LandlordPropertiesDetailViewController.swift */; };
 		5292967E218F7170006131D5 /* LandlordPropertiesDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292967D218F7170006131D5 /* LandlordPropertiesDetailViewModel.swift */; };
 		52929680218F717E006131D5 /* LandlordPropertiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292967F218F717E006131D5 /* LandlordPropertiesViewModel.swift */; };
+		52929687218F77EE006131D5 /* LandlordPropertiesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929686218F77EE006131D5 /* LandlordPropertiesViewModelTests.swift */; };
+		52929689218F77FF006131D5 /* LandlordPropertiesDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929688218F77FF006131D5 /* LandlordPropertiesDetailViewModelTests.swift */; };
 		5FD266B366C186DE217AABED /* Pods_rentBetter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7E052CCF911CD6B413781B /* Pods_rentBetter.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,8 @@
 		5292967B218F66CE006131D5 /* LandlordPropertiesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordPropertiesDetailViewController.swift; sourceTree = "<group>"; };
 		5292967D218F7170006131D5 /* LandlordPropertiesDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordPropertiesDetailViewModel.swift; sourceTree = "<group>"; };
 		5292967F218F717E006131D5 /* LandlordPropertiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordPropertiesViewModel.swift; sourceTree = "<group>"; };
+		52929686218F77EE006131D5 /* LandlordPropertiesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordPropertiesViewModelTests.swift; sourceTree = "<group>"; };
+		52929688218F77FF006131D5 /* LandlordPropertiesDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordPropertiesDetailViewModelTests.swift; sourceTree = "<group>"; };
 		675D8278D00049FDC62FFCA7 /* Pods-rentBetter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentBetter.release.xcconfig"; path = "Pods/Target Support Files/Pods-rentBetter/Pods-rentBetter.release.xcconfig"; sourceTree = "<group>"; };
 		FCECFCF914070E387D0C42AC /* Pods-rentBetter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentBetter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rentBetter/Pods-rentBetter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -245,6 +249,7 @@
 		52929673218E64CC006131D5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				52929685218F7797006131D5 /* Properties View Models */,
 				52929674218E64DC006131D5 /* Parser */,
 			);
 			path = Classes;
@@ -257,6 +262,15 @@
 				52929677218E6517006131D5 /* MaintenancesParserTests.swift */,
 			);
 			path = Parser;
+			sourceTree = "<group>";
+		};
+		52929685218F7797006131D5 /* Properties View Models */ = {
+			isa = PBXGroup;
+			children = (
+				52929686218F77EE006131D5 /* LandlordPropertiesViewModelTests.swift */,
+				52929688218F77FF006131D5 /* LandlordPropertiesDetailViewModelTests.swift */,
+			);
+			path = "Properties View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,8 +484,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				52929678218E6517006131D5 /* MaintenancesParserTests.swift in Sources */,
+				52929687218F77EE006131D5 /* LandlordPropertiesViewModelTests.swift in Sources */,
 				5292963D21892087006131D5 /* rentBetterTests.swift in Sources */,
 				52929676218E6501006131D5 /* PropertiesParserTests.swift in Sources */,
+				52929689218F77FF006131D5 /* LandlordPropertiesDetailViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
