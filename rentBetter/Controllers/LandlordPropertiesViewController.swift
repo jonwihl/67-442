@@ -8,7 +8,11 @@
 
 import UIKit
 
-class LandlordPropertiesViewController: UIViewController {
+class LandlordPropertiesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+	
+
+	
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,14 +25,16 @@ class LandlordPropertiesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 	
-//	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//		<#code#>
-//	}
-//	
-//	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//		<#code#>
-//	}
-//	
+	
+		func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+			<#code#>
+		}
+	
+		func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+			<#code#>
+		}
+	
+
     
 
     /*

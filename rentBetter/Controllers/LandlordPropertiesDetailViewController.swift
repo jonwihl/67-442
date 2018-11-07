@@ -11,6 +11,17 @@ import UIKit
 
 class LandlordPropertiesDetailViewController: UIViewController {
 	
+	@IBOutlet weak var addr_line1: UILabel!
+	@IBOutlet weak var city: UILabel!
+	@IBOutlet weak var state: UILabel!
+	@IBOutlet weak var zip: UILabel!
+	@IBOutlet weak var start_date: UILabel!
+	@IBOutlet weak var end_date: UILabel!
+	@IBOutlet weak var rent: UILabel!
+	
+	
+	
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
