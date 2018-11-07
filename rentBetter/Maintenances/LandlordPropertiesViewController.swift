@@ -14,14 +14,17 @@ class LandlordPropertiesViewController: UIViewController, UITableViewDataSource,
 	
 	@IBOutlet var propertiesTable: UITableView!
 	
-	
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
+				viewModel.refresh { [unowned self] in
+					DispatchQueue.main.async {
+						self.propertiesTable.reloadData()
+					}
 
         // Do any additional setup after loading the view.
     }
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -34,12 +37,23 @@ class LandlordPropertiesViewController: UIViewController, UITableViewDataSource,
 		}
 	
 		func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-			let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
-			cell.name?.text = viewModel.titleForRowAtIndexPath(indexPath)
-			cell.summary?.text = viewModel.summaryForRowAtIndexPath(indexPath)
+			let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PropertiesTableViewCell
+			cell.address?.text = viewModel.addrForRowAtIndexPath(indexPath)
 			return cell
 		}
 	
+	
+		func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+			performSegue(withIdentifier: "toDetailVC", sender: indexPath)
+		}
+	
+		// MARK: Segues
+		override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+			if let detailVC = segue.destination as? LandlordPropertiesDetailViewController,
+				let indexPath = sender as? IndexPath {
+				detailVC.viewModel = viewModel.detailViewModelForRowAtIndexPath(indexPath)
+			}
+		}
 
     
 

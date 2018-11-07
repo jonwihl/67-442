@@ -19,6 +19,24 @@ class LandlordPropertiesDetailViewController: UIViewController {
 	@IBOutlet weak var end_date: UILabel!
 	@IBOutlet weak var rent: UILabel!
 	
+	var viewModel: LandlordPropertiesDetailViewModel?
+	
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		
+//		self.title = viewModel?.title()
+		
+		if let viewModel = viewModel{
+			let addr_line1 = viewModel.address()
+			let city = viewModel.city()
+			let state = viewModel.state()
+			let zip = viewModel.zipcode()
+			let start_date = viewModel.start()
+			let end_date = viewModel.end()
+			let rent = viewModel.rent()
+		}
+	}
 	
 	
 	

@@ -371,23 +371,23 @@
                             <outlet property="delegate" destination="h4g-xV-Ycj" id="EVk-26-X0o"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="UoZ-oJ-AbQ"/>
+                    <navigationItem key="navigationItem" title="Maintenances" id="UoZ-oJ-AbQ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KK0-OL-bOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2178" y="1288"/>
         </scene>
-        <!--Item-->
+        <!--Maintenances-->
         <scene sceneID="Rv8-yt-wGA">
             <objects>
                 <navigationController id="WAK-sk-pQd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="bIF-WJ-fDV"/>
+                    <tabBarItem key="tabBarItem" title="Maintenances" id="bIF-WJ-fDV"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9sp-hX-DvZ">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="h4g-xV-Ycj" kind="relationship" relationship="rootViewController" id="H8o-6u-ygt"/>
+                        <segue destination="h4g-xV-Ycj" kind="relationship" relationship="rootViewController" id="Knk-Xq-gEs"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HQL-KQ-y19" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -451,12 +451,12 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JtX-TO-E3a">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JtX-TO-E3a" id="Ghn-X0-KuG" customClass="UITableViewCell">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JtX-TO-E3a" id="Ghn-X0-KuG" customClass="UITableViewCell" customModule="rentBetter" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMP-z9-N6B">
-                                            <rect key="frame" x="16" y="11" width="296" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFf-hu-zqR">
+                                            <rect key="frame" x="16" y="12" width="320" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -474,31 +474,31 @@
                             <outlet property="delegate" destination="iHH-qZ-k7K" id="Zdr-pI-2vE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="u6p-cf-jX6"/>
+                    <navigationItem key="navigationItem" title="Properties" id="u6p-cf-jX6"/>
                     <connections>
-                        <outlet property="propertiesTable" destination="OjB-UR-sE1" id="uHn-Uq-WrL"/>
+                        <outlet property="propertiesTable" destination="OjB-UR-sE1" id="yxs-5f-3Xf"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvj-1Q-N0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2178.4000000000001" y="1997.2906403940888"/>
         </scene>
-        <!--Item-->
+        <!--Properties-->
         <scene sceneID="GC9-Rs-7yz">
             <objects>
                 <navigationController id="lV4-p5-Y57" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="mER-rs-g7g"/>
+                    <tabBarItem key="tabBarItem" title="Properties" id="mER-rs-g7g"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e8A-8a-FlR">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="iHH-qZ-k7K" kind="relationship" relationship="rootViewController" id="0pw-eR-p5Y"/>
+                        <segue destination="iHH-qZ-k7K" kind="relationship" relationship="rootViewController" id="KFp-Jw-wv1"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I5S-ch-pkr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1224" y="1998"/>
+            <point key="canvasLocation" x="1244" y="1997"/>
         </scene>
         <!--Landlord Properties Detail View Controller-->
         <scene sceneID="IXC-Jx-Npo">
