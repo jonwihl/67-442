@@ -11,6 +11,7 @@
 		25CD14F5218E2BDA008E4D92 /* LandlordPropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD14F4218E2BDA008E4D92 /* LandlordPropertiesViewController.swift */; };
 		25CD5AF1218BBBAD0007C6AD /* MaintenanceViewCelll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD5AF0218BBBAD0007C6AD /* MaintenanceViewCelll.swift */; };
 		25D23273218A74D400A5E2B2 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D23272218A74D400A5E2B2 /* Property.swift */; };
+		522B23B2219269D100EF5091 /* PropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B23B1219269D100EF5091 /* PropertiesTableViewCell.swift */; };
 		5292962521892086006131D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292962421892086006131D5 /* AppDelegate.swift */; };
 		5292962721892086006131D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292962621892086006131D5 /* LoginViewController.swift */; };
 		5292962A21892086006131D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5292962821892086006131D5 /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		25CD5AF0218BBBAD0007C6AD /* MaintenanceViewCelll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceViewCelll.swift; sourceTree = "<group>"; };
 		25D23272218A74D400A5E2B2 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		3D7E052CCF911CD6B413781B /* Pods_rentBetter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rentBetter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		522B23B1219269D100EF5091 /* PropertiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewCell.swift; sourceTree = "<group>"; };
 		5292962121892086006131D5 /* rentBetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rentBetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5292962421892086006131D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5292962621892086006131D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		522B23B421926BF500EF5091 /* Maintenances */ = {
+			isa = PBXGroup;
+			children = (
+				25CD5AF0218BBBAD0007C6AD /* MaintenanceViewCelll.swift */,
+				25CD14F0218E2B9A008E4D92 /* LandlordMaintenancesViewController.swift */,
+				5292968F218F90B0006131D5 /* LandlordMaintenancesViewModel.swift */,
+				52929679218F6625006131D5 /* LandlordMaintenancesDetailViewController.swift */,
+				52929691218F9278006131D5 /* LandlordMaintenancesDetailViewModel.swift */,
+			);
+			name = Maintenances;
+			path = Properties;
+			sourceTree = "<group>";
+		};
 		5292961821892086006131D5 = {
 			isa = PBXGroup;
 			children = (
@@ -171,7 +186,8 @@
 			children = (
 				5292962421892086006131D5 /* AppDelegate.swift */,
 				5292965C2189407D006131D5 /* Models */,
-				52929659218920EE006131D5 /* Controllers */,
+				522B23B421926BF500EF5091 /* Maintenances */,
+				52929659218920EE006131D5 /* Properties */,
 				52929666218E3968006131D5 /* Network */,
 				52929663218E391E006131D5 /* Parser */,
 				5292962821892086006131D5 /* Main.storyboard */,
@@ -203,22 +219,17 @@
 			path = rentBetterUITests;
 			sourceTree = "<group>";
 		};
-		52929659218920EE006131D5 /* Controllers */ = {
+		52929659218920EE006131D5 /* Properties */ = {
 			isa = PBXGroup;
 			children = (
-				5292962621892086006131D5 /* LoginViewController.swift */,
-				52929655218920D4006131D5 /* InfoViewController.swift */,
-				25CD5AF0218BBBAD0007C6AD /* MaintenanceViewCelll.swift */,
-				25CD14F0218E2B9A008E4D92 /* LandlordMaintenancesViewController.swift */,
-				5292968F218F90B0006131D5 /* LandlordMaintenancesViewModel.swift */,
-				52929679218F6625006131D5 /* LandlordMaintenancesDetailViewController.swift */,
-				52929691218F9278006131D5 /* LandlordMaintenancesDetailViewModel.swift */,
+				522B23B1219269D100EF5091 /* PropertiesTableViewCell.swift */,
 				25CD14F4218E2BDA008E4D92 /* LandlordPropertiesViewController.swift */,
 				5292967F218F717E006131D5 /* LandlordPropertiesViewModel.swift */,
 				5292967B218F66CE006131D5 /* LandlordPropertiesDetailViewController.swift */,
 				5292967D218F7170006131D5 /* LandlordPropertiesDetailViewModel.swift */,
 			);
-			path = Controllers;
+			name = Properties;
+			path = Maintenances;
 			sourceTree = "<group>";
 		};
 		5292965C2189407D006131D5 /* Models */ = {
@@ -226,6 +237,8 @@
 			children = (
 				5292965D2189408F006131D5 /* Maintenance.swift */,
 				25D23272218A74D400A5E2B2 /* Property.swift */,
+				5292962621892086006131D5 /* LoginViewController.swift */,
+				52929655218920D4006131D5 /* InfoViewController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -483,6 +496,7 @@
 				5292966A218E3A0C006131D5 /* SearchPropertiesClient.swift in Sources */,
 				25CD14F1218E2B9A008E4D92 /* LandlordMaintenancesViewController.swift in Sources */,
 				5292962721892086006131D5 /* LoginViewController.swift in Sources */,
+				522B23B2219269D100EF5091 /* PropertiesTableViewCell.swift in Sources */,
 				5292966E218E4916006131D5 /* MaintenancesParser.swift in Sources */,
 				52929680218F717E006131D5 /* LandlordPropertiesViewModel.swift in Sources */,
 				5292966C218E4905006131D5 /* PropertiesParser.swift in Sources */,

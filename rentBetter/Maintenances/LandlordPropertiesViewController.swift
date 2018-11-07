@@ -1,5 +1,5 @@
 //
-//  LandlordMaintenanceViewController.swift
+//  LandlordPropertiesViewController.swift
 //  rentBetter
 //
 //  Created by Jonathan Wihl on 11/3/18.
@@ -8,9 +8,14 @@
 
 import UIKit
 
-class LandlordMaintenancesViewController: UIViewController {
+class LandlordPropertiesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+	
+	let viewModel = LandlordPropertiesViewModel()
+	
+	@IBOutlet var propertiesTable: UITableView!
 	
 	
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,14 +28,20 @@ class LandlordMaintenancesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 	
-//		func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//			<#code#>
-//		}
-//
-//		func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//			<#code#>
-//		}
-//
+	
+		func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+			return viewModel.numberOfRows()
+		}
+	
+		func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+			let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
+			cell.name?.text = viewModel.titleForRowAtIndexPath(indexPath)
+			cell.summary?.text = viewModel.summaryForRowAtIndexPath(indexPath)
+			return cell
+		}
+	
+
+    
 
     /*
     // MARK: - Navigation
