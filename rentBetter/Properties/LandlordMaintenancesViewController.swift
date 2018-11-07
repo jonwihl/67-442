@@ -8,14 +8,19 @@
 
 import UIKit
 
-class LandlordMaintenancesViewController: UIViewController {
+class LandlordMaintenancesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
 	
 	
+	let viewModel = LandlordMaintenancesViewModel()
+    @IBOutlet var maintenancesTable: UITableView!
 	
-	
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.refresh { [unowned self] in
+            DispatchQueue.main.async {
+                self.maintenancesTable.reloadData()
+            }
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -24,15 +29,31 @@ class LandlordMaintenancesViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.numberOfRows()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MaintenancesTableViewCell
+        cell.address?.text = viewModel.titleForRowAtIndexPath(indexPath)
+        return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toDetailVC", sender: indexPath)
+    }
+    
+    // MARK: Segues
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailVC = segue.destination as? LandlordMaintenancesDetailViewController,
+            let indexPath = sender as? IndexPath {
+            detailVC.viewModel = viewModel.detailViewModelForRowAtIndexPath(indexPath)
+        }
+    }
 	
-//		func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//			<#code#>
-//		}
-//
-//		func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//			<#code#>
-//		}
-//
+
 
     /*
     // MARK: - Navigation
