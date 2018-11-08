@@ -11,8 +11,8 @@ import UIKit
 
 class LandlordMaintenancesDetailViewController: UIViewController {
     
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var description: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var photo: UILabel!
     
     var viewModel: LandlordMaintenancesDetailViewModel?

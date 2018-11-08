@@ -35,8 +35,8 @@ class LandlordMaintenancesViewController: UIViewController, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MaintenancesTableViewCell
-        cell.address?.text = viewModel.titleForRowAtIndexPath(indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MaintenanceViewCelll
+        cell.titleLabel?.text = viewModel.titleForRowAtIndexPath(indexPath)
         return cell
     }
     

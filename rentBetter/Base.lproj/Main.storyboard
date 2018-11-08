@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -382,9 +381,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Maintenances" id="UoZ-oJ-AbQ"/>
-                    <connections>
-                        <outlet property="titleLabel" destination="d9X-GL-hl0" id="t1c-CH-JFJ"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KK0-OL-bOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -630,12 +626,12 @@
                         <outlet property="rent" destination="mpY-TO-Iwe" id="blK-2f-PmT"/>
                         <outlet property="start_date" destination="cLb-Qg-syM" id="cuh-Ye-oKM"/>
                         <outlet property="state" destination="SI4-Ak-7fU" id="mK2-Jr-wSL"/>
-                        <outlet property="zip" destination="cLb-Qg-syM" id="h6J-d5-6tF"/>
+                        <outlet property="zip" destination="20c-K8-RJW" id="So3-iv-j6x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qko-9v-hUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2998" y="1997"/>
+            <point key="canvasLocation" x="2997.5999999999999" y="1996.5517241379312"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MKE-w5-nu2">
@@ -657,7 +653,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="home 19-43-48-812" width="612" height="606"/>
-        <image name="plus" width="52" height="44"/>
+        <image name="home 19-43-48-812" width="146.8800048828125" height="145.44000244140625"/>
+        <image name="plus" width="26" height="22"/>
     </resources>
 </document>
