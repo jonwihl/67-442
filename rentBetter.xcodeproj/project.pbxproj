@@ -12,9 +12,9 @@
 		25CD5AF1218BBBAD0007C6AD /* MaintenanceViewCelll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD5AF0218BBBAD0007C6AD /* MaintenanceViewCelll.swift */; };
 		25D23273218A74D400A5E2B2 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D23272218A74D400A5E2B2 /* Property.swift */; };
 		522B23B2219269D100EF5091 /* PropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B23B1219269D100EF5091 /* PropertiesTableViewCell.swift */; };
+		522B23B521992F3900EF5091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5292962821892086006131D5 /* Main.storyboard */; };
 		5292962521892086006131D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292962421892086006131D5 /* AppDelegate.swift */; };
 		5292962721892086006131D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292962621892086006131D5 /* LoginViewController.swift */; };
-		5292962A21892086006131D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5292962821892086006131D5 /* Main.storyboard */; };
 		5292962D21892086006131D5 /* rentBetter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5292962B21892086006131D5 /* rentBetter.xcdatamodeld */; };
 		5292962F21892087006131D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5292962E21892087006131D5 /* Assets.xcassets */; };
 		5292963221892087006131D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5292963021892087006131D5 /* LaunchScreen.storyboard */; };
@@ -415,9 +415,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522B23B521992F3900EF5091 /* Main.storyboard in Resources */,
 				5292963221892087006131D5 /* LaunchScreen.storyboard in Resources */,
 				5292962F21892087006131D5 /* Assets.xcassets in Resources */,
-				5292962A21892086006131D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
