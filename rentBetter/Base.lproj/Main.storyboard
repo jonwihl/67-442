@@ -348,7 +348,7 @@
         <!--Landlord Maintenances View Controller-->
         <scene sceneID="5IY-my-H8S">
             <objects>
-                <tableViewController id="h4g-xV-Ycj" userLabel="Landlord Maintenances View Controller" sceneMemberID="viewController">
+                <tableViewController id="h4g-xV-Ycj" userLabel="Landlord Maintenances View Controller" customClass="LandlordMaintenancesViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vgN-L0-PNb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -444,7 +444,7 @@
         <!--Landlord Properties View Controller-->
         <scene sceneID="hTY-72-VCR">
             <objects>
-                <tableViewController id="iHH-qZ-k7K" userLabel="Landlord Properties View Controller" customClass="LandlordPropertiesViewContoller" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="iHH-qZ-k7K" userLabel="Landlord Properties View Controller" customClass="LandlordPropertiesViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OjB-UR-sE1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

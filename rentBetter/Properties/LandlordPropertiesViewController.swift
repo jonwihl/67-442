@@ -8,7 +8,8 @@
 
 import UIKit
 
-class LandlordPropertiesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class LandlordPropertiesViewController: UITableViewController {
+	
 	
 	let viewModel = LandlordPropertiesViewModel()
 	
@@ -32,18 +33,18 @@ class LandlordPropertiesViewController: UIViewController, UITableViewDataSource,
     }
 	
 	
-		func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 			return viewModel.numberOfRows()
 		}
 	
-		func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PropertiesTableViewCell
 			cell.address?.text = viewModel.addrForRowAtIndexPath(indexPath)
 			return cell
 		}
 	
 	
-		func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 			performSegue(withIdentifier: "toDetailVC", sender: indexPath)
 		}
 	
