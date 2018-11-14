@@ -30,7 +30,7 @@ class LandlordPropertiesViewModelTests: XCTestCase {
     
     
     func createProperty() -> Property {
-			return Property(id: 1, addr_line1: "5445 Wilkins", addr_line2: "N/A", city: "Pittsburgh", state: "PA", zipcode: "15217", rent: 3900, start_date: "6/1/2018", end_date: "6/2/2019", active: true)
+			return Property(id: 1, addr_line1: "5445 Wilkins", addr_line2: "N/A", city: "Pittsburgh", state: "PA", zipcode: "15217", rent: "3900", start_date: "6/1/2018", end_date: "6/2/2019", active: true)
     }
     
 }

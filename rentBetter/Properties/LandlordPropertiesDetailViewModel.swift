@@ -32,7 +32,7 @@ class LandlordPropertiesDetailViewModel {
 		return property.zipcode
 	}
 	
-	func rent() -> Int? {
+	func rent() -> String? {
 		return property.rent
 	}
 	

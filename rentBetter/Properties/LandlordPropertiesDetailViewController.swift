@@ -11,13 +11,13 @@ import UIKit
 
 class LandlordPropertiesDetailViewController: UIViewController {
 	
-	@IBOutlet weak var addr_line1: UILabel!
-	@IBOutlet weak var city: UILabel!
-	@IBOutlet weak var state: UILabel!
-	@IBOutlet weak var zip: UILabel!
-	@IBOutlet weak var start_date: UILabel!
-	@IBOutlet weak var end_date: UILabel!
-	@IBOutlet weak var rent: UILabel!
+	@IBOutlet weak var addr_line1Label: UILabel!
+	@IBOutlet weak var cityLabel: UILabel!
+	@IBOutlet weak var stateLabel: UILabel!
+	@IBOutlet weak var zipLabel: UILabel!
+	@IBOutlet weak var start_dateLabel: UILabel!
+	@IBOutlet weak var end_dateLabel: UILabel!
+	@IBOutlet weak var rentLabel: UILabel!
 	
 	var viewModel: LandlordPropertiesDetailViewModel?
 	
@@ -35,6 +35,13 @@ class LandlordPropertiesDetailViewController: UIViewController {
 			let start_date = viewModel.start()
 			let end_date = viewModel.end()
 			let rent = viewModel.rent()
+            addr_line1Label.text = addr_line1
+            cityLabel.text = city
+            stateLabel.text = state
+            zipLabel.text = zip
+            start_dateLabel.text = start_date
+            end_dateLabel.text = end_date
+            rentLabel.text = rent
 		}
 	}
 	

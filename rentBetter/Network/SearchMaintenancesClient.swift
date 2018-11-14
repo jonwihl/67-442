@@ -8,20 +8,26 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
+
 
 class SearchMaintenancesClient {
-	func fetchMaintenances(_ completion: @escaping (Data?) -> Void) {
-		
-		let urlString = "https://protected-gorge-28359.herokuapp.com/maintenances"
-		
-		Alamofire.request(urlString).response { response in
-			if let error = response.error {
-				print("Error fetching maintenances: \(error)")
-				completion(response.data)
-				return
-			}
-			completion(response.data)
-		}
-		
-	}
+    func fetchMaintenances(_ completion: @escaping (Data?) -> Void) {
+
+        let urlString = "https://api.myjson.com/bins/wir3m"
+        
+
+        Alamofire.request(urlString).response { response in
+            if let error = response.error {
+                print("Error fetching maintenances: \(error)")
+                completion(response.data)
+                return
+            }
+            completion(response.data)
+        }
+        
+
+    }
+
 }
+

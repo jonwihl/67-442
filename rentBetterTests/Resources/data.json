@@ -37,7 +37,7 @@
 			"city": "Pittsburgh",
 			"state": "PA",
 			"zipcode": "15217",
-			"rent": 3900,
+			"rent": "3900",
 			"start_date": "6/1/2018",
 			"end_date": "6/1/2019",
 			"active": true
@@ -49,7 +49,7 @@
 			"city": "Newton",
 			"state": "MA",
 			"zipcode": "02459",
-			"rent": 2500,
+			"rent": "2500",
 			"start_date": "2/1/2001",
 			"end_date": "2/1/2020",
 			"active": true
@@ -61,7 +61,7 @@
 			"city": "Pittsburgh",
 			"state": "PA",
 			"zipcode": "15217",
-			"rent": 1100,
+			"rent": "1100",
 			"start_date": "5/1/2016",
 			"end_date": "5/1/2019",
 			"active": true

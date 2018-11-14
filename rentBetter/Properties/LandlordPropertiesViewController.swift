@@ -18,6 +18,7 @@ class LandlordPropertiesViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.propertiesTable.register(UINib(nibName: "PropertiesTableViewCell", bundle: nil), forCellReuseIdentifier: "PropertiesCell")
 				viewModel.refresh { [unowned self] in
 					DispatchQueue.main.async {
 						self.propertiesTable.reloadData()
@@ -38,14 +39,14 @@ class LandlordPropertiesViewController: UITableViewController {
 		}
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-			let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PropertiesTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PropertiesCell", for: indexPath) as! PropertiesTableViewCell
 			cell.address?.text = viewModel.addrForRowAtIndexPath(indexPath)
 			return cell
 		}
 	
 	
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-			performSegue(withIdentifier: "toDetailVC", sender: indexPath)
+			performSegue(withIdentifier: "toLandlordPVC", sender: indexPath)
 		}
 	
 		// MARK: Segues

@@ -51,7 +51,7 @@ class PropertiesParser {
 			let city = dict["city"] as? String,
 			let state = dict["state"] as? String,
 			let zipcode = dict["zipcode"] as? String,
-			let rent = dict["rent"] as? Int,
+			let rent = dict["rent"] as? String,
 			let start_date = dict["start_date"] as? String,
 			let end_date = dict["end_date"] as? String,
 			let active = dict["active"] as? Bool {

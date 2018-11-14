@@ -27,6 +27,8 @@ class LandlordMaintenancesDetailViewController: UIViewController {
                 let title = viewModel.title()
                 let description = viewModel.description()
                 let photo = viewModel.photo()
+                titleLabel.text = title
+                descriptionLabel.text = description
         }
     }
     

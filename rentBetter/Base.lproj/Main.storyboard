@@ -12,7 +12,7 @@
         <!--Login -->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Login " customClass="ViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Login " sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -354,24 +354,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Eyk-z3-aif">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MaintenanceCell" rowHeight="44" id="Eyk-z3-aif" userLabel="MaintenanceCell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Eyk-z3-aif" id="vjd-lb-nVc">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9X-GL-hl0">
-                                            <rect key="frame" x="42" y="11" width="122" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="4vS-gl-R3d" kind="show" id="ASV-eR-UPe"/>
+                                    <segue destination="4vS-gl-R3d" kind="show" identifier="toLandlordMVC" id="ASV-eR-UPe"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -381,6 +372,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Maintenances" id="UoZ-oJ-AbQ"/>
+                    <connections>
+                        <outlet property="maintenancesTable" destination="vgN-L0-PNb" id="HfR-Bv-XOc"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KK0-OL-bOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -407,7 +401,7 @@
         <scene sceneID="vgV-dZ-Ifm">
             <objects>
                 <viewController id="4vS-gl-R3d" customClass="LandlordMaintenancesDetailViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="k2T-RT-jsJ" customClass="LandlordDetailViewController" customModule="rentBetter" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="k2T-RT-jsJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -432,14 +426,40 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTV-gT-mQD">
+                                <rect key="frame" x="135" y="130" width="139" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwi-OW-865">
+                                <rect key="frame" x="136" y="396" width="108" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CI3-Ea-TuX">
+                                <rect key="frame" x="72" y="257" width="202" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Oo4-B4-pVZ"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="CI3-Ea-TuX" id="tre-Ms-FLG"/>
+                        <outlet property="photo" destination="Uwi-OW-865" id="KgU-aN-yu2"/>
+                        <outlet property="titleLabel" destination="DTV-gT-mQD" id="oW7-MT-j47"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugf-un-IjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2999" y="1288"/>
+            <point key="canvasLocation" x="2997.5999999999999" y="1287.9310344827586"/>
         </scene>
         <!--Landlord Properties View Controller-->
         <scene sceneID="hTY-72-VCR">
@@ -450,29 +470,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JtX-TO-E3a">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PropertiesCell" id="JtX-TO-E3a" customClass="PropertiesTableViewCell" customModule="rentBetter" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JtX-TO-E3a" id="Ghn-X0-KuG" customClass="UITableViewCell" customModule="rentBetter" customModuleProvider="target">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JtX-TO-E3a" id="Ghn-X0-KuG">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFf-hu-zqR">
-                                            <rect key="frame" x="27" y="11" width="320" height="22"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="TFf-hu-zqR" firstAttribute="bottom" secondItem="Ghn-X0-KuG" secondAttribute="bottomMargin" id="3IT-lo-4F5"/>
-                                        <constraint firstItem="TFf-hu-zqR" firstAttribute="leading" secondItem="Ghn-X0-KuG" secondAttribute="leadingMargin" id="M3r-Qc-0Aj"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="TFf-hu-zqR" secondAttribute="trailing" constant="23" id="O5I-S6-kIQ"/>
-                                        <constraint firstItem="TFf-hu-zqR" firstAttribute="centerY" secondItem="Ghn-X0-KuG" secondAttribute="centerY" id="sAw-bv-LoK"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="TJl-Iq-BE2" kind="show" id="aVK-i9-1My"/>
+                                    <segue destination="TJl-Iq-BE2" kind="show" identifier="toLandlordPVC" id="aVK-i9-1My"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -618,13 +624,13 @@
                         <viewLayoutGuide key="safeArea" id="VuB-0C-Dco"/>
                     </view>
                     <connections>
-                        <outlet property="addr_line1" destination="F8Y-UW-alz" id="EYr-nP-D6Q"/>
-                        <outlet property="city" destination="FUn-S8-vep" id="IDN-pH-3UD"/>
-                        <outlet property="end_date" destination="7Of-FO-Kbb" id="Ppz-fV-v8u"/>
-                        <outlet property="rent" destination="mpY-TO-Iwe" id="blK-2f-PmT"/>
-                        <outlet property="start_date" destination="cLb-Qg-syM" id="cuh-Ye-oKM"/>
-                        <outlet property="state" destination="SI4-Ak-7fU" id="mK2-Jr-wSL"/>
-                        <outlet property="zip" destination="20c-K8-RJW" id="So3-iv-j6x"/>
+                        <outlet property="addr_line1Label" destination="F8Y-UW-alz" id="jgB-Gv-enZ"/>
+                        <outlet property="cityLabel" destination="FUn-S8-vep" id="YE6-7s-5kC"/>
+                        <outlet property="end_dateLabel" destination="7Of-FO-Kbb" id="J1P-yb-izO"/>
+                        <outlet property="rentLabel" destination="mpY-TO-Iwe" id="v2t-El-vjU"/>
+                        <outlet property="start_dateLabel" destination="cLb-Qg-syM" id="i76-X2-ifd"/>
+                        <outlet property="stateLabel" destination="SI4-Ak-7fU" id="ezn-47-RYz"/>
+                        <outlet property="zipLabel" destination="20c-K8-RJW" id="996-74-YE2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qko-9v-hUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
