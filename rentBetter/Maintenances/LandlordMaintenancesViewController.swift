@@ -24,6 +24,10 @@ class LandlordMaintenancesViewController: UITableViewController  {
         }
         
 		// Do any additional setup after loading the view.
+		navigationController?.navigationBar.barTintColor = UIColor(red: 65/100, green: 85/100, blue: 97/100, alpha: 1)
+		
+		tabBarController?.tabBar.barTintColor = UIColor(red: 65/100, green: 85/100, blue: 97/100, alpha: 1)
+		
 	}
 	
 	override func didReceiveMemoryWarning() {

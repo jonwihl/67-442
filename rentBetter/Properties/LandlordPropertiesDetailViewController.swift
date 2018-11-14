@@ -49,7 +49,7 @@ class LandlordPropertiesDetailViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
+//		self.view.backgroundColor = UIColor(red: 97.6/100, green: 85.9/100, blue: 74.1/100, alpha: 1)
 		// Do any additional setup after loading the view.
 	}
 	
