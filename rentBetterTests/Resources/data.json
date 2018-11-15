@@ -2,8 +2,8 @@
 	"maintenances": [
 		{
 			"id": 1,
-			"title": "broken sink",
-			"description": "the sink is broken",
+			"title": "Broken sink",
+			"description": "The sink is broken",
 			"created_on": "11/1/2018",
 			"closed_on": "11/3/2018",
 			"photo": "xyz",
@@ -11,8 +11,8 @@
 		},
 		{
 			"id": 2,
-			"title": "broken window",
-			"description": "second floor window is not closing",
+			"title": "Broken window",
+			"description": "Second floor window is not closing",
 			"created_on": "10/31/2018",
 			"closed_on": "11/2/2018",
 			"photo": "xyz",
@@ -21,7 +21,7 @@
 		{
 			"id": 3,
 			"title": "Sink not running",
-			"description": "no water is coming out of the kitchen sink",
+			"description": "No water is coming out of the kitchen sink",
 			"created_on": "10/15/2018",
 			"closed_on": "10/18/2018",
 			"photo": "xyz",

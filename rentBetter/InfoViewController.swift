@@ -15,6 +15,8 @@ class InfoViewController: UIViewController {
 		// Do any additional setup after loading the view, typically from a nib.
 		
 		self.view.backgroundColor = UIColor(red: 76/100, green: 94/100, blue: 92/100, alpha: 1)
+		navigationController?.navigationBar.barTintColor = UIColor(red: 76/100, green: 94/100, blue: 92/100, alpha: 1)
+		
 	}
 	
 	

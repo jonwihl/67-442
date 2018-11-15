@@ -21,6 +21,7 @@ class PropertiesTableViewCell: UITableViewCell {
 	override func setSelected(_ selected: Bool, animated: Bool) {
 		super.setSelected(selected, animated: animated)
 		// Configure the view for the selected state
+		self.address.textColor = UIColor(red: 41/100, green: 41/100, blue: 41/100, alpha: 1)
 	}
 	
 	
