@@ -24,7 +24,11 @@ class TenantPropertyViewController: UIViewController {
     @IBOutlet weak var endDate_Label: UILabel!
     
     override func viewDidLoad() {
-		super.viewDidLoad()
+			super.viewDidLoad()
+			
+			navigationController?.navigationBar.barTintColor = UIColor(red: 76/100, green: 94/100, blue: 92/100, alpha: 1)
+			
+			tabBarController?.tabBar.barTintColor = UIColor(red: 76/100, green: 94/100, blue: 92/100, alpha: 1)
 //			self.view.backgroundColor = UIColor(red: 65/100, green: 85/100, blue: 97/100, alpha: 1)
 
 //        updateLabelAddr()
