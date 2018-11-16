@@ -182,7 +182,7 @@
         <!--Maintenance-->
         <scene sceneID="m5b-U1-c4C">
             <objects>
-                <viewController id="Xjp-eV-9y9" sceneMemberID="viewController">
+                <viewController id="Xjp-eV-9y9" customClass="TenantNewMaintenanceViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZcG-VU-KRS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -234,6 +234,14 @@
                                     <navigationItem title="New Maintenance Request" id="EAS-kV-4bN"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofo-h6-cbf">
+                                <rect key="frame" x="150" y="651" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add JSON"/>
+                                <connections>
+                                    <action selector="addJson:" destination="Xjp-eV-9y9" eventType="touchUpInside" id="aHq-j4-ick"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Dqw-3S-m81"/>
@@ -242,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jcb-Vk-lIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2117.5999999999999" y="504.67980295566502"/>
+            <point key="canvasLocation" x="2117.3913043478265" y="504.24107142857139"/>
         </scene>
         <!--Info-->
         <scene sceneID="XpT-IH-U9A">

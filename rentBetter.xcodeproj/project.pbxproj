@@ -10,6 +10,7 @@
 		255C029C219A778A00DA5CF3 /* jsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C029B219A778A00DA5CF3 /* jsonParser.swift */; };
 		255C02E1219BE40200DA5CF3 /* MaintenanceViewCelll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255C02E0219BE40200DA5CF3 /* MaintenanceViewCelll.xib */; };
 		255C02E3219BE41C00DA5CF3 /* PropertiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255C02E2219BE41C00DA5CF3 /* PropertiesTableViewCell.xib */; };
+		255C02E5219E259500DA5CF3 /* TenantNewMaintenanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C02E4219E259500DA5CF3 /* TenantNewMaintenanceViewController.swift */; };
 		25D23273218A74D400A5E2B2 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D23272218A74D400A5E2B2 /* Property.swift */; };
 		522B23B521992F3900EF5091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5292962821892086006131D5 /* Main.storyboard */; };
 		522B23C9219A2B9A00EF5091 /* PropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B23C4219A2B9A00EF5091 /* PropertiesTableViewCell.swift */; };
@@ -67,6 +68,7 @@
 		255C029B219A778A00DA5CF3 /* jsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonParser.swift; sourceTree = "<group>"; };
 		255C02E0219BE40200DA5CF3 /* MaintenanceViewCelll.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaintenanceViewCelll.xib; sourceTree = "<group>"; };
 		255C02E2219BE41C00DA5CF3 /* PropertiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertiesTableViewCell.xib; sourceTree = "<group>"; };
+		255C02E4219E259500DA5CF3 /* TenantNewMaintenanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenantNewMaintenanceViewController.swift; sourceTree = "<group>"; };
 		25D23272218A74D400A5E2B2 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		3D7E052CCF911CD6B413781B /* Pods_rentBetter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rentBetter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		522B23C4219A2B9A00EF5091 /* PropertiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PropertiesTableViewCell.swift; path = rentBetter/Properties/PropertiesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
@@ -163,6 +165,7 @@
 				522B23D0219A2E5200EF5091 /* LandlordMaintenancesDetailViewController.swift */,
 				522B23D1219A2E5200EF5091 /* LandlordMaintenancesDetailViewModel.swift */,
 				255C02E0219BE40200DA5CF3 /* MaintenanceViewCelll.xib */,
+				255C02E4219E259500DA5CF3 /* TenantNewMaintenanceViewController.swift */,
 			);
 			name = Maintenances;
 			path = Properties;
@@ -519,6 +522,7 @@
 				5292966C218E4905006131D5 /* PropertiesParser.swift in Sources */,
 				255C029C219A778A00DA5CF3 /* jsonParser.swift in Sources */,
 				522B23CD219A2B9A00EF5091 /* LandlordPropertiesViewController.swift in Sources */,
+				255C02E5219E259500DA5CF3 /* TenantNewMaintenanceViewController.swift in Sources */,
 				522B23C9219A2B9A00EF5091 /* PropertiesTableViewCell.swift in Sources */,
 				522B23D9219CD06400EF5091 /* InfoViewController.swift in Sources */,
 				5292962521892086006131D5 /* AppDelegate.swift in Sources */,
