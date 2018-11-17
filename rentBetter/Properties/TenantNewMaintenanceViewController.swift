@@ -25,13 +25,16 @@ class TenantNewMaintenanceViewController: UIViewController {
 //            ] as [String : Any]
         
         let  parameters = [
-            "id": 1,
-            "title": "Broken sink",
-            "description": "The sink is broken",
-            "created_on": "11/1/2018",
-            "closed_on": "11/3/2018",
-            "photo": "xyz",
-            "active": true
+            "id":4,
+            "title":"Mold",
+            "description":"Mold in Basement.",
+            "photo": "",
+            "created_on":"2018-01-11",
+            "closed_on": "",
+            "active":true,
+            "property_id":5,"tenant_id":10,
+            "created_at":"2018-11-15T23:35:51.547Z",
+            "updated_at":"2018-11-15T23:35:51.547Z"
         ] as [String : Any]
         
         Alamofire.request("https://protected-gorge-28359.herokuapp.com/maintenances", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseString { (response:DataResponse<String>) in
@@ -48,6 +51,7 @@ class TenantNewMaintenanceViewController: UIViewController {
                 break
                 
             }
+            
         }
         
     }

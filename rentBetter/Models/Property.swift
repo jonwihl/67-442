@@ -20,6 +20,7 @@ struct Property{
 	let start_date: String
 	let end_date: String?
 	let active: Bool
+    let landlord_id: Int
     
 //    init(addr_1: String, street:String, zipcode:String, city:String, state:String, rent: String, start_date: String, end_date: String) {
 //        self.addr_1 = addr_1
