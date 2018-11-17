@@ -12,7 +12,7 @@ import Alamofire
 class SearchPropertiesClient {
 	func fetchProperties(_ completion: @escaping (Data?) -> Void) {
 		
-		let urlString = "https://protected-gorge-28359.herokuapp.com/properties"
+		let urlString = "https://api.myjson.com/bins/n2axe"
 		
 		Alamofire.request(urlString).response { response in
 			if let error = response.error {
