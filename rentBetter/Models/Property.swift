@@ -18,7 +18,7 @@ struct Property{
 	let zipcode: String
 	let rent: String
 	let start_date: String
-	let end_date: String?
+	let end_date: String
 	let active: Bool
     let landlord_id: Int
     

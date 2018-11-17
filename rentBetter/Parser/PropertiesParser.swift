@@ -29,6 +29,7 @@ class PropertiesParser {
 	
 	func propertiesFromSearchResponse(_ data: Data?) -> [Property]? {
 		guard let dict = parseDictionary(data) else {
+			print(parseDictionary(data)!)
 			print("Error: couldn't parse dictionary from data")
 			return nil
 		}
