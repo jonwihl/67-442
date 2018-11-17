@@ -27,8 +27,8 @@ class MaintenancesParserTests: XCTestCase {
 
         let first = results!.first!
         XCTAssertEqual(1, first.id)
-        XCTAssertEqual("broken sink", first.title)
-        XCTAssertEqual("the sink is broken", first.description)
+        XCTAssertEqual("Broken sink", first.title)
+        XCTAssertEqual("The sink is broken", first.description)
         XCTAssertEqual("11/1/2018", first.created_on)
         XCTAssertEqual("11/3/2018", first.closed_on)
         XCTAssertEqual("xyz", first.photo)

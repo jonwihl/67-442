@@ -14,15 +14,8 @@ struct Maintenance {
 	let title: String
 	let description: String
 	let created_on: String
-	let closed_on: String?
-	let photo: String?
+	let closed_on: String
+	let photo: String
 	let active: Bool
-    
-//	init(id: Int, title: String, description: String, created_on:String) {
-//		self.id = id
-//		self.title = title
-//		self.description = description
-//		self.created_on = created_on
-//	}
 	
 }

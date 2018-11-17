@@ -38,6 +38,7 @@ class PropertiesParserTests: XCTestCase {
 		XCTAssertEqual("3900", first.rent)
 		XCTAssertEqual("6/1/2018", first.start_date)
 		XCTAssertEqual("6/1/2019", first.end_date)
+		XCTAssertEqual(1, first.landlord_id)
 	}
 	
 	

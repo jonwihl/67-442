@@ -8,10 +8,10 @@
 
 import Foundation
 
-//typealias JSONDictionary = [String: AnyObject]
+typealias JSONDictionary = [String: AnyObject]
+
 
 class PropertiesParser {
-	
 	
 	func parseDictionary(_ data: Data?) -> JSONDictionary? {
 		do {
@@ -29,7 +29,6 @@ class PropertiesParser {
 	
 	func propertiesFromSearchResponse(_ data: Data?) -> [Property]? {
 		guard let dict = parseDictionary(data) else {
-			print(parseDictionary(data)!)
 			print("Error: couldn't parse dictionary from data")
 			return nil
 		}
@@ -48,7 +47,6 @@ class PropertiesParser {
 	func parseProperty(_ dict: JSONDictionary) -> Property? {
 		if let id = dict["id"] as? Int,
 			let addr_line1 = dict["addr_line1"] as? String,
-			let addr_line2 = dict["addr_line2"] as? String,
 			let city = dict["city"] as? String,
 			let state = dict["state"] as? String,
 			let zipcode = dict["zipcode"] as? String,
@@ -57,7 +55,7 @@ class PropertiesParser {
 			let end_date = dict["end_date"] as? String,
 			let active = dict["active"] as? Bool {
             let landlord_id = dict["landlord_id"] as? Int
-			let prop = Property(id: id, addr_line1: addr_line1, addr_line2: addr_line2, city: city,
+			let prop = Property(id: id, addr_line1: addr_line1, city: city,
                                 state: state, zipcode: zipcode, rent: rent, start_date: start_date, end_date: end_date,active: active, landlord_id: landlord_id!)
 				return prop
 			
