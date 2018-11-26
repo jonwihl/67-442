@@ -13,10 +13,10 @@ import Foundation
 
 class MaintenancesParser {
 	
-	func parseDictionary(_ data: Data?) -> JSONDictionary? {
+	func parseDictionary(_ data: Data?) -> JSONArray? {
 		do {
 			if let data = data,
-				let json = try JSONSerialization.jsonObject(with: data, options: []) as? JSONDictionary {
+				let json = try JSONSerialization.jsonObject(with: data, options: []) as? JSONArray {
 				return json
 			}
 		} catch {
@@ -32,12 +32,12 @@ class MaintenancesParser {
 			return nil
 		}
 		
-		guard let maintenanceDicts = dict["maintenances"] as? [JSONDictionary] else {
-			print("Error: couldn't parse maintenances from JSON: \(dict)")
-			return nil
-		}
+//		guard let maintenanceDicts = dict["maintenances"] as? [JSONDictionary] else {
+//			print("Error: couldn't parse maintenances from JSON: \(dict)")
+//			return nil
+//		}
 		
-		return maintenanceDicts.compactMap { parseRepository($0) }
+		return dict.compactMap { parseRepository($0) }
 	}
 	
 	

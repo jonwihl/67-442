@@ -9,14 +9,14 @@
 import Foundation
 
 typealias JSONDictionary = [String: AnyObject]
-
+typealias JSONArray = [JSONDictionary]
 
 class PropertiesParser {
 	
-	func parseDictionary(_ data: Data?) -> JSONDictionary? {
+	func parseDictionary(_ data: Data?) -> JSONArray? {
 		do {
 			if let data = data,
-				let json = try JSONSerialization.jsonObject(with: data, options: []) as? JSONDictionary {
+				let json = try JSONSerialization.jsonObject(with: data, options: []) as? JSONArray {
 				return json
 			}
 		} catch {
@@ -33,12 +33,12 @@ class PropertiesParser {
 			return nil
 		}
 		
-		guard let propDicts = dict["properties"] as? [JSONDictionary] else {
-			print("Error: couldn't parse properties from JSON: \(dict)")
-			return nil
-		}
+//		guard let propDicts = dict as? [JSONDictionary] else {
+//			print("Error: couldn't parse properties from JSON: \(dict)")
+//			return nil
+//		}
 		
-		return propDicts.compactMap { parseProperty($0) }
+		return dict.compactMap { parseProperty($0) }
 	}
 	
 	
@@ -50,7 +50,7 @@ class PropertiesParser {
 			let city = dict["city"] as? String,
 			let state = dict["state"] as? String,
 			let zipcode = dict["zipcode"] as? String,
-			let rent = dict["rent"] as? String,
+			let rent = dict["rent"] as? Int,
 			let start_date = dict["start_date"] as? String,
 			let end_date = dict["end_date"] as? String,
 			let active = dict["active"] as? Bool {

@@ -41,7 +41,7 @@ class LandlordPropertiesDetailViewController: UIViewController {
             zipLabel.text = zip
             start_dateLabel.text = start_date
             end_dateLabel.text = end_date
-            rentLabel.text = rent
+						rentLabel.text = String(rent!)
 		}
 	}
 	

@@ -14,7 +14,7 @@ import SwiftyJSON
 class SearchMaintenancesClient {
     func fetchMaintenances(_ completion: @escaping (Data?) -> Void) {
 
-        let urlString = "https://api.myjson.com/bins/n2axe"
+        let urlString = "https://protected-gorge-28359.herokuapp.com/maintenances"
         
 
         Alamofire.request(urlString).response { response in
