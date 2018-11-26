@@ -23,7 +23,7 @@ class MaintenancesParserTests: XCTestCase {
     func test_maintenancesFromSearchResponse()  {
         let data = loadJSONTestData("data")
         let results = maintenancesParser.maintenancesFromSearchResponse(data)
-        XCTAssertEqual(3, results!.count)
+        XCTAssertEqual(2, results!.count)
 
         let first = results!.first!
         XCTAssertEqual(1, first.id)

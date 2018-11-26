@@ -11,11 +11,9 @@ import Foundation
 
 class LandlordPropertiesDetailViewModel {
 	let property: Property
-	let tenant: Tenant
 	
-	init(property: Property, tenant: Tenant) {
+	init(property: Property) {
 		self.property = property
-		self.tenant = tenant
 	}
 	
 	func address() -> String {
