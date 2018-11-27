@@ -222,11 +222,6 @@
                                 <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARe-Ap-ehX">
-                                <rect key="frame" x="141" y="382" width="54" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="plus"/>
-                            </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ni-bV-GrM">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -234,12 +229,29 @@
                                     <navigationItem title="New Maintenance Request" id="EAS-kV-4bN"/>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="npd-9J-pw5">
+                                <rect key="frame" x="68" y="434" width="238" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofo-h6-cbf">
-                                <rect key="frame" x="99" y="653" width="209" height="30"/>
+                                <rect key="frame" x="97" y="749" width="209" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit Maintenance"/>
                                 <connections>
                                     <action selector="addJson:" destination="Xjp-eV-9y9" eventType="touchUpInside" id="aHq-j4-ick"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCC-3G-OS8">
+                                <rect key="frame" x="149" y="389" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uml-oQ-ASW">
+                                <rect key="frame" x="149" y="388" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="openCameraButton:" destination="Xjp-eV-9y9" eventType="touchUpInside" id="8QV-He-ecP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -249,6 +261,7 @@
                     <tabBarItem key="tabBarItem" title="Maintenance" id="mnW-cr-Jr2"/>
                     <connections>
                         <outlet property="descriptionText" destination="MFo-rH-IlP" id="wbZ-Os-qgs"/>
+                        <outlet property="imagePicked" destination="npd-9J-pw5" id="TTf-pX-DFK"/>
                         <outlet property="titleText" destination="mY4-KG-jvZ" id="wrw-33-bqd"/>
                     </connections>
                 </viewController>
@@ -751,9 +764,6 @@
             <point key="canvasLocation" x="204" y="1594"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="plus" width="26" height="22"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Mt1-YM-rWl"/>
     </inferredMetricsTieBreakers>

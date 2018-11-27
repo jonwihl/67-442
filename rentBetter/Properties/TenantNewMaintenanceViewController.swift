@@ -9,10 +9,36 @@
 import UIKit
 import Alamofire
 
-class TenantNewMaintenanceViewController: UIViewController {
+class TenantNewMaintenanceViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var titleText: UITextField!
     @IBOutlet weak var descriptionText: UITextField!
+    @IBOutlet weak var imagePicked: UIImageView!
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        // The info dictionary may contain multiple representations of the image. You want to use the original.
+        guard let selectedImage = info[.originalImage] as? UIImage else {
+            fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+        }
+        
+        // Set photoImageView to display the selected image.
+        imagePicked.image = selectedImage
+        
+        // Dismiss the picker.
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func openCameraButton(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            var imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .camera;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
     
     @IBAction func addJson(_ sender: Any) {
         print("posting params")
