@@ -247,6 +247,10 @@
                         <viewLayoutGuide key="safeArea" id="Dqw-3S-m81"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Maintenance" id="mnW-cr-Jr2"/>
+                    <connections>
+                        <outlet property="descriptionText" destination="MFo-rH-IlP" id="wbZ-Os-qgs"/>
+                        <outlet property="titleText" destination="mY4-KG-jvZ" id="wrw-33-bqd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jcb-Vk-lIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
