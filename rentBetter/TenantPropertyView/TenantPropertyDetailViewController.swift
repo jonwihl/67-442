@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TenantPropertyViewController: UIViewController {
+class TenantPropertyDetailViewController: UIViewController {
 	
     @IBOutlet weak var rent_Label: UILabel!
     @IBOutlet weak var addr_1_Label: UILabel!
@@ -17,6 +17,8 @@ class TenantPropertyViewController: UIViewController {
     @IBOutlet weak var state_Label: UILabel!
     @IBOutlet weak var startDate_Label: UILabel!
     @IBOutlet weak var endDate_Label: UILabel!
+	
+		var viewModel: TenantPropertyDetailViewModel?
     
     override func viewDidLoad() {
 			super.viewDidLoad()
@@ -28,20 +30,40 @@ class TenantPropertyViewController: UIViewController {
 
 //        updateLabelAddr()
 		// Do any additional setup after loading the view, typically from a nib.
-	}
-    
-//    func updateLabelAddr() -> Void {
-//        Addr_1_Label.text = property.addr_1 + property.street
-//        zipcode_Label.text = property.zipcode
-//        state_Label.text = property.state
-//        startDate_Label.text = property.start_date
-//        endDate_Label.text = property.end_date
-//        rent_Label.text = property.rent
-//        city_Label.text = property.city
-//
-//    }
-//
+		}
 	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+//		viewModel!.refresh(_, completion: () -> Void)
+//
+//		for property in viewModel!.properties {
+//			if (property.id == 1){
+//				viewModel!.property = property
+//			}
+//		}
+		
+		
+		//		self.title = viewModel?.title()
+		
+		if let viewModel = viewModel{
+			let addr_line1 = viewModel.address()
+			let city = viewModel.city()
+			let state = viewModel.state()
+			let zip = viewModel.zipcode()
+			let start_date = viewModel.start()
+			let end_date = viewModel.end()
+			let rent = viewModel.rent()
+			
+			addr_1_Label.text = addr_line1
+			city_Label.text = city
+			state_Label.text = state
+			zipcode_Label.text = zip
+			startDate_Label.text = start_date
+			endDate_Label.text = end_date
+			rent_Label.text = String(rent!)
+		}
+	}
+
 	
 	
 }
