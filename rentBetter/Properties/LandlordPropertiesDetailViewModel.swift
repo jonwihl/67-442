@@ -10,10 +10,12 @@ import Foundation
 
 
 class LandlordPropertiesDetailViewModel {
-	let property: Property
+	var property: Property
+	var tenant: Tenant
 	
-	init(property: Property) {
+	init(property: Property, tenant: Tenant) {
 		self.property = property
+		self.tenant = tenant
 	}
 	
 	func address() -> String {
@@ -44,5 +46,22 @@ class LandlordPropertiesDetailViewModel {
 		return property.end_date
 	}
 	
+	func name() -> String? {
+		if property.id == tenant.property_id{
+				return tenant.name
+		}
+		else{
+			return "x"
+		}
+	}
+	
+	func phone() -> String? {
+		if property.id == tenant.property_id{
+			return tenant.phone
+		}
+		else{
+			return "x"
+		}
+	}
 	
 }

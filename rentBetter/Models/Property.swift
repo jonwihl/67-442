@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 struct Property{
-	let id: Int
+	var id: Int
 	let addr_line1: String
 	let city: String
 	let state: String

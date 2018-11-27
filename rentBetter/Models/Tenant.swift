@@ -16,6 +16,6 @@ struct Tenant{
 	let username: String
 	let password_digest: String
 	let active: Bool
-	let property_id: Int
+	var property_id: Int
 	
 }
