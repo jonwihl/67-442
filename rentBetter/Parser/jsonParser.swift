@@ -23,7 +23,7 @@ class JsonParser {
 //            let closed_on = request["closed_on"].string
 //            let photo = request["photo"].string
             
-            let maintenance = Maintenance(id: id, title:title!, description:"the sink is broken", created_on:"11/1/2018", closed_on:"11/3/2018", photo:"xyz", active: true)
+            let maintenance = Maintenance(id: id, title:title!, description:"the sink is broken", created_on:"11/1/2018", closed_on:"11/3/2018", photo:"xyz", active: true, property)
             maintenances.append(maintenance)
         }
         return maintenances

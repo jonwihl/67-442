@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		255C029C219A778A00DA5CF3 /* jsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C029B219A778A00DA5CF3 /* jsonParser.swift */; };
 		255C02E1219BE40200DA5CF3 /* MaintenanceViewCelll.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255C02E0219BE40200DA5CF3 /* MaintenanceViewCelll.xib */; };
 		255C02E3219BE41C00DA5CF3 /* PropertiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255C02E2219BE41C00DA5CF3 /* PropertiesTableViewCell.xib */; };
 		255C02E5219E259500DA5CF3 /* TenantNewMaintenanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C02E4219E259500DA5CF3 /* TenantNewMaintenanceViewController.swift */; };
@@ -66,7 +65,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		255C029B219A778A00DA5CF3 /* jsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonParser.swift; sourceTree = "<group>"; };
 		255C02E0219BE40200DA5CF3 /* MaintenanceViewCelll.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaintenanceViewCelll.xib; sourceTree = "<group>"; };
 		255C02E2219BE41C00DA5CF3 /* PropertiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertiesTableViewCell.xib; sourceTree = "<group>"; };
 		255C02E4219E259500DA5CF3 /* TenantNewMaintenanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenantNewMaintenanceViewController.swift; sourceTree = "<group>"; };
@@ -265,7 +263,6 @@
 			children = (
 				5292966B218E4905006131D5 /* PropertiesParser.swift */,
 				5292966D218E4916006131D5 /* MaintenancesParser.swift */,
-				255C029B219A778A00DA5CF3 /* jsonParser.swift */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -524,7 +521,6 @@
 				522B23CC219A2B9A00EF5091 /* LandlordPropertiesViewModel.swift in Sources */,
 				5292966C218E4905006131D5 /* PropertiesParser.swift in Sources */,
 				521C700821ACB2EB000F2FCD /* Tenant.swift in Sources */,
-				255C029C219A778A00DA5CF3 /* jsonParser.swift in Sources */,
 				522B23CD219A2B9A00EF5091 /* LandlordPropertiesViewController.swift in Sources */,
 				255C02E5219E259500DA5CF3 /* TenantNewMaintenanceViewController.swift in Sources */,
 				522B23C9219A2B9A00EF5091 /* PropertiesTableViewCell.swift in Sources */,

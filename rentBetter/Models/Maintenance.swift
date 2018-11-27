@@ -17,5 +17,6 @@ struct Maintenance {
 	let closed_on: String
 	let photo: String
 	let active: Bool
-	
+	let property_id: Int
+	let tenant_id: Int
 }
