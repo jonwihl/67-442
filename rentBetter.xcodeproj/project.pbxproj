@@ -160,6 +160,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		521C700D21ADFACA000F2FCD /* TenantPropertyView */ = {
+			isa = PBXGroup;
+			children = (
+				52929655218920D4006131D5 /* TenantPropertyController.swift */,
+			);
+			path = TenantPropertyView;
+			sourceTree = "<group>";
+		};
 		522B23B421926BF500EF5091 /* Maintenances */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,8 +210,8 @@
 			children = (
 				5292962421892086006131D5 /* AppDelegate.swift */,
 				5292962621892086006131D5 /* LoginViewController.swift */,
-				52929655218920D4006131D5 /* TenantPropertyController.swift */,
 				522B23D8219CD06400EF5091 /* InfoViewController.swift */,
+				521C700D21ADFACA000F2FCD /* TenantPropertyView */,
 				5292965C2189407D006131D5 /* Models */,
 				522B23B421926BF500EF5091 /* Maintenances */,
 				52929659218920EE006131D5 /* Properties */,

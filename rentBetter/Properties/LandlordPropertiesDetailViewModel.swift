@@ -11,11 +11,9 @@ import Foundation
 
 class LandlordPropertiesDetailViewModel {
 	var property: Property
-	var tenant: Tenant
 	
-	init(property: Property, tenant: Tenant) {
+	init(property: Property) {
 		self.property = property
-		self.tenant = tenant
 	}
 	
 	func address() -> String {
@@ -46,22 +44,22 @@ class LandlordPropertiesDetailViewModel {
 		return property.end_date
 	}
 	
-	func name() -> String? {
-		if property.id == tenant.property_id{
-				return tenant.name
-		}
-		else{
-			return "x"
-		}
-	}
-	
-	func phone() -> String? {
-		if property.id == tenant.property_id{
-			return tenant.phone
-		}
-		else{
-			return "x"
-		}
-	}
+//	func name() -> String? {
+//		if property.id == tenant.property_id{
+//				return tenant.name
+//		}
+//		else{
+//			return "x"
+//		}
+//	}
+//
+//	func phone() -> String? {
+//		if property.id == tenant.property_id{
+//			return tenant.phone
+//		}
+//		else{
+//			return "x"
+//		}
+//	}
 	
 }

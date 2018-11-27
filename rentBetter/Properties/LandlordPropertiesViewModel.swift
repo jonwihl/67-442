@@ -56,6 +56,8 @@ class LandlordPropertiesViewModel {
 	
 	func detailViewModelForRowAtIndexPath(_ indexPath: IndexPath) -> LandlordPropertiesDetailViewModel {
 		let prop = (filteredProperties.isEmpty ? properties[indexPath.row] : filteredProperties[indexPath.row])
+		
+		
 		return LandlordPropertiesDetailViewModel(property: prop)
 	}
 	

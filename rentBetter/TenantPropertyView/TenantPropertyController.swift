@@ -9,17 +9,12 @@
 import UIKit
 
 class TenantPropertyViewController: UIViewController {
-    
-//    var property = Property(addr_1: "5445", street: "Wilkins Ave", zipcode: "15217", city: "Pittsburgh", state: "PA", rent: "5000", start_date: "10/31/2018", end_date: "10/31/2019")
 	
     @IBOutlet weak var rent_Label: UILabel!
-    @IBOutlet weak var Addr_1_Label: UILabel!
-    
+    @IBOutlet weak var addr_1_Label: UILabel!
     @IBOutlet weak var city_Label: UILabel!
     @IBOutlet weak var zipcode_Label: UILabel!
-    
     @IBOutlet weak var state_Label: UILabel!
-    
     @IBOutlet weak var startDate_Label: UILabel!
     @IBOutlet weak var endDate_Label: UILabel!
     
