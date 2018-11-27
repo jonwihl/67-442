@@ -43,12 +43,12 @@ class TenantNewMaintenanceViewController: UIViewController, UIImagePickerControl
     @IBAction func addJson(_ sender: Any) {
         print("posting params")
         let  parameters = [
-            "id":4,
             "title": titleText.text,
             "description": descriptionText.text,
             "photo": "",
             "active":true,
-            "property_id":5,"tenant_id":10,
+            "property_id":5,
+						"tenant_id":10,
             "created_at":"2018-11-15T23:35:51.547Z",
             "updated_at":"2018-11-15T23:35:51.547Z"
         ] as [String : Any]

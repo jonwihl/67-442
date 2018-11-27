@@ -14,14 +14,18 @@ class LandlordMaintenancesDetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var photo: UILabel!
-    
-    var viewModel: LandlordMaintenancesDetailViewModel?
-    
-    
+	
+	
+		var viewModel: LandlordMaintenancesDetailViewModel?
+	
+		@IBAction func markComplete(_ sender: Any) {
+			viewModel?.deactivate()
+			
+		}
+
+	
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        //        self.title = viewModel?.title()
         
         if let viewModel = viewModel{
                 let title = viewModel.title()
