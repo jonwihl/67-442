@@ -53,11 +53,13 @@ class MaintenancesParser {
 			let property_id = dict["property_id"] as? Int,
 			let tenant_id = dict["tenant_id"] as? Int{
 //			display only the active maintenances
+			if active == true {
 				let maintenance = Maintenance(id: id, title: title, description: description,
 																			created_on: created_on, closed_on: closed_on,
 																			photo: photo, active: active, property_id:property_id, tenant_id:tenant_id)
 				return maintenance
 			}
+		}
 		else {
 			print("Error: couldn't parse JSON dictionary: \(dict)")
 		}
