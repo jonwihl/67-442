@@ -40,13 +40,13 @@ class RemindersParser {
 	
 	
 	
-	func parseReminder(_ dict: JSONDictionary) -> Maintenance? {
+	func parseReminder(_ dict: JSONDictionary) -> Reminder? {
 		if let id = dict["id"] as? Int,
 			let title = dict["title"] as? String,
 			let description = dict["description"] as? String,
-			let created_on = dict["created_on"] as? String,
-			let removed_on = dict["closed_on"] as? String,
-			let active = dict["photo"] as? String,
+			let created_on = dict["created_on"] as? Date,
+			let removed_on = dict["closed_on"] as? Date,
+			let active = dict["photo"] as? Bool,
 			let landlord_id = dict["landlord_id"] as? Int,
 			let property_id = dict["property_id"] as? Int{
 			//			display only the active maintenances

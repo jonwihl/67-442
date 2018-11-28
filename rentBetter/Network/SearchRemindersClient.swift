@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 class SearchRemindersClient {
-	func fetchTenants(_ completion: @escaping (Data?) -> Void) {
+	func fetchReminders(_ completion: @escaping (Data?) -> Void) {
 		
 		let urlString = "https://protected-gorge-28359.herokuapp.com/reminders"
 		
