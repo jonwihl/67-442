@@ -25,6 +25,7 @@
 		521C700F21ADFDDB000F2FCD /* TenantPropertyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C700E21ADFDDB000F2FCD /* TenantPropertyDetailViewModel.swift */; };
 		521C701121AE12DC000F2FCD /* RemindersParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701021AE12DC000F2FCD /* RemindersParser.swift */; };
 		521C701321AE12F4000F2FCD /* SearchRemindersClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701221AE12F4000F2FCD /* SearchRemindersClient.swift */; };
+		521C701521AE387C000F2FCD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701421AE387C000F2FCD /* Constants.swift */; };
 		522B23B521992F3900EF5091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5292962821892086006131D5 /* Main.storyboard */; };
 		522B23C9219A2B9A00EF5091 /* PropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B23C4219A2B9A00EF5091 /* PropertiesTableViewCell.swift */; };
 		522B23CA219A2B9A00EF5091 /* LandlordPropertiesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B23C5219A2B9A00EF5091 /* LandlordPropertiesDetailViewController.swift */; };
@@ -97,6 +98,7 @@
 		521C700E21ADFDDB000F2FCD /* TenantPropertyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenantPropertyDetailViewModel.swift; sourceTree = "<group>"; };
 		521C701021AE12DC000F2FCD /* RemindersParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersParser.swift; sourceTree = "<group>"; };
 		521C701221AE12F4000F2FCD /* SearchRemindersClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRemindersClient.swift; sourceTree = "<group>"; };
+		521C701421AE387C000F2FCD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		522B23C4219A2B9A00EF5091 /* PropertiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PropertiesTableViewCell.swift; path = rentBetter/Properties/PropertiesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		522B23C5219A2B9A00EF5091 /* LandlordPropertiesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LandlordPropertiesDetailViewController.swift; path = rentBetter/Properties/LandlordPropertiesDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		522B23C6219A2B9A00EF5091 /* LandlordPropertiesDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LandlordPropertiesDetailViewModel.swift; path = rentBetter/Properties/LandlordPropertiesDetailViewModel.swift; sourceTree = SOURCE_ROOT; };
@@ -246,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				5292962421892086006131D5 /* AppDelegate.swift */,
+				521C701421AE387C000F2FCD /* Constants.swift */,
 				5292962621892086006131D5 /* LoginViewController.swift */,
 				522B23D8219CD06400EF5091 /* InfoViewController.swift */,
 				521C700D21ADFACA000F2FCD /* TenantPropertyView */,
@@ -545,6 +548,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-rentBetter/Pods-rentBetter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -553,6 +557,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,6 +607,7 @@
 				522B23D3219A2E5200EF5091 /* LandlordMaintenancesViewController.swift in Sources */,
 				5292965E2189408F006131D5 /* Maintenance.swift in Sources */,
 				5292962D21892086006131D5 /* rentBetter.xcdatamodeld in Sources */,
+				521C701521AE387C000F2FCD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
