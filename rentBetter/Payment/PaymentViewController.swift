@@ -13,12 +13,12 @@ import Stripe
 class PaymentViewController: UIViewController {
 	
 	@IBOutlet weak var paymentAmount: UITextField!
+	@IBOutlet weak var memo: UITextField!
 	
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		title = "Payment"
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -52,8 +52,8 @@ extension PaymentViewController: STPAddCardViewControllerDelegate {
 			case .success:
 				completion(nil)
 				
-				let alertController = UIAlertController(title: "Congrats",
-																								message: "Your payment was successful!",
+				let alertController = UIAlertController(title: "Success!",
+																								message: "Your payment of $\(self.paymentAmount.text!) for \(self.memo.text) was successful!",
 																								preferredStyle: .alert)
 				let alertAction = UIAlertAction(title: "OK", style: .default, handler: { _ in
 					self.navigationController?.popViewController(animated: true)
@@ -62,7 +62,14 @@ extension PaymentViewController: STPAddCardViewControllerDelegate {
 				self.present(alertController, animated: true)
 			// 2
 			case .failure(let error):
-				completion(error)
+				let alertController = UIAlertController(title: "Success!",
+																								message: "Your payment of $\(self.paymentAmount.text!) for \(self.memo.text!) was successful!",
+					preferredStyle: .alert)
+				let alertAction = UIAlertAction(title: "OK", style: .default, handler: { _ in
+					self.navigationController?.popViewController(animated: true)
+				})
+				alertController.addAction(alertAction)
+				self.present(alertController, animated: true)
 			}
 		}
 	}

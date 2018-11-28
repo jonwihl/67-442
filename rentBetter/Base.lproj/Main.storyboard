@@ -485,6 +485,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Make a Payment" id="8AH-Ib-ecv"/>
                     <connections>
+                        <outlet property="memo" destination="jXb-GI-Oo3" id="KIF-cV-gSs"/>
                         <outlet property="paymentAmount" destination="Ckc-XD-Ehn" id="wQp-70-BX0"/>
                     </connections>
                 </viewController>
