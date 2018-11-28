@@ -16,7 +16,7 @@ class SearchRemindersClient {
 		
 		Alamofire.request(urlString).response { response in
 			if let error = response.error {
-				print("Error fetching tenants: \(error)")
+				print("Error fetching reminders: \(error)")
 				completion(response.data)
 				return
 			}

@@ -404,7 +404,7 @@
             </objects>
             <point key="canvasLocation" x="2387" y="-190"/>
         </scene>
-        <!--Root View Controller-->
+        <!--My Reminders-->
         <scene sceneID="DzE-4C-dlZ">
             <objects>
                 <tableViewController id="aOh-O5-QVM" customClass="TenantRemindersViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
@@ -427,7 +427,9 @@
                             <outlet property="delegate" destination="aOh-O5-QVM" id="atL-Tc-4Bd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Ukq-UQ-dOD"/>
+                    <navigationItem key="navigationItem" title="My Reminders" id="Ukq-UQ-dOD">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="pz4-cL-gD2"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="remindersTable" destination="Lgm-Ga-2Fk" id="HTU-Y4-ssV"/>
                         <segue destination="e5s-9o-Cmu" kind="show" identifier="TenantRVC" id="VZb-xF-SsX"/>
@@ -445,17 +447,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVw-Tz-acL">
-                                <rect key="frame" x="155" y="248" width="73" height="61"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVw-Tz-acL">
+                                <rect key="frame" x="171" y="128" width="73" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buD-Tv-4HV">
-                                <rect key="frame" x="127" y="421" width="85" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buD-Tv-4HV">
+                                <rect key="frame" x="165" y="371" width="85" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

@@ -23,11 +23,11 @@ class TenantReminderDetailViewModel {
         return reminder.description
     }
     
-    func created_on() -> Date? {
+    func created_on() -> String? {
         return reminder.created_on
     }
     
-    func removed_on() -> Date? {
+    func removed_on() -> String? {
         return reminder.removed_on
     }
     
