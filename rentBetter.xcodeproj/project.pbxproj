@@ -26,6 +26,7 @@
 		521C701121AE12DC000F2FCD /* RemindersParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701021AE12DC000F2FCD /* RemindersParser.swift */; };
 		521C701321AE12F4000F2FCD /* SearchRemindersClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701221AE12F4000F2FCD /* SearchRemindersClient.swift */; };
 		521C701521AE387C000F2FCD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701421AE387C000F2FCD /* Constants.swift */; };
+		521C701721AE3992000F2FCD /* StripeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701621AE3992000F2FCD /* StripeClient.swift */; };
 		522B23B521992F3900EF5091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5292962821892086006131D5 /* Main.storyboard */; };
 		522B23C9219A2B9A00EF5091 /* PropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B23C4219A2B9A00EF5091 /* PropertiesTableViewCell.swift */; };
 		522B23CA219A2B9A00EF5091 /* LandlordPropertiesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B23C5219A2B9A00EF5091 /* LandlordPropertiesDetailViewController.swift */; };
@@ -99,6 +100,7 @@
 		521C701021AE12DC000F2FCD /* RemindersParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersParser.swift; sourceTree = "<group>"; };
 		521C701221AE12F4000F2FCD /* SearchRemindersClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRemindersClient.swift; sourceTree = "<group>"; };
 		521C701421AE387C000F2FCD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		521C701621AE3992000F2FCD /* StripeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeClient.swift; sourceTree = "<group>"; };
 		522B23C4219A2B9A00EF5091 /* PropertiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PropertiesTableViewCell.swift; path = rentBetter/Properties/PropertiesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		522B23C5219A2B9A00EF5091 /* LandlordPropertiesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LandlordPropertiesDetailViewController.swift; path = rentBetter/Properties/LandlordPropertiesDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		522B23C6219A2B9A00EF5091 /* LandlordPropertiesDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LandlordPropertiesDetailViewModel.swift; path = rentBetter/Properties/LandlordPropertiesDetailViewModel.swift; sourceTree = SOURCE_ROOT; };
@@ -248,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				5292962421892086006131D5 /* AppDelegate.swift */,
+				521C701621AE3992000F2FCD /* StripeClient.swift */,
 				521C701421AE387C000F2FCD /* Constants.swift */,
 				5292962621892086006131D5 /* LoginViewController.swift */,
 				522B23D8219CD06400EF5091 /* InfoViewController.swift */,
@@ -575,6 +578,7 @@
 				25AE67F821AE153800A1D48A /* TenantRemindersViewController.swift in Sources */,
 				25AE680421AE1BC100A1D48A /* ReminderViewCell.swift in Sources */,
 				521C701321AE12F4000F2FCD /* SearchRemindersClient.swift in Sources */,
+				521C701721AE3992000F2FCD /* StripeClient.swift in Sources */,
 				25D23273218A74D400A5E2B2 /* Property.swift in Sources */,
 				522B23D6219A2E5200EF5091 /* LandlordMaintenancesDetailViewModel.swift in Sources */,
 				522B23D4219A2E5200EF5091 /* MaintenanceViewCelll.swift in Sources */,
