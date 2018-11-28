@@ -46,12 +46,7 @@ class TenantNewMaintenanceViewController: UIViewController, UIImagePickerControl
             "title": titleText.text,
             "description": descriptionText.text,
             "photo": "",
-            "active":true,
-            "property_id":5,
-						"tenant_id":10,
-            "created_at":"2018-11-15T23:35:51.547Z",
-            "updated_at":"2018-11-15T23:35:51.547Z"
-        ] as [String : Any]
+            "active":true] as [String : Any]
         
         Alamofire.request("https://protected-gorge-28359.herokuapp.com/maintenances", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseString { (response:DataResponse<String>) in
             
@@ -69,7 +64,10 @@ class TenantNewMaintenanceViewController: UIViewController, UIImagePickerControl
             }
             
         }
-        
+			
+			let alert = UIAlertController(title: "Success!", message: "Your maintenance request was submitted!", preferredStyle: .alert)
+			alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+			present(alert, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
