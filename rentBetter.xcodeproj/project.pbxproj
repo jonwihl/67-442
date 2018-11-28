@@ -27,6 +27,7 @@
 		521C701321AE12F4000F2FCD /* SearchRemindersClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701221AE12F4000F2FCD /* SearchRemindersClient.swift */; };
 		521C701521AE387C000F2FCD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701421AE387C000F2FCD /* Constants.swift */; };
 		521C701721AE3992000F2FCD /* StripeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701621AE3992000F2FCD /* StripeClient.swift */; };
+		521C701A21AE3FB8000F2FCD /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701921AE3FB8000F2FCD /* PaymentViewController.swift */; };
 		522B23B521992F3900EF5091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5292962821892086006131D5 /* Main.storyboard */; };
 		522B23C9219A2B9A00EF5091 /* PropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B23C4219A2B9A00EF5091 /* PropertiesTableViewCell.swift */; };
 		522B23CA219A2B9A00EF5091 /* LandlordPropertiesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B23C5219A2B9A00EF5091 /* LandlordPropertiesDetailViewController.swift */; };
@@ -101,6 +102,7 @@
 		521C701221AE12F4000F2FCD /* SearchRemindersClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRemindersClient.swift; sourceTree = "<group>"; };
 		521C701421AE387C000F2FCD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		521C701621AE3992000F2FCD /* StripeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeClient.swift; sourceTree = "<group>"; };
+		521C701921AE3FB8000F2FCD /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		522B23C4219A2B9A00EF5091 /* PropertiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PropertiesTableViewCell.swift; path = rentBetter/Properties/PropertiesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		522B23C5219A2B9A00EF5091 /* LandlordPropertiesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LandlordPropertiesDetailViewController.swift; path = rentBetter/Properties/LandlordPropertiesDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		522B23C6219A2B9A00EF5091 /* LandlordPropertiesDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LandlordPropertiesDetailViewModel.swift; path = rentBetter/Properties/LandlordPropertiesDetailViewModel.swift; sourceTree = SOURCE_ROOT; };
@@ -209,6 +211,16 @@
 			path = TenantPropertyView;
 			sourceTree = "<group>";
 		};
+		521C701821AE3F72000F2FCD /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				521C701421AE387C000F2FCD /* Constants.swift */,
+				521C701621AE3992000F2FCD /* StripeClient.swift */,
+				521C701921AE3FB8000F2FCD /* PaymentViewController.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
 		522B23B421926BF500EF5091 /* Maintenances */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,9 +261,8 @@
 		5292962321892086006131D5 /* rentBetter */ = {
 			isa = PBXGroup;
 			children = (
+				521C701821AE3F72000F2FCD /* Payment */,
 				5292962421892086006131D5 /* AppDelegate.swift */,
-				521C701621AE3992000F2FCD /* StripeClient.swift */,
-				521C701421AE387C000F2FCD /* Constants.swift */,
 				5292962621892086006131D5 /* LoginViewController.swift */,
 				522B23D8219CD06400EF5091 /* InfoViewController.swift */,
 				521C700D21ADFACA000F2FCD /* TenantPropertyView */,
@@ -596,6 +607,7 @@
 				522B23CD219A2B9A00EF5091 /* LandlordPropertiesViewController.swift in Sources */,
 				255C02E5219E259500DA5CF3 /* TenantNewMaintenanceViewController.swift in Sources */,
 				522B23C9219A2B9A00EF5091 /* PropertiesTableViewCell.swift in Sources */,
+				521C701A21AE3FB8000F2FCD /* PaymentViewController.swift in Sources */,
 				522B23D9219CD06400EF5091 /* InfoViewController.swift in Sources */,
 				521C700A21ADF257000F2FCD /* SearchTenantsClient.swift in Sources */,
 				25AE680021AE159900A1D48A /* LandlordNewReminderViewController.swift in Sources */,
