@@ -41,7 +41,7 @@ class TenantRemindersViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "toTenantRVC", sender: indexPath)
+        performSegue(withIdentifier: "TenantRVC", sender: indexPath)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
