@@ -7,9 +7,41 @@
 //
 
 import UIKit
+import Alamofire
 
 class LandlordNewReminderViewController: UIViewController {
 
+    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var titleTextField: UITextField!
+    
+    @IBAction func addJson(_ sender: Any) {
+        print("posting params")
+        let  parameters = [
+            "title": titleTextField.text,
+            "description": descriptionTextField.text
+            ] as [String : Any]
+        
+        Alamofire.request("https://protected-gorge-28359.herokuapp.com/reminders", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseString { (response:DataResponse<String>) in
+            
+            switch(response.result) {
+            case .success(_):
+                if let data = response.result.value{
+                    print(response.result.value)
+                }
+                break
+                
+            case .failure(_):
+                print(response.result.error)
+                break
+                
+            }
+            
+        }
+        let alert = UIAlertController(title: "Success!", message: "Your reminder was submitted!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
