@@ -660,7 +660,7 @@
             </objects>
             <point key="canvasLocation" x="1246" y="1997"/>
         </scene>
-        <!--Item-->
+        <!--Reminder-->
         <scene sceneID="ShM-Lg-SUE">
             <objects>
                 <viewController id="xxo-7W-c3K" customClass="LandlordNewReminderViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
@@ -708,7 +708,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WFD-Yn-hWS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="kwf-Ss-sbY"/>
+                    <tabBarItem key="tabBarItem" title="Reminder" id="kwf-Ss-sbY"/>
                     <connections>
                         <outlet property="descriptionTextField" destination="TER-r7-KZp" id="ba1-Ls-UH9"/>
                         <outlet property="titleTextField" destination="EE7-DQ-CV0" id="3CS-hA-32R"/>
