@@ -48,12 +48,12 @@ class TenantMaintenancesViewController: UITableViewController  {
 	
 	
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		performSegue(withIdentifier: "toLandlordMVC", sender: indexPath)
+		performSegue(withIdentifier: "toTenantMVC", sender: indexPath)
 	}
 	
 	// MARK: Segues
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		if let detailVC = segue.destination as? LandlordMaintenancesDetailViewController,
+		if let detailVC = segue.destination as? TenantMaintenancesDetailViewController,
 			let indexPath = sender as? IndexPath {
 			detailVC.viewModel = viewModel.detailViewModelForRowAtIndexPath(indexPath)
 		}

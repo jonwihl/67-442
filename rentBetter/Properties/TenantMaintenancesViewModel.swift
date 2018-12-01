@@ -54,9 +54,9 @@ class TenantMaintenancesViewModel {
 		}
 	}
 	
-	func detailViewModelForRowAtIndexPath(_ indexPath: IndexPath) -> LandlordMaintenancesDetailViewModel {
+	func detailViewModelForRowAtIndexPath(_ indexPath: IndexPath) -> TenantMaintenancesDetailViewModel {
 		let fix = (filteredMaintenances.isEmpty ? maintenances[indexPath.row] : filteredMaintenances[indexPath.row])
-		return LandlordMaintenancesDetailViewModel(maintenance: fix)
+		return TenantMaintenancesDetailViewModel(maintenance: fix)
 	}
 	
 	func updateFiltering(_ searchText: String) -> Void {
