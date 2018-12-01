@@ -28,6 +28,8 @@
 		521C701521AE387C000F2FCD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701421AE387C000F2FCD /* Constants.swift */; };
 		521C701721AE3992000F2FCD /* StripeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701621AE3992000F2FCD /* StripeClient.swift */; };
 		521C701A21AE3FB8000F2FCD /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701921AE3FB8000F2FCD /* PaymentViewController.swift */; };
+		521C701C21B30B79000F2FCD /* TenantMaintenancesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701B21B30B79000F2FCD /* TenantMaintenancesViewController.swift */; };
+		521C701E21B30BD5000F2FCD /* TenantMaintenancesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C701D21B30BD5000F2FCD /* TenantMaintenancesViewModel.swift */; };
 		522B23B521992F3900EF5091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5292962821892086006131D5 /* Main.storyboard */; };
 		522B23C9219A2B9A00EF5091 /* PropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B23C4219A2B9A00EF5091 /* PropertiesTableViewCell.swift */; };
 		522B23CA219A2B9A00EF5091 /* LandlordPropertiesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B23C5219A2B9A00EF5091 /* LandlordPropertiesDetailViewController.swift */; };
@@ -103,6 +105,8 @@
 		521C701421AE387C000F2FCD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		521C701621AE3992000F2FCD /* StripeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeClient.swift; sourceTree = "<group>"; };
 		521C701921AE3FB8000F2FCD /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		521C701B21B30B79000F2FCD /* TenantMaintenancesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenantMaintenancesViewController.swift; sourceTree = "<group>"; };
+		521C701D21B30BD5000F2FCD /* TenantMaintenancesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenantMaintenancesViewModel.swift; sourceTree = "<group>"; };
 		522B23C4219A2B9A00EF5091 /* PropertiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PropertiesTableViewCell.swift; path = rentBetter/Properties/PropertiesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		522B23C5219A2B9A00EF5091 /* LandlordPropertiesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LandlordPropertiesDetailViewController.swift; path = rentBetter/Properties/LandlordPropertiesDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		522B23C6219A2B9A00EF5091 /* LandlordPropertiesDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LandlordPropertiesDetailViewModel.swift; path = rentBetter/Properties/LandlordPropertiesDetailViewModel.swift; sourceTree = SOURCE_ROOT; };
@@ -230,6 +234,8 @@
 				522B23D0219A2E5200EF5091 /* LandlordMaintenancesDetailViewController.swift */,
 				522B23D1219A2E5200EF5091 /* LandlordMaintenancesDetailViewModel.swift */,
 				255C02E0219BE40200DA5CF3 /* MaintenanceViewCelll.xib */,
+				521C701B21B30B79000F2FCD /* TenantMaintenancesViewController.swift */,
+				521C701D21B30BD5000F2FCD /* TenantMaintenancesViewModel.swift */,
 				255C02E4219E259500DA5CF3 /* TenantNewMaintenanceViewController.swift */,
 			);
 			name = Maintenances;
@@ -261,10 +267,10 @@
 		5292962321892086006131D5 /* rentBetter */ = {
 			isa = PBXGroup;
 			children = (
-				521C701821AE3F72000F2FCD /* Payment */,
 				5292962421892086006131D5 /* AppDelegate.swift */,
 				5292962621892086006131D5 /* LoginViewController.swift */,
 				522B23D8219CD06400EF5091 /* InfoViewController.swift */,
+				521C701821AE3F72000F2FCD /* Payment */,
 				521C700D21ADFACA000F2FCD /* TenantPropertyView */,
 				5292965C2189407D006131D5 /* Models */,
 				522B23B421926BF500EF5091 /* Maintenances */,
@@ -586,6 +592,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521C701E21B30BD5000F2FCD /* TenantMaintenancesViewModel.swift in Sources */,
 				25AE67F821AE153800A1D48A /* TenantRemindersViewController.swift in Sources */,
 				25AE680421AE1BC100A1D48A /* ReminderViewCell.swift in Sources */,
 				521C701321AE12F4000F2FCD /* SearchRemindersClient.swift in Sources */,
@@ -595,6 +602,7 @@
 				522B23D4219A2E5200EF5091 /* MaintenanceViewCelll.swift in Sources */,
 				522B23CA219A2B9A00EF5091 /* LandlordPropertiesDetailViewController.swift in Sources */,
 				5292966A218E3A0C006131D5 /* SearchPropertiesClient.swift in Sources */,
+				521C701C21B30B79000F2FCD /* TenantMaintenancesViewController.swift in Sources */,
 				5292962721892086006131D5 /* LoginViewController.swift in Sources */,
 				5292966E218E4916006131D5 /* MaintenancesParser.swift in Sources */,
 				522B23CC219A2B9A00EF5091 /* LandlordPropertiesViewModel.swift in Sources */,
