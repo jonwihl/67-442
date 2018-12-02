@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MaintenanceViewCelll: UITableViewCell {
+class MaintenanceViewCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
 

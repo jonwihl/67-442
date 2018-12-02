@@ -16,7 +16,7 @@ class LandlordMaintenancesViewController: UITableViewController  {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-        self.maintenancesTable.register(UINib(nibName: "MaintenanceViewCelll", bundle: nil), forCellReuseIdentifier: "MaintenanceCell")
+        self.maintenancesTable.register(UINib(nibName: "MaintenanceViewCell", bundle: nil), forCellReuseIdentifier: "MaintenanceCell")
         viewModel.refresh { [unowned self] in
             DispatchQueue.main.async {
                 self.maintenancesTable.reloadData()
@@ -40,7 +40,7 @@ class LandlordMaintenancesViewController: UITableViewController  {
 	}
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: "MaintenanceCell", for: indexPath) as! MaintenanceViewCelll
+		let cell = tableView.dequeueReusableCell(withIdentifier: "MaintenanceCell", for: indexPath) as! MaintenanceViewCell
 		cell.titleLabel?.text = viewModel.titleForRowAtIndexPath(indexPath)
 		return cell
 	}

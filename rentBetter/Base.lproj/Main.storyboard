@@ -207,16 +207,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="IOn-aa-HQS">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="IOn-aa-HQS" userLabel="MaintenanceCell">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IOn-aa-HQS" id="hoz-eo-AHp">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IOn-aa-HQS" id="hoz-eo-AHp" customClass="MaintenanceViewCell" customModule="rentBetter" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="63H-rf-IP8" kind="show" id="bqX-Lh-MQe"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -225,6 +222,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Submitted Requests" id="euC-Yv-udR">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="fBP-yx-OGC"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="abK-Og-1RI">
                             <connections>
                                 <segue destination="Xjp-eV-9y9" kind="show" id="5jh-rm-93W"/>
@@ -237,7 +235,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rFA-Vm-eeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3352" y="463"/>
+            <point key="canvasLocation" x="3350.7246376811595" y="462.72321428571428"/>
         </scene>
         <!--Tenant Maintenances Detail View Controller-->
         <scene sceneID="7rc-B4-qNk">
@@ -278,6 +276,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" label="Back"/>
                         <viewLayoutGuide key="safeArea" id="jfe-al-xHO"/>
                     </view>
                     <connections>
