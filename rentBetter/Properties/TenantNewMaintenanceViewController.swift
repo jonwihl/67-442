@@ -55,6 +55,11 @@ class TenantNewMaintenanceViewController: UIViewController, UIImagePickerControl
                 if let data = response.result.value{
                     print(response.result.value)
                 }
+								
+								let alert = UIAlertController(title: "Success!", message: "Your maintenance request was submitted!", preferredStyle: .alert)
+								alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+								self.present(alert, animated: true, completion: nil)
+	
                 break
                 
             case .failure(_):
@@ -65,9 +70,7 @@ class TenantNewMaintenanceViewController: UIViewController, UIImagePickerControl
             
         }
 			
-			let alert = UIAlertController(title: "Success!", message: "Your maintenance request was submitted!", preferredStyle: .alert)
-			alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-			present(alert, animated: true, completion: nil)
+			
     }
     
     override func viewDidLoad() {
