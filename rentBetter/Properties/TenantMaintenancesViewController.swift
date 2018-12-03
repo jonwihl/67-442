@@ -48,7 +48,7 @@ class TenantMaintenancesViewController: UITableViewController  {
 	
 	
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		performSegue(withIdentifier: "toLandlordMVC", sender: indexPath)
+		performSegue(withIdentifier: "toTenantM", sender: indexPath)
 	}
 	
 	// MARK: Segues
