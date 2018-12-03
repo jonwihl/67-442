@@ -225,7 +225,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="fBP-yx-OGC"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="abK-Og-1RI">
                             <connections>
-                                <segue destination="Xjp-eV-9y9" kind="show" id="5jh-rm-93W"/>
+                                <segue destination="Xjp-eV-9y9" kind="show" identifier="toLandlordMVC" id="5jh-rm-93W"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
