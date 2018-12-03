@@ -240,7 +240,6 @@
         <!--Tenant Maintenances Detail View Controller-->
         <scene sceneID="7rc-B4-qNk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nbk-bt-w64" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="63H-rf-IP8" customClass="TenantMaintenancesDetailViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FHp-Pf-3vp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -284,6 +283,7 @@
                         <outlet property="titleLabel" destination="fib-WA-qhA" id="Vhd-JH-kGU"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nbk-bt-w64" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4190" y="890"/>
         </scene>
