@@ -18,45 +18,45 @@ class TenantPropertyDetailViewModel {
 	
 	func refresh(_ completion: @escaping () -> Void) {
 		client.fetchProperties { [unowned self] data in
-			if let props = self.parser.propertiesFromSearchResponse(data) {
+			if let props = self.parser.tenantPropertiesFromSearchResponse(data) {
 				self.properties = props
+				print(self.properties)
 			}
 			completion()
 		}
 	}
 	
-
 	
 	init(property: Property) {
 		self.property = property
 	}
 	
 	func address() -> String {
-			return property.addr_line1
+		return properties[1].addr_line1
 	}
 	
 	func city() -> String? {
-		return property.city
+		return properties[1].city
 	}
 	
 	func state() -> String? {
-		return property.state
+		return properties[1].state
 	}
 	
 	func zipcode() -> String? {
-		return property.zipcode
+		return properties[1].zipcode
 	}
 	
 	func rent() -> Int? {
-		return property.rent
+		return properties[1].rent
 	}
 	
 	func start() -> String? {
-		return property.start_date
+		return properties[1].start_date
 	}
 	
 	func end() -> String? {
-		return property.end_date
+		return properties[1].end_date
 }
 
 }

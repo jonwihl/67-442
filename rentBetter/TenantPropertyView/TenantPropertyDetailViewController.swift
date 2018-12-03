@@ -22,15 +22,12 @@ class TenantPropertyDetailViewController: UIViewController {
     
     override func viewDidLoad() {
 			super.viewDidLoad()
+//			viewModel?.refresh(() -> Void)
 			
 			navigationController?.navigationBar.barTintColor = UIColor(red: 76/100, green: 94/100, blue: 92/100, alpha: 1)
 			
 			tabBarController?.tabBar.barTintColor = UIColor(red: 76/100, green: 94/100, blue: 92/100, alpha: 1)
-//			self.view.backgroundColor = UIColor(red: 65/100, green: 85/100, blue: 97/100, alpha: 1)
-
-//        updateLabelAddr()
-		// Do any additional setup after loading the view, typically from a nib.
-		}
+	}
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
