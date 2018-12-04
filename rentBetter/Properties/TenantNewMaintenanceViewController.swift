@@ -56,9 +56,7 @@ class TenantNewMaintenanceViewController: UIViewController, UIImagePickerControl
                     print(response.result.value)
                 }
 								
-								let alert = UIAlertController(title: "Success!", message: "Your maintenance request was submitted!", preferredStyle: .alert)
-								alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-								self.present(alert, animated: true, completion: nil)
+								
 	
                 break
                 
