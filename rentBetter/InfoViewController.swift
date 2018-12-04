@@ -13,6 +13,7 @@ class InfoViewController: UIViewController {
 	override func viewDidLoad() {
 
 		UINavigationBar.appearance().barTintColor = UIColor(red: 76/100, green: 94/100, blue: 92/100, alpha: 1)
+		self.view.backgroundColor = UIColor(red: 76/100, green: 94/100, blue: 92/100, alpha: 1)
 		super.viewDidLoad()
 		
 		
