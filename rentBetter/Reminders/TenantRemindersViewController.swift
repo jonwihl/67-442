@@ -13,6 +13,14 @@ class TenantRemindersViewController: UITableViewController {
     let viewModel = TenantRemindersViewModel()
     @IBOutlet var remindersTable: UITableView!
     
+    @IBAction func refresh(_ sender: Any) {
+        viewModel.refresh {
+            [unowned self] in
+            DispatchQueue.main.async {
+                self.remindersTable.reloadData()
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

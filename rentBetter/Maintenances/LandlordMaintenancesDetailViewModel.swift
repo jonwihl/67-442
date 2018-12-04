@@ -15,6 +15,9 @@ class LandlordMaintenancesDetailViewModel {
 	init(maintenance: Maintenance) {
 		self.maintenance = maintenance
 	}
+    func id() -> Int {
+        return maintenance.id
+    }
 	
 	func title() -> String {
 		return maintenance.title

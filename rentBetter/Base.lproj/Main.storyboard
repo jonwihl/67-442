@@ -650,6 +650,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="My Reminders" id="Ukq-UQ-dOD">
                         <barButtonItem key="backBarButtonItem" title="Back" id="pz4-cL-gD2"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="refresh" id="tLH-is-Y70">
+                            <connections>
+                                <action selector="refresh:" destination="aOh-O5-QVM" id="Ue8-N4-cz0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="remindersTable" destination="Lgm-Ga-2Fk" id="HTU-Y4-ssV"/>
@@ -691,6 +696,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="markAsRead:" destination="e5s-9o-Cmu" eventType="touchUpInside" id="0fb-tq-1uS"/>
                                     <action selector="markComplete:" destination="4vS-gl-R3d" eventType="touchUpInside" id="FIO-g9-djW"/>
                                 </connections>
                             </button>
@@ -761,6 +767,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Pending Maintenances" id="UoZ-oJ-AbQ">
                         <barButtonItem key="backBarButtonItem" title="Back" id="PP4-uO-e2L"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="refresh" id="fJh-gZ-Ciy">
+                            <connections>
+                                <action selector="refresh:" destination="h4g-xV-Ycj" id="8gw-yy-X8d"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="maintenancesTable" destination="vgN-L0-PNb" id="HfR-Bv-XOc"/>
@@ -894,6 +905,7 @@
                                 </state>
                                 <connections>
                                     <action selector="markComplete:" destination="4vS-gl-R3d" eventType="touchUpInside" id="ky3-aM-jwj"/>
+                                    <action selector="updateMaintenance:" destination="4vS-gl-R3d" eventType="touchUpInside" id="CRh-JF-G76"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Details:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5S-gj-z8B">
@@ -1161,6 +1173,7 @@
         <image name="icons8-wrench-25" width="18.75" height="18.75"/>
         <image name="logo" width="1200" height="630"/>
         <image name="password" width="59" height="58"/>
+        <image name="refresh" width="18.75" height="18.75"/>
         <image name="username" width="47" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>

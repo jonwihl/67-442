@@ -14,7 +14,15 @@ class LandlordMaintenancesViewController: UITableViewController  {
 	let viewModel = LandlordMaintenancesViewModel()
 	@IBOutlet var maintenancesTable: UITableView!
 	
-	override func viewDidLoad() {
+    @IBAction func refresh(_ sender: Any) {
+        viewModel.refresh {
+            [unowned self] in
+            DispatchQueue.main.async {
+                self.maintenancesTable.reloadData()
+            }
+        }
+    }
+    override func viewDidLoad() {
 		super.viewDidLoad()
         self.maintenancesTable.register(UINib(nibName: "MaintenanceViewCell", bundle: nil), forCellReuseIdentifier: "MaintenanceCell")
         viewModel.refresh { [unowned self] in

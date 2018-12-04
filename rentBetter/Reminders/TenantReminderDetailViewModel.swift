@@ -15,6 +15,10 @@ class TenantReminderDetailViewModel {
         self.reminder = reminder
     }
     
+    func id() -> Int{
+        return reminder.id
+    }
+    
     func title() -> String {
         return reminder.title
     }

@@ -6,7 +6,7 @@
 //  Copyright © 2018 AJ. All rights reserved.
 //
 
-
+import Alamofire
 import UIKit
 
 class LandlordMaintenancesDetailViewController: UIViewController {
@@ -36,6 +36,34 @@ class LandlordMaintenancesDetailViewController: UIViewController {
         }
     }
     
+    @IBAction func updateMaintenance(_ sender: Any) {
+        print("posting params")
+        let id = viewModel!.id()
+        let  parameters = [
+            "active":false] as [String : Any]
+        
+        Alamofire.request("https://protected-gorge-28359.herokuapp.com/maintenances/\(id)", method: .patch, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseString { (response:DataResponse<String>) in
+            
+            switch(response.result) {
+            case .success(_):
+                if let data = response.result.value{
+                    print(response.result.value)
+                }
+                
+                
+                
+                break
+                
+            case .failure(_):
+                print(response.result.error)
+                break
+                
+            }
+            
+        }
+        
+        
+    }
     
     
     override func viewDidLoad() {

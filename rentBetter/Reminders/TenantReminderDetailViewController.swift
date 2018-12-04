@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Alamofire
 class TenantReminderDetailViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
@@ -21,6 +21,31 @@ class TenantReminderDetailViewController: UIViewController {
     
     var viewModel: TenantReminderDetailViewModel?
     
+    @IBAction func markAsRead(_ sender: Any) {
+        let id = viewModel!.id()
+        let  parameters = [
+            "active":false] as [String : Any]
+        
+        Alamofire.request("https://protected-gorge-28359.herokuapp.com/reminders/\(id)", method: .patch, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseString { (response:DataResponse<String>) in
+            
+            switch(response.result) {
+            case .success(_):
+                if let data = response.result.value{
+                    print(response.result.value)
+                }
+                
+                
+                
+                break
+                
+            case .failure(_):
+                print(response.result.error)
+                break
+                
+            }
+            
+        }
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
