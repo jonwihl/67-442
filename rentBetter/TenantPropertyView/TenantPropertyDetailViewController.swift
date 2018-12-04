@@ -22,8 +22,7 @@ class TenantPropertyDetailViewController: UIViewController {
     
     override func viewDidLoad() {
 			super.viewDidLoad()
-//			viewModel?.refresh(() -> Void)
-			
+			viewModel?.refresh()
 			navigationController?.navigationBar.barTintColor = UIColor(red: 76/100, green: 94/100, blue: 92/100, alpha: 1)
 			
 			tabBarController?.tabBar.barTintColor = UIColor(red: 76/100, green: 94/100, blue: 92/100, alpha: 1)

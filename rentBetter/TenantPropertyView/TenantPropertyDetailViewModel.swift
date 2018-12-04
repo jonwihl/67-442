@@ -16,13 +16,13 @@ class TenantPropertyDetailViewModel {
 	
 	var property: Property
 	
-	func refresh(_ completion: @escaping () -> Void) {
+	func refresh() {
+		print("hello")
 		client.fetchProperties { [unowned self] data in
 			if let props = self.parser.tenantPropertiesFromSearchResponse(data) {
 				self.properties = props
-				print(self.properties)
 			}
-			completion()
+			print(self.properties)
 		}
 	}
 	
