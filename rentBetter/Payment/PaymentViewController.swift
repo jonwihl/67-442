@@ -9,26 +9,17 @@
 import Foundation
 import UIKit
 import Stripe
-import Toast_Swift
 
 class PaymentViewController: UIViewController {
 	
 	@IBOutlet weak var paymentAmount: UITextField!
 	@IBOutlet weak var memo: UITextField!
 	
-	var style = ToastStyle()
 	
 //	style.messageColor = .blue
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		self.view.makeToast("Payment", duration: 15.0, position: .bottom, title: "Use this page to enter in a payment amount and memo, then continue") { didTap in
-			if didTap {
-				print("completion from tap")
-			} else {
-				print("completion without tap")
-			}
-		}
 
 		
 	}

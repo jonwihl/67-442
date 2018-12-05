@@ -23,7 +23,7 @@ class TenantMaintenancesDetailViewModel {
 		return maintenance.description
 	}
 	
-	func created_on() -> String? {
+	func created_on() -> String {
 		return maintenance.created_on
 	}
 	
@@ -35,7 +35,7 @@ class TenantMaintenancesDetailViewModel {
 		return maintenance.photo
 	}
 	
-	func status() -> String?{
+	func status() -> String{
 		if maintenance.active{
 			return "Incomplete"
 		}

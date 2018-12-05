@@ -12,6 +12,8 @@ import UIKit
 class TenantMaintenancesDetailViewController: UIViewController {
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var descriptionLabel: UITextView!
+	@IBOutlet weak var submitted: UILabel!
+	@IBOutlet weak var status: UILabel!
 	//	@IBOutlet weak var photo: UILabel!
 	
 	
@@ -29,9 +31,13 @@ class TenantMaintenancesDetailViewController: UIViewController {
 		if let viewModel = viewModel{
 			let title = viewModel.title()
 			let description = viewModel.description()
+			let submit = viewModel.created_on()
+			let completed = viewModel.status()
 			//			let photo = viewModel.photo()
 			titleLabel.text = title
 			descriptionLabel.text = description
+			submitted.text = submit
+			status.text = completed
 		}
 	}
 	
