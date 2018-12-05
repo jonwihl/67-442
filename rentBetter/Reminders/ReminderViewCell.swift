@@ -22,7 +22,7 @@ class ReminderViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        self.titleLabel.textColor = UIColor(red: 41/100, green: 41/100, blue: 41/100, alpha: 1)
+        self.titleLabel.textColor = UIColor(red:0.04, green:0.19, blue:0.26, alpha:1.0)
         
         // Configure the view for the selected state
     }
