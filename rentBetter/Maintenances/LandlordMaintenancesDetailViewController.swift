@@ -14,6 +14,7 @@ class LandlordMaintenancesDetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UITextView!
     @IBOutlet weak var photo: UILabel!
+		@IBOutlet	weak var createdLabel: UILabel!
 	
 	
 		var viewModel: LandlordMaintenancesDetailViewModel?
@@ -31,8 +32,10 @@ class LandlordMaintenancesDetailViewController: UIViewController {
                 let title = viewModel.title()
                 let description = viewModel.description()
                 let photo = viewModel.photo()
+								let created = viewModel.created_on()
                 titleLabel.text = title
                 descriptionLabel.text = description
+								createdLabel.text = created
         }
     }
     

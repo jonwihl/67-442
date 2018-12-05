@@ -55,12 +55,7 @@ class TenantNewMaintenanceViewController: UIViewController, UIImagePickerControl
                 if let data = response.result.value{
 									let alert = UIAlertController(title: "Success!",
 																								message: "Your request for \(self.titleText.text!) was succesfully submitted! Your landlord will be in touch soon.", preferredStyle: UIAlertController.Style.alert)
-									
-									let action = UIAlertAction(title: "OK", style: .default) { (action) -> Void in
-										let tenantProperties = self.storyboard?.instantiateViewController(withIdentifier: "TenantMaintenancesViewController.swift")
-										self.present(tenantProperties!, animated: true, completion: nil)
-									}
-									alert.addAction(action)
+									alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
 									self.present(alert, animated: true, completion: nil)
                 }
 								
