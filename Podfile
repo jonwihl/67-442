@@ -8,4 +8,6 @@ target 'rentBetter' do
     pod 'AlamofireImage', '~> 3.3'
 		pod 'SwiftyJSON', '~> 4.0'
 		pod 'Stripe'
+
+    pod 'Toast-Swift', '~> 4.0.0'
 end

@@ -12,7 +12,7 @@ import Alamofire
 class TenantNewMaintenanceViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var titleText: UITextField!
-    @IBOutlet weak var descriptionText: UITextField!
+    @IBOutlet weak var descriptionText: UITextView!
     @IBOutlet weak var imagePicked: UIImageView!
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -53,7 +53,10 @@ class TenantNewMaintenanceViewController: UIViewController, UIImagePickerControl
             switch(response.result) {
             case .success(_):
                 if let data = response.result.value{
-                    print(response.result.value)
+									let alert = UIAlertController(title: "Success!",
+																								message: "Your request for \(self.titleText.text!) was succesfully submitted! Your landlord will be in touch soon.", preferredStyle: UIAlertController.Style.alert)
+									alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+									self.present(alert, animated: true, completion: nil)
                 }
 								
 								
@@ -73,6 +76,10 @@ class TenantNewMaintenanceViewController: UIViewController, UIImagePickerControl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+			descriptionText.layer.borderColor = UIColor(red:0, green:0, blue:0, alpha:1.0).cgColor
+			descriptionText.layer.borderWidth = 1.0
+			descriptionText.layer.cornerRadius = 1.0
+//			self.descriptionText.layer.borderColor = [[UIColor, grayColor], CGColor];
 
         // Do any additional setup after loading the view.
     }
