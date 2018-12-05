@@ -12,6 +12,7 @@ class TenantReminderDetailViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UITextView!
+		@IBOutlet weak var createdLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,8 +56,11 @@ class TenantReminderDetailViewController: UIViewController {
         if let viewModel = viewModel{
             let title = viewModel.title()
             let description = viewModel.description()
+						let created = viewModel.created_on()
+					
             titleLabel.text = title
             descriptionLabel.text = description
+						createdLabel.text = created
         }
     }
 
