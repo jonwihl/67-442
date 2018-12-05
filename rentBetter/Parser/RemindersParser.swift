@@ -50,10 +50,12 @@ class RemindersParser {
 			let landlord_id = dict["landlord_id"] as? Int,
 			let property_id = dict["property_id"] as? Int{
 			//			display only the active maintenances
+			if active == true{
 				let reminder = Reminder(id: id, title: title, description: description,
 																			created_on: created_on, removed_on: removed_on,
 																			active: active, landlord_id: landlord_id, property_id:property_id)
 				return reminder
+			}
 		}
 		else {
 			print("Error: couldn't parse JSON dictionary: \(dict)")

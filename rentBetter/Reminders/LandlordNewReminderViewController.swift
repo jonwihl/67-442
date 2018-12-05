@@ -11,7 +11,7 @@ import Alamofire
 
 class LandlordNewReminderViewController: UIViewController {
 
-    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextView!
     @IBOutlet weak var titleTextField: UITextField!
     
     @IBAction func addJson(_ sender: Any) {
@@ -44,6 +44,9 @@ class LandlordNewReminderViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+			descriptionTextField.layer.borderColor = UIColor(red:0, green:0, blue:0, alpha:1.0).cgColor
+			descriptionTextField.layer.borderWidth = 1.0
+			descriptionTextField.layer.cornerRadius = 1.0
 
         // Do any additional setup after loading the view.
     }

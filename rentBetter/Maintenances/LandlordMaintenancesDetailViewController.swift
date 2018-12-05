@@ -12,7 +12,7 @@ import UIKit
 class LandlordMaintenancesDetailViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UITextView!
     @IBOutlet weak var photo: UILabel!
 	
 	
@@ -48,6 +48,9 @@ class LandlordMaintenancesDetailViewController: UIViewController {
             case .success(_):
                 if let data = response.result.value{
                     print(response.result.value)
+									let alert = UIAlertController(title: "Complete!", message: "Marked as Completed.", preferredStyle: UIAlertController.Style.alert)
+									alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+									self.present(alert, animated: true, completion: nil)
                 }
                 
                 
