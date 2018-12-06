@@ -10,24 +10,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" editingAccessoryType="disclosureIndicator" rowHeight="95" id="VaZ-Ol-e61" customClass="MaintenanceViewCell" customModule="rentBetter" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="75" id="9Vf-mh-X8O" customClass="MaintenanceViewCell" customModule="rentBetter" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VaZ-Ol-e61" id="aa1-Mj-NA5" customClass="MaintenanceViewCell" customModule="rentBetter" customModuleProvider="target">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Vf-mh-X8O" id="3zC-8K-iD1">
                 <rect key="frame" x="0.0" y="0.0" width="341" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7u-Iz-AVS" customClass="mai">
-                        <rect key="frame" x="16" y="11" width="280" height="28"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JwP-XO-I9Y">
+                        <rect key="frame" x="16" y="11" width="271" height="39"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                        <color key="textColor" red="0.043137254899999998" green="0.19215686269999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPj-zb-3oG">
-                        <rect key="frame" x="16" y="59" width="150" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktd-0T-Q5Q">
+                        <rect key="frame" x="16" y="58" width="343" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="150" id="80Y-Fo-qgM"/>
-                            <constraint firstAttribute="height" constant="20" id="zWF-Sh-0P2"/>
+                            <constraint firstAttribute="width" constant="343" id="4zu-gb-Bn5"/>
+                            <constraint firstAttribute="height" constant="21" id="lrn-l7-GMR"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -35,25 +35,27 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="l7u-Iz-AVS" secondAttribute="trailing" constant="37" id="1vw-Rs-3ul"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="GPj-zb-3oG" secondAttribute="bottom" constant="10" id="Eez-1M-uIR"/>
-                    <constraint firstItem="l7u-Iz-AVS" firstAttribute="leading" secondItem="aa1-Mj-NA5" secondAttribute="leadingMargin" id="JzN-th-rhb"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="GPj-zb-3oG" secondAttribute="bottom" constant="10" id="N7I-NG-C81"/>
-                    <constraint firstItem="GPj-zb-3oG" firstAttribute="top" secondItem="l7u-Iz-AVS" secondAttribute="bottom" constant="20" id="Vxn-Cq-uup"/>
-                    <constraint firstItem="l7u-Iz-AVS" firstAttribute="top" secondItem="aa1-Mj-NA5" secondAttribute="topMargin" id="fcC-MF-CHY"/>
-                    <constraint firstItem="l7u-Iz-AVS" firstAttribute="leading" secondItem="GPj-zb-3oG" secondAttribute="leading" id="jf3-y7-alP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JwP-XO-I9Y" secondAttribute="trailing" constant="46" id="7Sw-An-96z"/>
+                    <constraint firstItem="JwP-XO-I9Y" firstAttribute="leading" secondItem="Ktd-0T-Q5Q" secondAttribute="leading" id="9FF-Zb-hd4"/>
+                    <constraint firstItem="JwP-XO-I9Y" firstAttribute="leading" secondItem="3zC-8K-iD1" secondAttribute="leadingMargin" id="CYx-Ov-R0O"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ktd-0T-Q5Q" secondAttribute="bottom" constant="20" id="Hqq-v9-Ma3"/>
+                    <constraint firstItem="JwP-XO-I9Y" firstAttribute="top" secondItem="3zC-8K-iD1" secondAttribute="topMargin" id="QGI-uU-N2C"/>
+                    <constraint firstItem="Ktd-0T-Q5Q" firstAttribute="top" secondItem="JwP-XO-I9Y" secondAttribute="bottom" constant="8" symbolic="YES" id="ivh-gx-Bxo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ktd-0T-Q5Q" secondAttribute="bottom" constant="10" id="w0I-sI-Gsw"/>
+                    <constraint firstItem="JwP-XO-I9Y" firstAttribute="top" secondItem="3zC-8K-iD1" secondAttribute="topMargin" id="xwA-7b-TCl"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
-                        <exclude reference="N7I-NG-C81"/>
+                        <exclude reference="Hqq-v9-Ma3"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
+            <color key="tintColor" red="0.043137254899999998" green="0.19215686269999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
-                <outlet property="summaryLabel" destination="GPj-zb-3oG" id="lmf-Hu-rPg"/>
-                <outlet property="titleLabel" destination="l7u-Iz-AVS" id="8co-mE-2sE"/>
+                <outlet property="summaryLabel" destination="Ktd-0T-Q5Q" id="EvR-Jl-3WU"/>
+                <outlet property="titleLabel" destination="JwP-XO-I9Y" id="pyI-9H-Lgg"/>
             </connections>
-            <point key="canvasLocation" x="29.600000000000001" y="-330.13493253373315"/>
+            <point key="canvasLocation" x="560.79999999999995" y="-128.63568215892056"/>
         </tableViewCell>
     </objects>
 </document>
