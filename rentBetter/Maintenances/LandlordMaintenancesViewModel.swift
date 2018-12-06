@@ -49,10 +49,9 @@ class LandlordMaintenancesViewModel {
 		}
 		if filteredMaintenances.isEmpty {
 //			print(filteredMaintenances[indexPath.row].created_on)
-			return maintenances[indexPath.row].created_on
+			return maintenances[indexPath.row].description
 		} else {
-			print(filteredMaintenances[indexPath.row].created_on)
-			return filteredMaintenances[indexPath.row].created_on
+			return filteredMaintenances[indexPath.row].description
 		}
 	}
 	
