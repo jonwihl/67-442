@@ -55,17 +55,43 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Aba-Kf-IIh">
                                 <rect key="frame" x="87" y="207" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ez-GE-USV">
-                                <rect key="frame" x="115" y="574" width="190" height="60"/>
-                                <color key="backgroundColor" red="0.043137254901960784" green="0.19215686274509802" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Log In">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ST-aF-TNb">
+                                <rect key="frame" x="87" y="660" width="85" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Launch Screen" image="Landlord"/>
                                 <connections>
-                                    <segue destination="Pmj-gx-vTA" kind="show" id="vBO-Ra-DNp"/>
+                                    <segue destination="x99-Fh-UYS" kind="show" id="ouf-AU-OUT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSj-1z-qBo">
+                                <rect key="frame" x="272" y="668" width="79" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Tenant"/>
+                                <connections>
+                                    <segue destination="nUM-oD-Pwp" kind="show" id="We6-w5-HSI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Landlord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8p-3Y-tOS">
+                                <rect key="frame" x="87" y="758" width="85" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tenant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnb-zr-ryx">
+                                <rect key="frame" x="266" y="757" width="85" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select your user type to continue:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krn-mh-2Jz">
+                                <rect key="frame" x="87" y="582" width="258" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -76,21 +102,17 @@
                             <constraint firstItem="KWp-RG-9Kj" firstAttribute="leading" secondItem="VMh-5r-Yd9" secondAttribute="leading" id="CJG-AO-f0m"/>
                             <constraint firstItem="Aba-Kf-IIh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="Eyd-63-pug"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lDc-Zc-gZZ" secondAttribute="trailing" constant="53" id="LG2-bQ-2ic"/>
-                            <constraint firstItem="kQy-Qv-C6m" firstAttribute="trailing" secondItem="3Ez-GE-USV" secondAttribute="trailing" id="OuR-aZ-QyU"/>
                             <constraint firstItem="P2b-c0-n6m" firstAttribute="trailing" secondItem="VMh-5r-Yd9" secondAttribute="trailing" id="Pe4-f4-ca9"/>
                             <constraint firstItem="lDc-Zc-gZZ" firstAttribute="top" secondItem="P2b-c0-n6m" secondAttribute="top" id="PgN-b5-wxa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VMh-5r-Yd9" secondAttribute="bottom" constant="345" id="Pqi-Pq-Irr"/>
                             <constraint firstItem="Aba-Kf-IIh" firstAttribute="centerX" secondItem="kQy-Qv-C6m" secondAttribute="centerX" id="V4R-gh-WyO"/>
                             <constraint firstItem="Aba-Kf-IIh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wy7-7b-PdD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Ez-GE-USV" secondAttribute="bottom" constant="228" id="XFI-HR-kOo"/>
-                            <constraint firstItem="3Ez-GE-USV" firstAttribute="top" secondItem="KWp-RG-9Kj" secondAttribute="bottom" constant="57" id="aZw-dO-FqN"/>
                             <constraint firstItem="lDc-Zc-gZZ" firstAttribute="trailing" secondItem="KWp-RG-9Kj" secondAttribute="trailing" id="eD7-ze-mpB"/>
                             <constraint firstItem="lDc-Zc-gZZ" firstAttribute="leading" secondItem="KWp-RG-9Kj" secondAttribute="leading" id="eXP-Lg-EeO"/>
                             <constraint firstItem="P2b-c0-n6m" firstAttribute="bottom" secondItem="lDc-Zc-gZZ" secondAttribute="bottom" id="ic7-hE-FLJ"/>
                             <constraint firstItem="Aba-Kf-IIh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="163" id="mZW-k6-oLc"/>
                             <constraint firstItem="P2b-c0-n6m" firstAttribute="leading" secondItem="lDc-Zc-gZZ" secondAttribute="leading" id="nHq-2o-dcc"/>
                             <constraint firstItem="VMh-5r-Yd9" firstAttribute="top" secondItem="lDc-Zc-gZZ" secondAttribute="bottom" constant="23" id="rAu-5A-7sO"/>
-                            <constraint firstItem="3Ez-GE-USV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="v61-d6-tdM"/>
                             <constraint firstItem="kQy-Qv-C6m" firstAttribute="top" secondItem="Aba-Kf-IIh" secondAttribute="bottom" constant="8" symbolic="YES" id="wgp-5h-pAJ"/>
                             <constraint firstItem="kQy-Qv-C6m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="ygb-Mv-Qtu"/>
                             <constraint firstItem="P2b-c0-n6m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="yxh-5L-0lw"/>
@@ -104,97 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1464" y="858"/>
-        </scene>
-        <!--Info View Controller-->
-        <scene sceneID="h8X-Ts-wBn">
-            <objects>
-                <viewController id="Pmj-gx-vTA" customClass="InfoViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Olf-AA-TYJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QkV-bO-MJZ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <items>
-                                    <navigationItem id="NEP-EK-Ftc">
-                                        <barButtonItem key="leftBarButtonItem" title="Log Out" style="plain" id="C9I-Ay-ooO">
-                                            <color key="tintColor" red="0.043137254901960784" green="0.19215686274509802" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="yuP-QW-pmG"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you a Landlord or a Tenant?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovz-Es-Meb">
-                                <rect key="frame" x="57" y="224" width="275" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="QUa-aq-bNd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7VO-nI-fHn">
-                                <rect key="frame" x="57" y="353" width="140" height="60"/>
-                                <color key="backgroundColor" red="0.043137254901960784" green="0.19215686274509802" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="5JW-RL-PyO"/>
-                                    <constraint firstAttribute="width" constant="140" id="aHr-VC-FR1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Landlord">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="x99-Fh-UYS" kind="show" id="tof-D5-Ztr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KO-Iy-Kcj">
-                                <rect key="frame" x="217" y="353" width="140" height="60"/>
-                                <color key="backgroundColor" red="0.043137254901960784" green="0.19215686274509802" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Tenant">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="nUM-oD-Pwp" kind="showDetail" id="BTq-4f-yGq"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="XjT-F0-XHc">
-                                <rect key="frame" x="125" y="51" width="57" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RENT BETTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQQ-q4-oYL">
-                                <rect key="frame" x="178" y="56" width="112" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="0Vf-Hk-y6Q" firstAttribute="trailing" secondItem="7KO-Iy-Kcj" secondAttribute="trailing" constant="57" id="1qz-Cp-sQA"/>
-                            <constraint firstAttribute="trailing" secondItem="QkV-bO-MJZ" secondAttribute="trailing" id="6c4-Ir-1sS"/>
-                            <constraint firstItem="0Vf-Hk-y6Q" firstAttribute="bottom" secondItem="7VO-nI-fHn" secondAttribute="bottom" constant="449" id="B0V-xr-fF0"/>
-                            <constraint firstItem="QkV-bO-MJZ" firstAttribute="top" secondItem="0Vf-Hk-y6Q" secondAttribute="top" id="I8r-1V-6pJ"/>
-                            <constraint firstItem="7VO-nI-fHn" firstAttribute="top" secondItem="ovz-Es-Meb" secondAttribute="bottom" constant="49" id="Ux5-BG-YmO"/>
-                            <constraint firstItem="ovz-Es-Meb" firstAttribute="leading" secondItem="0Vf-Hk-y6Q" secondAttribute="leading" constant="57" id="Xbm-PU-li9"/>
-                            <constraint firstItem="7VO-nI-fHn" firstAttribute="top" secondItem="7KO-Iy-Kcj" secondAttribute="top" id="cw3-zM-YiM"/>
-                            <constraint firstItem="0Vf-Hk-y6Q" firstAttribute="trailing" secondItem="ovz-Es-Meb" secondAttribute="trailing" constant="82" id="cz8-eb-fns"/>
-                            <constraint firstItem="7KO-Iy-Kcj" firstAttribute="leading" secondItem="7VO-nI-fHn" secondAttribute="trailing" constant="20" id="d6J-tq-zZc"/>
-                            <constraint firstItem="7VO-nI-fHn" firstAttribute="baseline" secondItem="7KO-Iy-Kcj" secondAttribute="firstBaseline" id="dyA-gh-ytJ"/>
-                            <constraint firstItem="QkV-bO-MJZ" firstAttribute="leading" secondItem="Olf-AA-TYJ" secondAttribute="leading" id="eO6-Ah-sIj"/>
-                            <constraint firstItem="ovz-Es-Meb" firstAttribute="leading" secondItem="7VO-nI-fHn" secondAttribute="leading" id="vFR-wu-rAW"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="0Vf-Hk-y6Q"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ipg-Ic-CJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-591.304347826087" y="858.48214285714278"/>
+            <point key="canvasLocation" x="-681.15942028985512" y="817.63392857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sAD-g9-4jG">
@@ -1275,6 +1207,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Landlord" width="200" height="200"/>
+        <image name="Tenant" width="225" height="225"/>
         <image name="icons8-alarm-25" width="18.75" height="18.75"/>
         <image name="icons8-condo-25" width="18.75" height="18.75"/>
         <image name="icons8-stack-of-money-25" width="18.75" height="18.75"/>
@@ -1285,7 +1219,7 @@
         <image name="username" width="47" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iVt-JH-VRU"/>
+        <segue reference="mhu-Nj-d62"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.043137254899999998" green="0.19215686269999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

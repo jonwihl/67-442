@@ -10,6 +10,7 @@
 		255C02E1219BE40200DA5CF3 /* MaintenanceViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255C02E0219BE40200DA5CF3 /* MaintenanceViewCell.xib */; };
 		255C02E3219BE41C00DA5CF3 /* PropertiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 255C02E2219BE41C00DA5CF3 /* PropertiesTableViewCell.xib */; };
 		255C02E5219E259500DA5CF3 /* TenantNewMaintenanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C02E4219E259500DA5CF3 /* TenantNewMaintenanceViewController.swift */; };
+		2563977C21B8C303001E7F2A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2563977B21B8C303001E7F2A /* Launch Screen.storyboard */; };
 		25AE67F521AE14F500A1D48A /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AE67F421AE14F500A1D48A /* Reminder.swift */; };
 		25AE67F821AE153800A1D48A /* TenantRemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AE67F721AE153800A1D48A /* TenantRemindersViewController.swift */; };
 		25AE67FA21AE154900A1D48A /* TenantRemindersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AE67F921AE154900A1D48A /* TenantRemindersViewModel.swift */; };
@@ -48,7 +49,6 @@
 		5292962721892086006131D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292962621892086006131D5 /* LoginViewController.swift */; };
 		5292962D21892086006131D5 /* rentBetter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5292962B21892086006131D5 /* rentBetter.xcdatamodeld */; };
 		5292962F21892087006131D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5292962E21892087006131D5 /* Assets.xcassets */; };
-		5292963221892087006131D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5292963021892087006131D5 /* LaunchScreen.storyboard */; };
 		5292963D21892087006131D5 /* rentBetterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292963C21892087006131D5 /* rentBetterTests.swift */; };
 		5292964821892087006131D5 /* rentBetterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292964721892087006131D5 /* rentBetterUITests.swift */; };
 		52929656218920D4006131D5 /* TenantPropertyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929655218920D4006131D5 /* TenantPropertyDetailViewController.swift */; };
@@ -88,6 +88,7 @@
 		255C02E0219BE40200DA5CF3 /* MaintenanceViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaintenanceViewCell.xib; sourceTree = "<group>"; };
 		255C02E2219BE41C00DA5CF3 /* PropertiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertiesTableViewCell.xib; sourceTree = "<group>"; };
 		255C02E4219E259500DA5CF3 /* TenantNewMaintenanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenantNewMaintenanceViewController.swift; sourceTree = "<group>"; };
+		2563977B21B8C303001E7F2A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		25AE67F421AE14F500A1D48A /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		25AE67F721AE153800A1D48A /* TenantRemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenantRemindersViewController.swift; sourceTree = "<group>"; };
 		25AE67F921AE154900A1D48A /* TenantRemindersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenantRemindersViewModel.swift; sourceTree = "<group>"; };
@@ -128,7 +129,6 @@
 		5292962921892086006131D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5292962C21892086006131D5 /* rentBetter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = rentBetter.xcdatamodel; sourceTree = "<group>"; };
 		5292962E21892087006131D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5292963121892087006131D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5292963321892087006131D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5292963821892087006131D5 /* rentBetterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rentBetterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5292963C21892087006131D5 /* rentBetterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rentBetterTests.swift; sourceTree = "<group>"; };
@@ -286,9 +286,9 @@
 				52929663218E391E006131D5 /* Parser */,
 				5292962821892086006131D5 /* Main.storyboard */,
 				5292962E21892087006131D5 /* Assets.xcassets */,
-				5292963021892087006131D5 /* LaunchScreen.storyboard */,
 				5292963321892087006131D5 /* Info.plist */,
 				5292962B21892086006131D5 /* rentBetter.xcdatamodeld */,
+				2563977B21B8C303001E7F2A /* Launch Screen.storyboard */,
 			);
 			path = rentBetter;
 			sourceTree = "<group>";
@@ -514,8 +514,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2563977C21B8C303001E7F2A /* Launch Screen.storyboard in Resources */,
 				522B23B521992F3900EF5091 /* Main.storyboard in Resources */,
-				5292963221892087006131D5 /* LaunchScreen.storyboard in Resources */,
 				5292962F21892087006131D5 /* Assets.xcassets in Resources */,
 				255C02E3219BE41C00DA5CF3 /* PropertiesTableViewCell.xib in Resources */,
 				25AE680221AE1A7F00A1D48A /* ReminderViewCell.xib in Resources */,
@@ -689,14 +689,6 @@
 				5292962921892086006131D5 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5292963021892087006131D5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5292963121892087006131D5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
