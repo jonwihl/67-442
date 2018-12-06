@@ -22,6 +22,9 @@ class LandlordMaintenancesViewController: UITableViewController  {
             }
         }
     }
+	
+	
+	
     override func viewDidLoad() {
 		super.viewDidLoad()
         self.maintenancesTable.register(UINib(nibName: "MaintenanceViewCell", bundle: nil), forCellReuseIdentifier: "MaintenanceCell")
@@ -36,6 +39,13 @@ class LandlordMaintenancesViewController: UITableViewController  {
 		
 		tabBarController?.tabBar.barTintColor = UIColor(red: 76/100, green: 94/100, blue: 92/100, alpha: 1)
 		
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		if let selectedRow = tableView.indexPathForSelectedRow {
+			tableView.deselectRow(at: selectedRow, animated: true)
+		}
 	}
 	
 	override func didReceiveMemoryWarning() {
