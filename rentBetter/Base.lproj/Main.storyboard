@@ -235,7 +235,7 @@
             </objects>
             <point key="canvasLocation" x="2529" y="459"/>
         </scene>
-        <!--Submitted Requests-->
+        <!--My Submitted Requests-->
         <scene sceneID="abf-ax-bAE">
             <objects>
                 <tableViewController id="hfP-gg-bAO" customClass="TenantMaintenancesViewController" customModule="rentBetter" customModuleProvider="target" sceneMemberID="viewController">
@@ -261,7 +261,7 @@
                             <outlet property="delegate" destination="hfP-gg-bAO" id="peA-vp-yq0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Submitted Requests" id="euC-Yv-udR">
+                    <navigationItem key="navigationItem" title="My Submitted Requests" id="euC-Yv-udR">
                         <barButtonItem key="backBarButtonItem" title="Back" id="fBP-yx-OGC"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="abK-Og-1RI">
                             <color key="tintColor" red="0.043137254899999998" green="0.19215686269999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1285,7 +1285,7 @@
         <image name="username" width="47" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yuP-QW-pmG"/>
+        <segue reference="iVt-JH-VRU"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.043137254899999998" green="0.19215686269999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

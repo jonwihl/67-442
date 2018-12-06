@@ -11,6 +11,7 @@ import UIKit
 
 class PropertiesTableViewCell: UITableViewCell {
 	@IBOutlet weak var address: UILabel!
+	@IBOutlet weak var start: UILabel!
 	
 	override func awakeFromNib() {
 		super.awakeFromNib()

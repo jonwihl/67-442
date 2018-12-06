@@ -48,9 +48,9 @@ class LandlordMaintenancesViewModel {
 			return ""
 		}
 		if filteredMaintenances.isEmpty {
-			return maintenances[indexPath.row].description
+			return maintenances[indexPath.row].created_on
 		} else {
-			return filteredMaintenances[indexPath.row].description
+			return filteredMaintenances[indexPath.row].created_on
 		}
 	}
 	

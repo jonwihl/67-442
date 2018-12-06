@@ -11,6 +11,7 @@ import UIKit
 class MaintenanceViewCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
+		@IBOutlet weak var summaryLabel: UILabel!
 
     
     override func awakeFromNib() {

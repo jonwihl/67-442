@@ -45,6 +45,7 @@ class LandlordPropertiesViewController: UITableViewController {
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PropertiesCell", for: indexPath) as! PropertiesTableViewCell
 			cell.address?.text = viewModel.addrForRowAtIndexPath(indexPath)
+			cell.start?.text = viewModel.summaryForRowAtIndexPath(indexPath)
 			return cell
 		}
 	

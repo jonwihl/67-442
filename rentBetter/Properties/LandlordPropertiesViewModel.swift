@@ -48,9 +48,9 @@ class LandlordPropertiesViewModel {
 			return ""
 		}
 		if filteredProperties.isEmpty {
-			return properties[indexPath.row].state
+			return properties[indexPath.row].start_date
 		} else {
-			return filteredProperties[indexPath.row].state
+			return filteredProperties[indexPath.row].start_date
 		}
 	}
 	
