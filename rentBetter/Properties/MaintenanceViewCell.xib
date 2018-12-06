@@ -11,25 +11,23 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="VaZ-Ol-e61" customClass="MaintenanceViewCell" customModule="rentBetter" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VaZ-Ol-e61" id="aa1-Mj-NA5" customClass="MaintenanceViewCell" customModule="rentBetter" customModuleProvider="target">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7u-Iz-AVS" customClass="mai">
-                        <rect key="frame" x="16" y="11" width="200" height="22"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="200" id="2Jg-7M-E8a"/>
-                        </constraints>
+                        <rect key="frame" x="16" y="11" width="280" height="29"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <color key="textColor" red="0.043137254899999998" green="0.19215686269999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPj-zb-3oG">
-                        <rect key="frame" x="16" y="47" width="99" height="17"/>
+                        <rect key="frame" x="16" y="54" width="150" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="99" id="9DQ-bF-nvg"/>
+                            <constraint firstAttribute="width" constant="150" id="PnU-Dq-2ht"/>
+                            <constraint firstAttribute="height" constant="20" id="Pzk-f6-5Qs"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -37,17 +35,13 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="l7u-Iz-AVS" firstAttribute="top" secondItem="aa1-Mj-NA5" secondAttribute="topMargin" id="8ya-4f-FuI"/>
-                    <constraint firstItem="l7u-Iz-AVS" firstAttribute="leading" secondItem="aa1-Mj-NA5" secondAttribute="leadingMargin" id="IUU-03-lFO"/>
-                    <constraint firstItem="l7u-Iz-AVS" firstAttribute="leading" secondItem="GPj-zb-3oG" secondAttribute="leading" id="m8O-mm-bs0"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="GPj-zb-3oG" secondAttribute="bottom" constant="10" id="r7Q-Vg-fUF"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="GPj-zb-3oG" secondAttribute="bottom" constant="10" id="t83-nQ-5Yx"/>
+                    <constraint firstItem="l7u-Iz-AVS" firstAttribute="leading" secondItem="aa1-Mj-NA5" secondAttribute="leadingMargin" id="8iO-BE-RZm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="l7u-Iz-AVS" secondAttribute="trailing" constant="63" id="GEq-Qi-I19"/>
+                    <constraint firstItem="l7u-Iz-AVS" firstAttribute="leading" secondItem="GPj-zb-3oG" secondAttribute="leading" id="ORh-zB-wDa"/>
+                    <constraint firstItem="l7u-Iz-AVS" firstAttribute="top" secondItem="aa1-Mj-NA5" secondAttribute="topMargin" id="WuV-De-Fqv"/>
+                    <constraint firstItem="GPj-zb-3oG" firstAttribute="top" secondItem="l7u-Iz-AVS" secondAttribute="bottom" constant="14" id="knq-mW-OUx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="GPj-zb-3oG" secondAttribute="bottom" constant="15" id="mdU-gB-lUT"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="constraints">
-                        <exclude reference="t83-nQ-5Yx"/>
-                    </mask>
-                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="summaryLabel" destination="GPj-zb-3oG" id="lmf-Hu-rPg"/>
