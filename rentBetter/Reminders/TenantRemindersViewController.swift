@@ -45,6 +45,7 @@ class TenantRemindersViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReminderCell", for: indexPath) as! ReminderViewCell
         cell.titleLabel?.text = viewModel.titleForRowAtIndexPath(indexPath)
+				cell.summaryLabel?.text = viewModel.summaryForRowAtIndexPath(indexPath)
         return cell
     }
     
