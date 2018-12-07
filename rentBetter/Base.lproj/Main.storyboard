@@ -41,11 +41,11 @@
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="VMh-5r-Yd9">
-                                <rect key="frame" x="16" y="399" width="48" height="34"/>
+                                <rect key="frame" x="16" y="399" width="40" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="P2b-c0-n6m">
-                                <rect key="frame" x="16" y="341" width="48" height="35"/>
+                                <rect key="frame" x="16" y="341" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Aba-Kf-IIh">
