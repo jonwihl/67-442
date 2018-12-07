@@ -32,7 +32,6 @@ class PropertiesParser {
 			print("Error: couldn't parse dictionary from data")
 			return nil
 		}
-		
 //		guard let propDicts = dict as? [JSONDictionary] else {
 //			print("Error: couldn't parse properties from JSON: \(dict)")
 //			return nil
