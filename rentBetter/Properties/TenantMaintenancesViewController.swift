@@ -43,6 +43,7 @@ class TenantMaintenancesViewController: UITableViewController  {
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "MaintenanceCell", for: indexPath) as! MaintenanceViewCell
 		cell.titleLabel?.text = viewModel.titleForRowAtIndexPath(indexPath)
+		cell.summaryLabel?.text = "Submitted: " + viewModel.summaryForRowAtIndexPath(indexPath)
 		return cell
 	}
 	
