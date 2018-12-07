@@ -50,13 +50,13 @@ class TenantPropertyDetailViewController: UIViewController {
 //            let end_date = viewModel.end()
 //            let rent = viewModel.rent()
 			
-			addr_1_Label.text = "5445 Wilkins Ave"
+			addr_1_Label.text = "5445 Wilkins Avenue"
 			city_Label.text = "Pittsburgh"
 			state_Label.text = "PA"
 			zipcode_Label.text = "15289"
 			startDate_Label.text = "2018-12-06"
 			endDate_Label.text = "2018-12-06"
-			rent_Label.text = String(3500)
+			rent_Label.text = "$" + String(3500)
 	}
 
 	
