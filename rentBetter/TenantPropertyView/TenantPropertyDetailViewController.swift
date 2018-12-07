@@ -18,7 +18,7 @@ class TenantPropertyDetailViewController: UIViewController {
     @IBOutlet weak var startDate_Label: UILabel!
     @IBOutlet weak var endDate_Label: UILabel!
 	
-		var viewModel: TenantPropertyDetailViewModel?
+    var viewModel = TenantPropertyDetailViewModel()
     
     override func viewDidLoad() {
 			super.viewDidLoad()
@@ -29,7 +29,7 @@ class TenantPropertyDetailViewController: UIViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		viewModel?.refresh()
+		viewModel.refresh()
 //		viewModel!.refresh(_, completion: () -> Void)
 //
 //		for property in viewModel!.properties {
@@ -41,23 +41,22 @@ class TenantPropertyDetailViewController: UIViewController {
 		
 		//		self.title = viewModel?.title()
 		
-		if let viewModel = viewModel{
-			let addr_line1 = viewModel.address()
-			let city = viewModel.city()
-			let state = viewModel.state()
-			let zip = viewModel.zipcode()
-			let start_date = viewModel.start()
-			let end_date = viewModel.end()
-			let rent = viewModel.rent()
+
+//            let addr_line1 = viewModel.address()
+//            let city = viewModel.city()
+//            let state = viewModel.state()
+//            let zip = viewModel.zipcode()
+//            let start_date = viewModel.start()
+//            let end_date = viewModel.end()
+//            let rent = viewModel.rent()
 			
-			addr_1_Label.text = addr_line1
-			city_Label.text = city
-			state_Label.text = state
-			zipcode_Label.text = zip
-			startDate_Label.text = start_date
-			endDate_Label.text = end_date
-			rent_Label.text = String(rent!)
-		}
+			addr_1_Label.text = "5445 Wilkins Ave"
+			city_Label.text = "Pittsburgh"
+			state_Label.text = "PA"
+			zipcode_Label.text = "15289"
+			startDate_Label.text = "2018-12-06"
+			endDate_Label.text = "2018-12-06"
+			rent_Label.text = String(3500)
 	}
 
 	

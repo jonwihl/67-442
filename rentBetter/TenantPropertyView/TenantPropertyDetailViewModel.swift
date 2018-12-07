@@ -14,21 +14,19 @@ class TenantPropertyDetailViewModel {
 	let client = SearchPropertiesClient()
 	let parser = PropertiesParser()
 	
-	var property: Property
 	
 	func refresh() {
 		print("hello")
 		client.fetchProperties { [unowned self] data in
-			if let props = self.parser.tenantPropertiesFromSearchResponse(data) {
-				self.properties = props
-			}
-			print(self.properties)
+                if let props = self.parser.propertiesFromSearchResponse(data) {
+                    self.properties = props
+                }
+                print(self.properties)
 		}
 	}
 	
 	
-	init(property: Property) {
-		self.property = property
+	init() {
 	}
 	
 	func address() -> String {
