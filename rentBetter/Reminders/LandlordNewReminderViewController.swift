@@ -47,6 +47,8 @@ class LandlordNewReminderViewController: UIViewController {
 			descriptionTextField.layer.borderColor = UIColor(red:0, green:0, blue:0, alpha:1.0).cgColor
 			descriptionTextField.layer.borderWidth = 1.0
 			descriptionTextField.layer.cornerRadius = 1.0
+			
+			self.hideKeyboardWhenTappedAround()
 
         // Do any additional setup after loading the view.
     }

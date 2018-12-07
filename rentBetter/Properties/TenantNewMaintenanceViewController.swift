@@ -79,6 +79,8 @@ class TenantNewMaintenanceViewController: UIViewController, UIImagePickerControl
 			descriptionText.layer.borderColor = UIColor(red:0, green:0, blue:0, alpha:1.0).cgColor
 			descriptionText.layer.borderWidth = 1.0
 			descriptionText.layer.cornerRadius = 1.0
+			
+			self.hideKeyboardWhenTappedAround()
 //			self.descriptionText.layer.borderColor = [[UIColor, grayColor], CGColor];
 
         // Do any additional setup after loading the view.
@@ -96,3 +98,5 @@ class TenantNewMaintenanceViewController: UIViewController, UIImagePickerControl
     */
 
 }
+
+
