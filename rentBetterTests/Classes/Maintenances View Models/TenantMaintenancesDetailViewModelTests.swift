@@ -46,7 +46,7 @@ class TenantMaintenancesDetailViewModelTests: XCTestCase {
 	func test_active(){
 		let main = Maintenance(id: 1, title: "Sink not running", description: "no water is coming out of the kitchen sink", created_on: "10/15/2018", closed_on: "10/20/2018", photo: "xyz", active: true, property_id: 1, tenant_id: 1)
 		let viewModel = TenantMaintenancesDetailViewModel(maintenance: main)
-		XCTAssertEqual("Complete", viewModel.status())
+		XCTAssertEqual("Incomplete", viewModel.status())
 	}
 	
 }
