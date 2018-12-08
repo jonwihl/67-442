@@ -19,11 +19,6 @@ class TenantMaintenancesDetailViewController: UIViewController {
 	
 	var viewModel: TenantMaintenancesDetailViewModel?
 	
-	//	@IBAction func markComplete(_ sender: Any) {
-	//		viewModel?.deactivate()
-	//
-	//	}
-	
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)

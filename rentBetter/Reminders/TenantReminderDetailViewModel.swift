@@ -15,7 +15,7 @@ class TenantReminderDetailViewModel {
         self.reminder = reminder
     }
     
-    func id() -> Int{
+    func id() -> Int {
         return reminder.id
     }
     
@@ -34,5 +34,4 @@ class TenantReminderDetailViewModel {
     func removed_on() -> String? {
         return reminder.removed_on
     }
-    
 }
