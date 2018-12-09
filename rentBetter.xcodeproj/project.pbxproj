@@ -67,6 +67,7 @@
 		52929689218F77FF006131D5 /* LandlordPropertiesDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52929688218F77FF006131D5 /* LandlordPropertiesDetailViewModelTests.swift */; };
 		5292968C218F9001006131D5 /* LandlordMaintenancesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292968B218F9001006131D5 /* LandlordMaintenancesViewModelTests.swift */; };
 		5292968E218F907B006131D5 /* LandlordMaintenancesDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292968D218F907B006131D5 /* LandlordMaintenancesDetailViewModelTests.swift */; };
+		52FF579421BD872E00B60BD7 /* dataM.json in Resources */ = {isa = PBXBuildFile; fileRef = 52FF579321BD872D00B60BD7 /* dataM.json */; };
 		5FD266B366C186DE217AABED /* Pods_rentBetter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7E052CCF911CD6B413781B /* Pods_rentBetter.framework */; };
 /* End PBXBuildFile section */
 
@@ -155,6 +156,7 @@
 		52929688218F77FF006131D5 /* LandlordPropertiesDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordPropertiesDetailViewModelTests.swift; sourceTree = "<group>"; };
 		5292968B218F9001006131D5 /* LandlordMaintenancesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordMaintenancesViewModelTests.swift; sourceTree = "<group>"; };
 		5292968D218F907B006131D5 /* LandlordMaintenancesDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordMaintenancesDetailViewModelTests.swift; sourceTree = "<group>"; };
+		52FF579321BD872D00B60BD7 /* dataM.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataM.json; sourceTree = "<group>"; };
 		675D8278D00049FDC62FFCA7 /* Pods-rentBetter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentBetter.release.xcconfig"; path = "Pods/Target Support Files/Pods-rentBetter/Pods-rentBetter.release.xcconfig"; sourceTree = "<group>"; };
 		FCECFCF914070E387D0C42AC /* Pods-rentBetter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentBetter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rentBetter/Pods-rentBetter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -370,6 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				52929670218E6497006131D5 /* dataP.json */,
+				52FF579321BD872D00B60BD7 /* dataM.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52929671218E6497006131D5 /* dataP.json in Resources */,
+				52FF579421BD872E00B60BD7 /* dataM.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

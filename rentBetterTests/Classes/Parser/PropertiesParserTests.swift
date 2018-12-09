@@ -17,7 +17,7 @@ class PropertiesParserTests: XCTestCase {
 	
 	
 	func test_parseDictionary() {
-		let data = loadJSONTestData("data")
+		let data = loadJSONTestData("dataP")
 		let results = propertiesParser.parseDictionary(data)
 
 		XCTAssertNotNil(results)
