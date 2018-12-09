@@ -17,7 +17,7 @@ class PropertiesParserTests: XCTestCase {
 	
 	
 	func test_parseDictionary() {
-		let data = loadJSONTestData("data")
+		let data = loadJSONTestData("https://protected-gorge-28359.herokuapp.com/properties")
 		let results = propertiesParser.parseDictionary(data)
 
 		XCTAssertNotNil(results)
@@ -25,7 +25,7 @@ class PropertiesParserTests: XCTestCase {
 
 
 	func test_propertiesFromSearchResponse()  {
-		let data = loadJSONTestData("data")
+		let data = loadJSONTestData("https://protected-gorge-28359.herokuapp.com/properties")
 		let results = propertiesParser.propertiesFromSearchResponse(data)
 		XCTAssertEqual(3, results!.count)
 
