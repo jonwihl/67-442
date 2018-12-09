@@ -68,6 +68,8 @@
 		5292968C218F9001006131D5 /* LandlordMaintenancesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292968B218F9001006131D5 /* LandlordMaintenancesViewModelTests.swift */; };
 		5292968E218F907B006131D5 /* LandlordMaintenancesDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5292968D218F907B006131D5 /* LandlordMaintenancesDetailViewModelTests.swift */; };
 		52FF579421BD872E00B60BD7 /* dataM.json in Resources */ = {isa = PBXBuildFile; fileRef = 52FF579321BD872D00B60BD7 /* dataM.json */; };
+		52FF579621BD87B800B60BD7 /* dataR.json in Resources */ = {isa = PBXBuildFile; fileRef = 52FF579521BD87B800B60BD7 /* dataR.json */; };
+		52FF579A21BD87EB00B60BD7 /* RemindersParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF579921BD87EB00B60BD7 /* RemindersParserTests.swift */; };
 		5FD266B366C186DE217AABED /* Pods_rentBetter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7E052CCF911CD6B413781B /* Pods_rentBetter.framework */; };
 /* End PBXBuildFile section */
 
@@ -157,6 +159,8 @@
 		5292968B218F9001006131D5 /* LandlordMaintenancesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordMaintenancesViewModelTests.swift; sourceTree = "<group>"; };
 		5292968D218F907B006131D5 /* LandlordMaintenancesDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordMaintenancesDetailViewModelTests.swift; sourceTree = "<group>"; };
 		52FF579321BD872D00B60BD7 /* dataM.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataM.json; sourceTree = "<group>"; };
+		52FF579521BD87B800B60BD7 /* dataR.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataR.json; sourceTree = "<group>"; };
+		52FF579921BD87EB00B60BD7 /* RemindersParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersParserTests.swift; sourceTree = "<group>"; };
 		675D8278D00049FDC62FFCA7 /* Pods-rentBetter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentBetter.release.xcconfig"; path = "Pods/Target Support Files/Pods-rentBetter/Pods-rentBetter.release.xcconfig"; sourceTree = "<group>"; };
 		FCECFCF914070E387D0C42AC /* Pods-rentBetter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentBetter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rentBetter/Pods-rentBetter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -373,6 +377,7 @@
 			children = (
 				52929670218E6497006131D5 /* dataP.json */,
 				52FF579321BD872D00B60BD7 /* dataM.json */,
+				52FF579521BD87B800B60BD7 /* dataR.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -393,6 +398,7 @@
 			children = (
 				52929675218E6501006131D5 /* PropertiesParserTests.swift */,
 				52929677218E6517006131D5 /* MaintenancesParserTests.swift */,
+				52FF579921BD87EB00B60BD7 /* RemindersParserTests.swift */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -541,6 +547,7 @@
 			files = (
 				52929671218E6497006131D5 /* dataP.json in Resources */,
 				52FF579421BD872E00B60BD7 /* dataM.json in Resources */,
+				52FF579621BD87B800B60BD7 /* dataR.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +670,7 @@
 			files = (
 				526188E921BC638100EB8056 /* TenantMaintenancesViewModelTests.swift in Sources */,
 				5292968E218F907B006131D5 /* LandlordMaintenancesDetailViewModelTests.swift in Sources */,
+				52FF579A21BD87EB00B60BD7 /* RemindersParserTests.swift in Sources */,
 				5292968C218F9001006131D5 /* LandlordMaintenancesViewModelTests.swift in Sources */,
 				52929678218E6517006131D5 /* MaintenancesParserTests.swift in Sources */,
 				52929687218F77EE006131D5 /* LandlordPropertiesViewModelTests.swift in Sources */,

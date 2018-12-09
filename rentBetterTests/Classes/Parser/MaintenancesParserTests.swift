@@ -35,7 +35,7 @@ class MaintenancesParserTests: XCTestCase {
         XCTAssertEqual(true, first.active)
     }
 
-    func test_propertiesFromSearchResponse_with_nil_data(){
+    func test_maintenancesFromSearchResponse_with_nil_data(){
         let data: Data? = nil
         let results = maintenancesParser.maintenancesFromSearchResponse(data)
         XCTAssertNil(results)
