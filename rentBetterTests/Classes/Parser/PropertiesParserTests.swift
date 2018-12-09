@@ -17,7 +17,7 @@ class PropertiesParserTests: XCTestCase {
 	
 	
 	func test_parseDictionary() {
-		let data = loadJSONTestData("https://protected-gorge-28359.herokuapp.com/properties")
+		let data = loadJSONTestData("data")
 		let results = propertiesParser.parseDictionary(data)
 
 		XCTAssertNotNil(results)
@@ -25,19 +25,20 @@ class PropertiesParserTests: XCTestCase {
 
 
 	func test_propertiesFromSearchResponse()  {
-		let data = loadJSONTestData("https://protected-gorge-28359.herokuapp.com/properties")
+		let data = loadJSONTestData("dataP")
 		let results = propertiesParser.propertiesFromSearchResponse(data)
-		XCTAssertEqual(3, results!.count)
+		print(results)
+		XCTAssertEqual(8, results!.count)
 
 		let first = results!.first!
 		XCTAssertEqual(1, first.id)
 		XCTAssertEqual("5445 Wilkins Ave", first.addr_line1)
 		XCTAssertEqual("Pittsburgh", first.city)
 		XCTAssertEqual("PA", first.state)
-		XCTAssertEqual("15217", first.zipcode)
-		XCTAssertEqual(3900, first.rent)
-		XCTAssertEqual("6/1/2018", first.start_date)
-		XCTAssertEqual("6/1/2019", first.end_date)
+		XCTAssertEqual("15289", first.zipcode)
+		XCTAssertEqual(3500, first.rent)
+		XCTAssertEqual("2018-12-07", first.start_date)
+		XCTAssertEqual("2018-12-07", first.end_date)
 		XCTAssertEqual(1, first.landlord_id)
 	}
 
