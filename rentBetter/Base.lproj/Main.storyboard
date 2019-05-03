@@ -24,30 +24,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KWp-RG-9Kj">
-                                <rect key="frame" x="16" y="399" width="343" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lDc-Zc-gZZ">
-                                <rect key="frame" x="16" y="341" width="343" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="username"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="VMh-5r-Yd9">
-                                <rect key="frame" x="16" y="399" width="40" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="username" translatesAutoresizingMaskIntoConstraints="NO" id="P2b-c0-n6m">
-                                <rect key="frame" x="16" y="341" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Aba-Kf-IIh">
                                 <rect key="frame" x="75" y="134" width="224" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -93,10 +69,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="passwordField" destination="KWp-RG-9Kj" id="vu2-pt-0le"/>
-                        <outlet property="userNameField" destination="lDc-Zc-gZZ" id="H1U-PO-CZg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -472,6 +444,7 @@
                         <outlet property="rent_Label" destination="PPR-66-4EO" id="RlX-co-hyY"/>
                         <outlet property="startDate_Label" destination="1hK-Yy-pyC" id="foi-BF-sJq"/>
                         <outlet property="state_Label" destination="Qhc-B3-0cQ" id="dcc-Ot-2qV"/>
+                        <outlet property="username_Label" destination="mBh-Xl-2Qt" id="srP-VN-XGW"/>
                         <outlet property="zipcode_Label" destination="x0I-TG-5Cq" id="zST-fj-xZZ"/>
                     </connections>
                 </viewController>
@@ -1131,9 +1104,7 @@
         <image name="icons8-stack-of-money-25" width="18.75" height="18.75"/>
         <image name="icons8-wrench-25" width="18.75" height="18.75"/>
         <image name="logo" width="1200" height="630"/>
-        <image name="password" width="59" height="58"/>
         <image name="refresh" width="18.75" height="18.75"/>
-        <image name="username" width="47" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="mhu-Nj-d62"/>

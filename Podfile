@@ -10,4 +10,7 @@ target 'rentBetter' do
 		pod 'Stripe'
 
     pod 'Toast-Swift', '~> 4.0.0'
+    pod 'FacebookCore'
+    pod 'FacebookLogin'
+    pod 'FacebookShare'
 end

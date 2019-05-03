@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import FacebookLogin
+
 
 class LoginViewController: UIViewController {
+    
 
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var userNameField: UITextField!
@@ -20,9 +23,14 @@ class LoginViewController: UIViewController {
 		
 		self.view.backgroundColor = UIColor(red: 76/100, green: 94/100, blue: 92/100, alpha: 1)
 //        passwordField.text = "  Password"
-        passwordField.textColor = UIColor.lightGray
+//        passwordField.textColor = UIColor.lightGray
 //        userNameField.text = "  Username"
-        userNameField.textColor = UIColor.lightGray
+//        userNameField.textColor = UIColor.lightGray
+        let loginButton = LoginButton(readPermissions: [ .publicProfile ])
+        loginButton.center = view.center
+        
+        view.addSubview(loginButton)
+
 	}
 }
 
