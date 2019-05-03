@@ -27,6 +27,16 @@ class LandlordPropertiesViewModelTests: XCTestCase {
         let indexPath1 = IndexPath(row: 0, section: 0)
         XCTAssertEqual(viewModel.addrForRowAtIndexPath(indexPath1), "5445 Wilkins")
     }
+	
+		func test_summaryForRowAtIndexPath(){
+			let property1 = createProperty()
+			let viewModel = LandlordPropertiesViewModel()
+			viewModel.properties = [property1]
+			
+			let indexPath1 = IndexPath(row: 0, section: 0)
+			XCTAssertEqual(viewModel.summaryForRowAtIndexPath(indexPath1), "6/1/2018")
+			
+		}
     
     
     func createProperty() -> Property {

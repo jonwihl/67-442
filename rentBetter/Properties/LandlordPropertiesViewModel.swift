@@ -60,11 +60,4 @@ class LandlordPropertiesViewModel {
 		
 		return LandlordPropertiesDetailViewModel(property: prop)
 	}
-	
-	func updateFiltering(_ searchText: String) -> Void {
-		filteredProperties = self.properties.filter { property in
-			return property.addr_line1.lowercased().contains(searchText.lowercased())
-		}
-	}
-	
 }

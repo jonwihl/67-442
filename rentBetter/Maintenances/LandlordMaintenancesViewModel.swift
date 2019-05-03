@@ -60,10 +60,4 @@ class LandlordMaintenancesViewModel {
 		return LandlordMaintenancesDetailViewModel(maintenance: fix)
 	}
 	
-	func updateFiltering(_ searchText: String) -> Void {
-		filteredMaintenances = self.maintenances.filter { maintenance in
-			return maintenance.title.lowercased().contains(searchText.lowercased())
-		}
-	}
-	
 }

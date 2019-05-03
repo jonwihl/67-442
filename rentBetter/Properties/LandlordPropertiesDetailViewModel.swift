@@ -44,22 +44,4 @@ class LandlordPropertiesDetailViewModel {
 		return property.end_date
 	}
 	
-//	func name() -> String? {
-//		if property.id == tenant.property_id{
-//				return tenant.name
-//		}
-//		else{
-//			return "x"
-//		}
-//	}
-//
-//	func phone() -> String? {
-//		if property.id == tenant.property_id{
-//			return tenant.phone
-//		}
-//		else{
-//			return "x"
-//		}
-//	}
-	
 }
